@@ -28,13 +28,13 @@ class LibraryViewControllerCollectionViewController: UICollectionViewController 
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
 
    
     // MARK: Collection view
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
+        
         return 10
     }
 
@@ -44,6 +44,9 @@ class LibraryViewControllerCollectionViewController: UICollectionViewController 
         // Configure the cell
         
         cell.bookCover.image = getBookCoverImage()
+        cell.author.text = "Rango"
+        
+        cell.title.text = "Orlovi rano lete"
     
         return cell
     }

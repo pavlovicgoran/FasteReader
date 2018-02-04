@@ -11,5 +11,7 @@ import UIKit
 class BookCell: UICollectionViewCell {
     
     @IBOutlet var bookCover: UIImageView!
+    @IBOutlet var author: UILabel!
+    @IBOutlet var title: UILabel!
     
 }
