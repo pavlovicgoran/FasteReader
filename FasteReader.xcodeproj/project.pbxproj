@@ -21,7 +21,7 @@
 		5F5B8B182026FC2600B4801A /* book_cover_brown.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5B8B152026FC2500B4801A /* book_cover_brown.png */; };
 		5F5B8B192026FC2600B4801A /* book_cover_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5B8B162026FC2600B4801A /* book_cover_black.png */; };
 		5F5B8B1A2026FC2600B4801A /* book_cover_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5B8B172026FC2600B4801A /* book_cover_red.png */; };
-		5F5B8B1C2026FDD200B4801A /* LibraryViewControllerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B8B1B2026FDD200B4801A /* LibraryViewControllerCollectionViewController.swift */; };
+		5F5B8B1C2026FDD200B4801A /* LibraryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B8B1B2026FDD200B4801A /* LibraryCollectionViewController.swift */; };
 		5F5B8B1F202700A700B4801A /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B8B1E202700A700B4801A /* BookCell.swift */; };
 		5F9DF97E20299AC4002F14B3 /* stick_chapter_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF94E20299AC4002F14B3 /* stick_chapter_1.txt */; };
 		5F9DF97F20299AC4002F14B3 /* stick_chapter_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF94F20299AC4002F14B3 /* stick_chapter_2.txt */; };
@@ -105,7 +105,7 @@
 		5F5B8B152026FC2500B4801A /* book_cover_brown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_cover_brown.png; sourceTree = "<group>"; };
 		5F5B8B162026FC2600B4801A /* book_cover_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_cover_black.png; sourceTree = "<group>"; };
 		5F5B8B172026FC2600B4801A /* book_cover_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_cover_red.png; sourceTree = "<group>"; };
-		5F5B8B1B2026FDD200B4801A /* LibraryViewControllerCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewControllerCollectionViewController.swift; sourceTree = "<group>"; };
+		5F5B8B1B2026FDD200B4801A /* LibraryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCollectionViewController.swift; sourceTree = "<group>"; };
 		5F5B8B1E202700A700B4801A /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		5F9DF94E20299AC4002F14B3 /* stick_chapter_1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stick_chapter_1.txt; sourceTree = "<group>"; };
 		5F9DF94F20299AC4002F14B3 /* stick_chapter_2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stick_chapter_2.txt; sourceTree = "<group>"; };
@@ -247,7 +247,7 @@
 		5F5B8B1D2027004B00B4801A /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				5F5B8B1B2026FDD200B4801A /* LibraryViewControllerCollectionViewController.swift */,
+				5F5B8B1B2026FDD200B4801A /* LibraryCollectionViewController.swift */,
 				5F5B8B1E202700A700B4801A /* BookCell.swift */,
 			);
 			path = Library;
@@ -544,7 +544,7 @@
 			files = (
 				5F5B8B1F202700A700B4801A /* BookCell.swift in Sources */,
 				5F15A2E220248FB10038039B /* AppDelegate.swift in Sources */,
-				5F5B8B1C2026FDD200B4801A /* LibraryViewControllerCollectionViewController.swift in Sources */,
+				5F5B8B1C2026FDD200B4801A /* LibraryCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

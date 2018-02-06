@@ -10,7 +10,7 @@ import UIKit
 import GameplayKit
 
 
-class LibraryViewControllerCollectionViewController: UICollectionViewController {
+class LibraryCollectionViewController: UICollectionViewController {
 
     private let reuseIdentifier = "Book"
     private let blackBookCover = "book_cover_black"

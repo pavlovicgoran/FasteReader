@@ -158,7 +158,7 @@
         <!--Library-->
         <scene sceneID="DCR-Lq-Nup">
             <objects>
-                <collectionViewController id="kRC-t4-lxc" userLabel="Library" customClass="LibraryViewControllerCollectionViewController" customModule="FasteReader" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="kRC-t4-lxc" userLabel="Library" customClass="LibraryCollectionViewController" customModule="FasteReader" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="8uj-Cz-7eC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
