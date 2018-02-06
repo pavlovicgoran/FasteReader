@@ -65,6 +65,7 @@
 		5F9DF9A520299AC4002F14B3 /* mind_chapter_4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF97B20299AC4002F14B3 /* mind_chapter_4.txt */; };
 		5F9DF9A620299AC4002F14B3 /* mind_chapter_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF97C20299AC4002F14B3 /* mind_chapter_5.txt */; };
 		5F9DF9A720299AC4002F14B3 /* mind_chapter_6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF97D20299AC4002F14B3 /* mind_chapter_6.txt */; };
+		5F9DF9AD2029A859002F14B3 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9DF9AC2029A859002F14B3 /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +150,7 @@
 		5F9DF97B20299AC4002F14B3 /* mind_chapter_4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mind_chapter_4.txt; sourceTree = "<group>"; };
 		5F9DF97C20299AC4002F14B3 /* mind_chapter_5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mind_chapter_5.txt; sourceTree = "<group>"; };
 		5F9DF97D20299AC4002F14B3 /* mind_chapter_6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mind_chapter_6.txt; sourceTree = "<group>"; };
+		5F9DF9AC2029A859002F14B3 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +251,7 @@
 			children = (
 				5F5B8B1B2026FDD200B4801A /* LibraryCollectionViewController.swift */,
 				5F5B8B1E202700A700B4801A /* BookCell.swift */,
+				5F9DF9AC2029A859002F14B3 /* Book.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -542,6 +545,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F9DF9AD2029A859002F14B3 /* Book.swift in Sources */,
 				5F5B8B1F202700A700B4801A /* BookCell.swift in Sources */,
 				5F15A2E220248FB10038039B /* AppDelegate.swift in Sources */,
 				5F5B8B1C2026FDD200B4801A /* LibraryCollectionViewController.swift in Sources */,
