@@ -19,11 +19,13 @@ class LibraryCollectionViewController: UICollectionViewController{
     
     private var arrayOfColors = [String]()
     
+    private var books = [Book]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         initialazeArrayOfColors()
-        
+        initializeBooksArray()
     }
 
     
@@ -33,6 +35,15 @@ class LibraryCollectionViewController: UICollectionViewController{
         arrayOfColors.append(brownBookCover)
     }
 
+    private func initializeBooksArray(){
+        books.append(Book(author: "Chip Heath", title: "Made to Stick", prefix: .madeToStick))
+        books.append(Book(author: "Dan Brown", title: "Origin", prefix: .origin))
+        books.append(Book(author: "Ed Catmul", title: "Creativity Inc", prefix: .creativity))
+        books.append(Book(author: "Janson Hanson", title: "Spy Secrets", prefix: .spy))
+        books.append(Book(author: "Josh Waitzkin", title: "The Art of Learning", prefix: .artOfLearning))
+        books.append(Book(author: "Marcus Chown", title: "Quantum Theory", prefix: .quantumTheory))
+        books.append(Book(author: "Seneca", title: "Piece of Mind", prefix: .pieceOfMind))
+    }
 
 }
 
@@ -42,18 +53,19 @@ extension LibraryCollectionViewController{
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 10
+        return books.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! BookCell
         
         // Configure the cell
+        let book = books[indexPath.item]
         
         cell.bookCover.image = getBookCoverImage()
-        cell.author.text = "Rango"
+        cell.author.text = book.getAuthor()
         
-        cell.title.text = "Orlovi rano lete"
+        cell.title.text = book.getTitle()
         
         return cell
     }
