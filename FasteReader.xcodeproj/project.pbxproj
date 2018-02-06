@@ -23,6 +23,48 @@
 		5F5B8B1A2026FC2600B4801A /* book_cover_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5B8B172026FC2600B4801A /* book_cover_red.png */; };
 		5F5B8B1C2026FDD200B4801A /* LibraryViewControllerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B8B1B2026FDD200B4801A /* LibraryViewControllerCollectionViewController.swift */; };
 		5F5B8B1F202700A700B4801A /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B8B1E202700A700B4801A /* BookCell.swift */; };
+		5F9DF97E20299AC4002F14B3 /* stick_chapter_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF94E20299AC4002F14B3 /* stick_chapter_1.txt */; };
+		5F9DF97F20299AC4002F14B3 /* stick_chapter_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF94F20299AC4002F14B3 /* stick_chapter_2.txt */; };
+		5F9DF98020299AC4002F14B3 /* stick_chapter_3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF95020299AC4002F14B3 /* stick_chapter_3.txt */; };
+		5F9DF98120299AC4002F14B3 /* stick_chapter_4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF95120299AC4002F14B3 /* stick_chapter_4.txt */; };
+		5F9DF98220299AC4002F14B3 /* stick_chapter_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF95220299AC4002F14B3 /* stick_chapter_5.txt */; };
+		5F9DF98320299AC4002F14B3 /* stick_chapter_6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF95320299AC4002F14B3 /* stick_chapter_6.txt */; };
+		5F9DF98420299AC4002F14B3 /* origin_chapter_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF95520299AC4002F14B3 /* origin_chapter_1.txt */; };
+		5F9DF98520299AC4002F14B3 /* origin_chapter_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF95620299AC4002F14B3 /* origin_chapter_2.txt */; };
+		5F9DF98620299AC4002F14B3 /* origin_chapter_3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF95720299AC4002F14B3 /* origin_chapter_3.txt */; };
+		5F9DF98720299AC4002F14B3 /* origin_chapter_4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF95820299AC4002F14B3 /* origin_chapter_4.txt */; };
+		5F9DF98820299AC4002F14B3 /* origin_chapter_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF95920299AC4002F14B3 /* origin_chapter_5.txt */; };
+		5F9DF98920299AC4002F14B3 /* origin_chapter_6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF95A20299AC4002F14B3 /* origin_chapter_6.txt */; };
+		5F9DF98A20299AC4002F14B3 /* create_chapter_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF95C20299AC4002F14B3 /* create_chapter_1.txt */; };
+		5F9DF98B20299AC4002F14B3 /* create_chapter_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF95D20299AC4002F14B3 /* create_chapter_2.txt */; };
+		5F9DF98C20299AC4002F14B3 /* create_chapter_3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF95E20299AC4002F14B3 /* create_chapter_3.txt */; };
+		5F9DF98D20299AC4002F14B3 /* create_chapter_4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF95F20299AC4002F14B3 /* create_chapter_4.txt */; };
+		5F9DF98E20299AC4002F14B3 /* create_chapter_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF96020299AC4002F14B3 /* create_chapter_5.txt */; };
+		5F9DF98F20299AC4002F14B3 /* create_chapter_6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF96120299AC4002F14B3 /* create_chapter_6.txt */; };
+		5F9DF99020299AC4002F14B3 /* spy_chapter_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF96320299AC4002F14B3 /* spy_chapter_1.txt */; };
+		5F9DF99120299AC4002F14B3 /* spy_chapter_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF96420299AC4002F14B3 /* spy_chapter_2.txt */; };
+		5F9DF99220299AC4002F14B3 /* spy_chapter_3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF96520299AC4002F14B3 /* spy_chapter_3.txt */; };
+		5F9DF99320299AC4002F14B3 /* spy_chapter_4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF96620299AC4002F14B3 /* spy_chapter_4.txt */; };
+		5F9DF99420299AC4002F14B3 /* spy_chapter_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF96720299AC4002F14B3 /* spy_chapter_5.txt */; };
+		5F9DF99520299AC4002F14B3 /* spy_chapter_6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF96820299AC4002F14B3 /* spy_chapter_6.txt */; };
+		5F9DF99620299AC4002F14B3 /* learning_chapter_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF96A20299AC4002F14B3 /* learning_chapter_1.txt */; };
+		5F9DF99720299AC4002F14B3 /* learning_chapter_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF96B20299AC4002F14B3 /* learning_chapter_2.txt */; };
+		5F9DF99820299AC4002F14B3 /* learning_chapter_3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF96C20299AC4002F14B3 /* learning_chapter_3.txt */; };
+		5F9DF99920299AC4002F14B3 /* learning_chapter_4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF96D20299AC4002F14B3 /* learning_chapter_4.txt */; };
+		5F9DF99A20299AC4002F14B3 /* learning_chapter_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF96E20299AC4002F14B3 /* learning_chapter_5.txt */; };
+		5F9DF99B20299AC4002F14B3 /* learning_chapter_6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF96F20299AC4002F14B3 /* learning_chapter_6.txt */; };
+		5F9DF99C20299AC4002F14B3 /* theory_chapter_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF97120299AC4002F14B3 /* theory_chapter_1.txt */; };
+		5F9DF99D20299AC4002F14B3 /* theory_chapter_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF97220299AC4002F14B3 /* theory_chapter_2.txt */; };
+		5F9DF99E20299AC4002F14B3 /* theory_chapter_3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF97320299AC4002F14B3 /* theory_chapter_3.txt */; };
+		5F9DF99F20299AC4002F14B3 /* theory_chapter_4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF97420299AC4002F14B3 /* theory_chapter_4.txt */; };
+		5F9DF9A020299AC4002F14B3 /* theory_chapter_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF97520299AC4002F14B3 /* theory_chapter_5.txt */; };
+		5F9DF9A120299AC4002F14B3 /* theory_chapter_6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF97620299AC4002F14B3 /* theory_chapter_6.txt */; };
+		5F9DF9A220299AC4002F14B3 /* mind_chapter_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF97820299AC4002F14B3 /* mind_chapter_1.txt */; };
+		5F9DF9A320299AC4002F14B3 /* mind_chapter_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF97920299AC4002F14B3 /* mind_chapter_2.txt */; };
+		5F9DF9A420299AC4002F14B3 /* mind_chapter_3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF97A20299AC4002F14B3 /* mind_chapter_3.txt */; };
+		5F9DF9A520299AC4002F14B3 /* mind_chapter_4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF97B20299AC4002F14B3 /* mind_chapter_4.txt */; };
+		5F9DF9A620299AC4002F14B3 /* mind_chapter_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF97C20299AC4002F14B3 /* mind_chapter_5.txt */; };
+		5F9DF9A720299AC4002F14B3 /* mind_chapter_6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF97D20299AC4002F14B3 /* mind_chapter_6.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +107,48 @@
 		5F5B8B172026FC2600B4801A /* book_cover_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_cover_red.png; sourceTree = "<group>"; };
 		5F5B8B1B2026FDD200B4801A /* LibraryViewControllerCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewControllerCollectionViewController.swift; sourceTree = "<group>"; };
 		5F5B8B1E202700A700B4801A /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		5F9DF94E20299AC4002F14B3 /* stick_chapter_1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stick_chapter_1.txt; sourceTree = "<group>"; };
+		5F9DF94F20299AC4002F14B3 /* stick_chapter_2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stick_chapter_2.txt; sourceTree = "<group>"; };
+		5F9DF95020299AC4002F14B3 /* stick_chapter_3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stick_chapter_3.txt; sourceTree = "<group>"; };
+		5F9DF95120299AC4002F14B3 /* stick_chapter_4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stick_chapter_4.txt; sourceTree = "<group>"; };
+		5F9DF95220299AC4002F14B3 /* stick_chapter_5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stick_chapter_5.txt; sourceTree = "<group>"; };
+		5F9DF95320299AC4002F14B3 /* stick_chapter_6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stick_chapter_6.txt; sourceTree = "<group>"; };
+		5F9DF95520299AC4002F14B3 /* origin_chapter_1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = origin_chapter_1.txt; sourceTree = "<group>"; };
+		5F9DF95620299AC4002F14B3 /* origin_chapter_2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = origin_chapter_2.txt; sourceTree = "<group>"; };
+		5F9DF95720299AC4002F14B3 /* origin_chapter_3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = origin_chapter_3.txt; sourceTree = "<group>"; };
+		5F9DF95820299AC4002F14B3 /* origin_chapter_4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = origin_chapter_4.txt; sourceTree = "<group>"; };
+		5F9DF95920299AC4002F14B3 /* origin_chapter_5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = origin_chapter_5.txt; sourceTree = "<group>"; };
+		5F9DF95A20299AC4002F14B3 /* origin_chapter_6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = origin_chapter_6.txt; sourceTree = "<group>"; };
+		5F9DF95C20299AC4002F14B3 /* create_chapter_1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_chapter_1.txt; sourceTree = "<group>"; };
+		5F9DF95D20299AC4002F14B3 /* create_chapter_2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_chapter_2.txt; sourceTree = "<group>"; };
+		5F9DF95E20299AC4002F14B3 /* create_chapter_3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_chapter_3.txt; sourceTree = "<group>"; };
+		5F9DF95F20299AC4002F14B3 /* create_chapter_4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_chapter_4.txt; sourceTree = "<group>"; };
+		5F9DF96020299AC4002F14B3 /* create_chapter_5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_chapter_5.txt; sourceTree = "<group>"; };
+		5F9DF96120299AC4002F14B3 /* create_chapter_6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_chapter_6.txt; sourceTree = "<group>"; };
+		5F9DF96320299AC4002F14B3 /* spy_chapter_1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spy_chapter_1.txt; sourceTree = "<group>"; };
+		5F9DF96420299AC4002F14B3 /* spy_chapter_2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spy_chapter_2.txt; sourceTree = "<group>"; };
+		5F9DF96520299AC4002F14B3 /* spy_chapter_3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spy_chapter_3.txt; sourceTree = "<group>"; };
+		5F9DF96620299AC4002F14B3 /* spy_chapter_4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spy_chapter_4.txt; sourceTree = "<group>"; };
+		5F9DF96720299AC4002F14B3 /* spy_chapter_5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spy_chapter_5.txt; sourceTree = "<group>"; };
+		5F9DF96820299AC4002F14B3 /* spy_chapter_6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spy_chapter_6.txt; sourceTree = "<group>"; };
+		5F9DF96A20299AC4002F14B3 /* learning_chapter_1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = learning_chapter_1.txt; sourceTree = "<group>"; };
+		5F9DF96B20299AC4002F14B3 /* learning_chapter_2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = learning_chapter_2.txt; sourceTree = "<group>"; };
+		5F9DF96C20299AC4002F14B3 /* learning_chapter_3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = learning_chapter_3.txt; sourceTree = "<group>"; };
+		5F9DF96D20299AC4002F14B3 /* learning_chapter_4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = learning_chapter_4.txt; sourceTree = "<group>"; };
+		5F9DF96E20299AC4002F14B3 /* learning_chapter_5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = learning_chapter_5.txt; sourceTree = "<group>"; };
+		5F9DF96F20299AC4002F14B3 /* learning_chapter_6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = learning_chapter_6.txt; sourceTree = "<group>"; };
+		5F9DF97120299AC4002F14B3 /* theory_chapter_1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = theory_chapter_1.txt; sourceTree = "<group>"; };
+		5F9DF97220299AC4002F14B3 /* theory_chapter_2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = theory_chapter_2.txt; sourceTree = "<group>"; };
+		5F9DF97320299AC4002F14B3 /* theory_chapter_3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = theory_chapter_3.txt; sourceTree = "<group>"; };
+		5F9DF97420299AC4002F14B3 /* theory_chapter_4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = theory_chapter_4.txt; sourceTree = "<group>"; };
+		5F9DF97520299AC4002F14B3 /* theory_chapter_5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = theory_chapter_5.txt; sourceTree = "<group>"; };
+		5F9DF97620299AC4002F14B3 /* theory_chapter_6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = theory_chapter_6.txt; sourceTree = "<group>"; };
+		5F9DF97820299AC4002F14B3 /* mind_chapter_1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mind_chapter_1.txt; sourceTree = "<group>"; };
+		5F9DF97920299AC4002F14B3 /* mind_chapter_2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mind_chapter_2.txt; sourceTree = "<group>"; };
+		5F9DF97A20299AC4002F14B3 /* mind_chapter_3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mind_chapter_3.txt; sourceTree = "<group>"; };
+		5F9DF97B20299AC4002F14B3 /* mind_chapter_4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mind_chapter_4.txt; sourceTree = "<group>"; };
+		5F9DF97C20299AC4002F14B3 /* mind_chapter_5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mind_chapter_5.txt; sourceTree = "<group>"; };
+		5F9DF97D20299AC4002F14B3 /* mind_chapter_6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mind_chapter_6.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +199,7 @@
 		5F15A2E020248FB10038039B /* FasteReader */ = {
 			isa = PBXGroup;
 			children = (
+				5F9DF94C20299AC4002F14B3 /* Books */,
 				5F5B8B1D2027004B00B4801A /* Library */,
 				5F15A312202492FA0038039B /* Images */,
 				5F15A2E120248FB10038039B /* AppDelegate.swift */,
@@ -166,6 +251,111 @@
 				5F5B8B1E202700A700B4801A /* BookCell.swift */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		5F9DF94C20299AC4002F14B3 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				5F9DF94D20299AC4002F14B3 /* Chip Heath - Made to Stick */,
+				5F9DF95420299AC4002F14B3 /* Dan Brown - Origin */,
+				5F9DF95B20299AC4002F14B3 /* Ed Catmul - Creativity Inc */,
+				5F9DF96220299AC4002F14B3 /* Janson Hanson - Spy Secrets */,
+				5F9DF96920299AC4002F14B3 /* Josh Waitzkin - The Art of Learning */,
+				5F9DF97020299AC4002F14B3 /* Marcus Chown - Quantum Theory Can't Hurt You */,
+				5F9DF97720299AC4002F14B3 /* Seneca - Piece of Mind */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		5F9DF94D20299AC4002F14B3 /* Chip Heath - Made to Stick */ = {
+			isa = PBXGroup;
+			children = (
+				5F9DF94E20299AC4002F14B3 /* stick_chapter_1.txt */,
+				5F9DF94F20299AC4002F14B3 /* stick_chapter_2.txt */,
+				5F9DF95020299AC4002F14B3 /* stick_chapter_3.txt */,
+				5F9DF95120299AC4002F14B3 /* stick_chapter_4.txt */,
+				5F9DF95220299AC4002F14B3 /* stick_chapter_5.txt */,
+				5F9DF95320299AC4002F14B3 /* stick_chapter_6.txt */,
+			);
+			path = "Chip Heath - Made to Stick";
+			sourceTree = "<group>";
+		};
+		5F9DF95420299AC4002F14B3 /* Dan Brown - Origin */ = {
+			isa = PBXGroup;
+			children = (
+				5F9DF95520299AC4002F14B3 /* origin_chapter_1.txt */,
+				5F9DF95620299AC4002F14B3 /* origin_chapter_2.txt */,
+				5F9DF95720299AC4002F14B3 /* origin_chapter_3.txt */,
+				5F9DF95820299AC4002F14B3 /* origin_chapter_4.txt */,
+				5F9DF95920299AC4002F14B3 /* origin_chapter_5.txt */,
+				5F9DF95A20299AC4002F14B3 /* origin_chapter_6.txt */,
+			);
+			path = "Dan Brown - Origin";
+			sourceTree = "<group>";
+		};
+		5F9DF95B20299AC4002F14B3 /* Ed Catmul - Creativity Inc */ = {
+			isa = PBXGroup;
+			children = (
+				5F9DF95C20299AC4002F14B3 /* create_chapter_1.txt */,
+				5F9DF95D20299AC4002F14B3 /* create_chapter_2.txt */,
+				5F9DF95E20299AC4002F14B3 /* create_chapter_3.txt */,
+				5F9DF95F20299AC4002F14B3 /* create_chapter_4.txt */,
+				5F9DF96020299AC4002F14B3 /* create_chapter_5.txt */,
+				5F9DF96120299AC4002F14B3 /* create_chapter_6.txt */,
+			);
+			path = "Ed Catmul - Creativity Inc";
+			sourceTree = "<group>";
+		};
+		5F9DF96220299AC4002F14B3 /* Janson Hanson - Spy Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				5F9DF96320299AC4002F14B3 /* spy_chapter_1.txt */,
+				5F9DF96420299AC4002F14B3 /* spy_chapter_2.txt */,
+				5F9DF96520299AC4002F14B3 /* spy_chapter_3.txt */,
+				5F9DF96620299AC4002F14B3 /* spy_chapter_4.txt */,
+				5F9DF96720299AC4002F14B3 /* spy_chapter_5.txt */,
+				5F9DF96820299AC4002F14B3 /* spy_chapter_6.txt */,
+			);
+			path = "Janson Hanson - Spy Secrets";
+			sourceTree = "<group>";
+		};
+		5F9DF96920299AC4002F14B3 /* Josh Waitzkin - The Art of Learning */ = {
+			isa = PBXGroup;
+			children = (
+				5F9DF96A20299AC4002F14B3 /* learning_chapter_1.txt */,
+				5F9DF96B20299AC4002F14B3 /* learning_chapter_2.txt */,
+				5F9DF96C20299AC4002F14B3 /* learning_chapter_3.txt */,
+				5F9DF96D20299AC4002F14B3 /* learning_chapter_4.txt */,
+				5F9DF96E20299AC4002F14B3 /* learning_chapter_5.txt */,
+				5F9DF96F20299AC4002F14B3 /* learning_chapter_6.txt */,
+			);
+			path = "Josh Waitzkin - The Art of Learning";
+			sourceTree = "<group>";
+		};
+		5F9DF97020299AC4002F14B3 /* Marcus Chown - Quantum Theory Can't Hurt You */ = {
+			isa = PBXGroup;
+			children = (
+				5F9DF97120299AC4002F14B3 /* theory_chapter_1.txt */,
+				5F9DF97220299AC4002F14B3 /* theory_chapter_2.txt */,
+				5F9DF97320299AC4002F14B3 /* theory_chapter_3.txt */,
+				5F9DF97420299AC4002F14B3 /* theory_chapter_4.txt */,
+				5F9DF97520299AC4002F14B3 /* theory_chapter_5.txt */,
+				5F9DF97620299AC4002F14B3 /* theory_chapter_6.txt */,
+			);
+			path = "Marcus Chown - Quantum Theory Can't Hurt You";
+			sourceTree = "<group>";
+		};
+		5F9DF97720299AC4002F14B3 /* Seneca - Piece of Mind */ = {
+			isa = PBXGroup;
+			children = (
+				5F9DF97820299AC4002F14B3 /* mind_chapter_1.txt */,
+				5F9DF97920299AC4002F14B3 /* mind_chapter_2.txt */,
+				5F9DF97A20299AC4002F14B3 /* mind_chapter_3.txt */,
+				5F9DF97B20299AC4002F14B3 /* mind_chapter_4.txt */,
+				5F9DF97C20299AC4002F14B3 /* mind_chapter_5.txt */,
+				5F9DF97D20299AC4002F14B3 /* mind_chapter_6.txt */,
+			);
+			path = "Seneca - Piece of Mind";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,17 +465,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F9DF98C20299AC4002F14B3 /* create_chapter_3.txt in Resources */,
+				5F9DF9A020299AC4002F14B3 /* theory_chapter_5.txt in Resources */,
+				5F9DF9A320299AC4002F14B3 /* mind_chapter_2.txt in Resources */,
+				5F9DF99E20299AC4002F14B3 /* theory_chapter_3.txt in Resources */,
+				5F9DF99920299AC4002F14B3 /* learning_chapter_4.txt in Resources */,
+				5F9DF98720299AC4002F14B3 /* origin_chapter_4.txt in Resources */,
 				5F15A2EC20248FB10038039B /* LaunchScreen.storyboard in Resources */,
 				5F11719E2025BE5300EE94B7 /* library.png in Resources */,
 				5F5B8B1A2026FC2600B4801A /* book_cover_red.png in Resources */,
+				5F9DF99020299AC4002F14B3 /* spy_chapter_1.txt in Resources */,
+				5F9DF98A20299AC4002F14B3 /* create_chapter_1.txt in Resources */,
+				5F9DF99420299AC4002F14B3 /* spy_chapter_5.txt in Resources */,
+				5F9DF98520299AC4002F14B3 /* origin_chapter_2.txt in Resources */,
+				5F9DF98120299AC4002F14B3 /* stick_chapter_4.txt in Resources */,
+				5F9DF99820299AC4002F14B3 /* learning_chapter_3.txt in Resources */,
+				5F9DF99B20299AC4002F14B3 /* learning_chapter_6.txt in Resources */,
+				5F9DF99620299AC4002F14B3 /* learning_chapter_1.txt in Resources */,
+				5F9DF99520299AC4002F14B3 /* spy_chapter_6.txt in Resources */,
 				5F11719F2025BE5300EE94B7 /* test.png in Resources */,
 				5F15A314202493250038039B /* pile of books.jpg in Resources */,
+				5F9DF98D20299AC4002F14B3 /* create_chapter_4.txt in Resources */,
+				5F9DF98420299AC4002F14B3 /* origin_chapter_1.txt in Resources */,
+				5F9DF9A420299AC4002F14B3 /* mind_chapter_3.txt in Resources */,
+				5F9DF98B20299AC4002F14B3 /* create_chapter_2.txt in Resources */,
+				5F9DF99D20299AC4002F14B3 /* theory_chapter_2.txt in Resources */,
 				5F5B8B182026FC2600B4801A /* book_cover_brown.png in Resources */,
+				5F9DF9A620299AC4002F14B3 /* mind_chapter_5.txt in Resources */,
+				5F9DF98320299AC4002F14B3 /* stick_chapter_6.txt in Resources */,
+				5F9DF99120299AC4002F14B3 /* spy_chapter_2.txt in Resources */,
 				5F15A2E920248FB10038039B /* Assets.xcassets in Resources */,
+				5F9DF98E20299AC4002F14B3 /* create_chapter_5.txt in Resources */,
+				5F9DF9A520299AC4002F14B3 /* mind_chapter_4.txt in Resources */,
+				5F9DF99220299AC4002F14B3 /* spy_chapter_3.txt in Resources */,
 				5F15A2E720248FB10038039B /* Main.storyboard in Resources */,
+				5F9DF9A220299AC4002F14B3 /* mind_chapter_1.txt in Resources */,
+				5F9DF98220299AC4002F14B3 /* stick_chapter_5.txt in Resources */,
+				5F9DF99720299AC4002F14B3 /* learning_chapter_2.txt in Resources */,
+				5F9DF99C20299AC4002F14B3 /* theory_chapter_1.txt in Resources */,
+				5F9DF99F20299AC4002F14B3 /* theory_chapter_4.txt in Resources */,
 				5F11719D2025BE5300EE94B7 /* techniques.png in Resources */,
+				5F9DF97E20299AC4002F14B3 /* stick_chapter_1.txt in Resources */,
+				5F9DF99A20299AC4002F14B3 /* learning_chapter_5.txt in Resources */,
+				5F9DF9A120299AC4002F14B3 /* theory_chapter_6.txt in Resources */,
 				5F5B8B192026FC2600B4801A /* book_cover_black.png in Resources */,
+				5F9DF98020299AC4002F14B3 /* stick_chapter_3.txt in Resources */,
+				5F9DF99320299AC4002F14B3 /* spy_chapter_4.txt in Resources */,
+				5F9DF98820299AC4002F14B3 /* origin_chapter_5.txt in Resources */,
 				5F1171A02025BE5300EE94B7 /* profile.png in Resources */,
+				5F9DF98620299AC4002F14B3 /* origin_chapter_3.txt in Resources */,
+				5F9DF98920299AC4002F14B3 /* origin_chapter_6.txt in Resources */,
+				5F9DF97F20299AC4002F14B3 /* stick_chapter_2.txt in Resources */,
+				5F9DF9A720299AC4002F14B3 /* mind_chapter_6.txt in Resources */,
+				5F9DF98F20299AC4002F14B3 /* create_chapter_6.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

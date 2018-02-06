@@ -1,0 +1,66 @@
+Every move an Army soldier makes is preceded by a staggering amount of planning, which can be traced to an original order from the president of the United States. The president orders the Joint Chiefs of Staff to accomplish an objective, and the Joint Chiefs set the parameters of the operation. Then the orders and plans begin to cascade downward—from generals to colonels to captains.
+
+The plans are quite thorough, specifying the “scheme of maneuver” and the “concept of fires”—what each unit will do, which equipment it will use, how it will replace munitions, and so on. The orders snowball until they accumulate enough specificity to guide the actions of individual foot soldiers at particular moments in time.
+
+The Army invests enormous energy in its planning, and its processes have been refined over many years. The system is a marvel of communication. There’s just one drawback: The plans often turn out to be useless.
+
+“The trite expression we always use is No plan survives contact with the enemy,” says Colonel Tom Kolditz, the head of the behavioral sciences division at West Point. “You may start off trying to fight your plan, but the enemy gets a vote. Unpredictable things happen—the weather changes, a key asset is destroyed, the enemy responds in a way you don’t expect. Many armies fail because they put all their emphasis into creating a plan that becomes useless ten minutes into the battle.”
+
+The Army’s challenge is akin to writing instructions for a friend to play chess on your behalf. You know a lot about the rules of the game, and you may know a lot about your friend and the opponent. But if you try to write move-by-move instructions you’ll fail. You can’t possibly foresee more than a few moves. The first time the opponent makes a surprise move, your friend will have to throw out your carefully designed plans and rely on her instincts.
+
+Colonel Kolditz says, “Over time we’ve come to understand more and more about what makes people successful in complex operations.” He believes that plans are useful, in the sense that they are proof that planning has taken place. The planning process forces people to think through the right issues. But as for the plans themselves, Kolditz says, “They just don’t work on the battlefield.” So, in the 1980s the Army adapted its planning process, inventing a concept called Commander’s Intent (CI).
+
+CI is a crisp, plain-talk statement that appears at the top of every order, specifying the plan’s goal, the desired end-state of an operation. At high levels of the Army, the CI may be relatively abstract: “Break the will of the enemy in the Southeast region.” At the tactical level, for colonels and captains, it is much more concrete: “My intent is to have Third Battalion on Hill 4305, to have the hill cleared of enemy, with only ineffective remnants remaining, so we can protect the flank of Third Brigade as they pass through the lines.”
+
+The CI never specifies so much detail that it risks being rendered obsolete by unpredictable events. “You can lose the ability to execute the original plan, but you never lose the responsibility of executing the intent,” says Kolditz. In other words, if there’s one soldier left in the Third Battalion on Hill 4305, he’d better be doing something to protect the flank of the Third Brigade.
+
+Commander’s Intent manages to align the behavior of soldiers at all levels without requiring play-by-play instructions from their leaders. When people know the desired destination, they’re free to improvise, as needed, in arriving there. Colonel Kolditz gives an example: “Suppose I’m commanding an artillery battalion and I say, ‘We’re going to pass this infantry unit through our lines forward.’ That means something different to different groups. The mechanics know that they’ll need lots of repair support along the roads, because if a tank breaks down on a bridge the whole operation will come to a screeching halt. The artillery knows they’ll need to fire smoke or have engineers generate smoke in the breech area where the infantry unit moves forward, so it won’t get shot up as it passes through. As a commander, I could spend a lot of time enumerating every specific task, but as soon as people know what the intent is they begin generating their own solutions.”
+
+The Combat Maneuver Training Center, the unit in charge of military simulations, recommends that officers arrive at the Commander’s Intent by asking themselves two questions:
+
+If we do nothing else during tomorrow’s mission, we must
+
+_______________.
+
+The single, most important thing that we must do tomorrow is
+
+_______________.
+
+
+
+No plan survives contact with the enemy. No doubt this principle has resonance for people who have no military experience whatsoever. No sales plan survives contact with the customer. No lesson plan survives contact with teenagers.
+
+It’s hard to make ideas stick in a noisy, unpredictable, chaotic environment. If we’re to succeed, the first step is this: Be simple. Not simple in terms of “dumbing down” or “sound bites.” You don’t have to speak in monosyllables to be simple. What we mean by “simple” is finding the core of the idea.
+
+“Finding the core” means stripping an idea down to its most critical essence. To get to the core, we’ve got to weed out superfluous and tangential elements. But that’s the easy part. The hard part is weeding out ideas that may be really important but just aren’t the most important idea. The Army’s Commander’s Intent forces its officers to highlight the most important goal of an operation. The value of the Intent comes from its singularity. You can’t have five North Stars, you can’t have five “most important goals,” and you can’t have five Commander’s Intents. Finding the core is analogous to writing the Commander’s Intent—it’s about discarding a lot of great insights in order to let the most important insight shine. The French aviator and author Antoine de Saint-Exupéry once offered a definition of engineering elegance: “A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.” A designer of simple ideas should aspire to the same goal: knowing how much can be wrung out of an idea before it begins to lose its essence.
+
+In fact, we’ll follow our own advice and strip this book down to its core. Here it is: There are two steps in making your ideas sticky—Step 1 is to find the core, and Step 2 is to translate the core using the SUCCESs checklist. That’s it. We’ll spend the next half chapter on Step 1, and the remainder of the book on Step 2. The first step in unpacking these ideas is to explore why Southwest Airlines deliberately ignores the food preferences of its customers.
+
+
+
+
+
+Finding the Core at Southwest Airlines
+
+
+It’s common knowledge that Southwest is a successful company, but there is a shocking performance gap between Southwest and its competitors. Although the airlines industry as a whole has only a passing acquaintance with profitability, Southwest has been consistently profitable for more than thirty years.
+
+The reasons for Southwest’s success could (and do) fill up books, but perhaps the single greatest factor in the company’s success is its dogged focus on reducing costs. Every airline would like to reduce costs, but Southwest has been doing it for decades. For this effort to succeed, the company must coordinate thousands of employees, ranging from marketers to baggage handlers.
+
+Southwest has a Commander’s Intent, a core, that helps to guide this coordination. As related by James Carville and Paul Begala:
+
+Herb Kelleher [the longest-serving CEO of Southwest] once told someone, “I can teach you the secret to running this airline in thirty seconds. This is it: We are THE low-fare airline. Once you understand that fact, you can make any decision about this company’s future as well as I can.
+
+“Here’s an example,” he said. “Tracy from marketing comes into your office. She says her surveys indicate that the passengers might enjoy a light entrée on the Houston to Las Vegas flight. All we offer is peanuts, and she thinks a nice chicken Caesar salad would be popular. What do you say?”
+
+The person stammered for a moment, so Kelleher responded: “You say, ‘Tracy, will adding that chicken Caesar salad make us THE low-fare airline from Houston to Las Vegas? Because if it doesn’t help us become the unchallenged low-fare airline, we’re not serving any damn chicken salad.’”
+
+
+
+Kelleher’s Commander’s Intent is “We are THE low-fare airline.” This is a simple idea, but it is sufficiently useful that it has guided the actions of Southwest’s employees for more than thirty years.
+
+Now, this core idea—“THE low-fare airline”—isn’t the whole story, of course. For instance, in 1996 Southwest received 124,000 applications for 5,444 openings. It’s known as a great place to work, which is surprising. It’s not supposed to be fun to work for penny-pinchers. It’s hard to imagine Wal-Mart employees giggling their way through the workday.
+
+Yet somehow Southwest has pulled it off. Let’s think about the ideas driving Southwest Airlines as concentric circles. The central circle, the core, is “THE low-fare airline.” But the very next circle might be “Have fun at work.” Southwest’s employees know that it’s okay to have fun so long as it doesn’t jeopardize the company’s status as THE low-fare airline. A new employee can easily put these ideas together to realize how to act in unscripted situations. For instance, is it all right to joke about a flight attendant’s birthday over the P.A.? Sure. Is it equally okay to throw confetti in her honor? Probably not—the confetti would create extra work for cleanup crews, and extra clean-up time means higher fares. It’s the lighthearted business equivalent of the foot soldier who improvises based on the Commander’s Intent. A well-thought-out simple idea can be amazingly powerful in shaping behavior.
+
+A warning: In the future, months after you’ve put down this book, you’re going to recall the word “Simple” as an element of the SUCCESs checklist. And your mental thesaurus will faithfully go digging for the meaning of “Simple,” and it’s going to come back with associations like dumbing down, shooting for the lowest common denominator, making things easy, and so on. At that moment, you’ve got to remind your thesaurus of the examples we’ve explored. “THE low-fare airline” and the other stories in this chapter aren’t simple because they’re full of easy words. They’re simple because they reflect the Commander’s Intent. It’s about elegance and prioritization, not dumbing down.

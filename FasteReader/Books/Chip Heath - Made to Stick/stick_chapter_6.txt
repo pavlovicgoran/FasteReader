@@ -1,0 +1,107 @@
+Burying the Lead
+
+
+News reporters are taught to start their stories with the most important information. The first sentence, called the lead, contains the most essential elements of the story. A good lead can convey a lot of information, as in these two leads from articles that won awards from the American Society of Newspaper Editors:
+
+A healthy 17-year-old heart pumped the gift of life through 34-year-old Bruce Murray Friday, following a four-hour transplant operation that doctors said went without a hitch.
+
+
+JERUSALEM, Nov. 4—A right-wing Jewish extremist shot and killed Prime Minister Yitzhak Rabin tonight as he departed a peace rally attended by more than 100,000 in Tel Aviv, throwing Israel’s government and the Middle East peace process into turmoil.
+
+
+
+After the lead, information is presented in decreasing order of importance. Journalists call this the “inverted pyramid” structure—the most important info (the widest part of the pyramid) is at the top.
+
+The inverted pyramid is great for readers. No matter what the reader’s attention span—whether she reads only the lead or the entire story—the inverted pyramid maximizes the information she gleans. Think of the alternative: If news stories were written like mysteries, with a dramatic payoff at the end, then readers who broke off in mid-story would miss the point. Imagine waiting until the last sentence of a story to find out who won the presidential election or the Super Bowl.
+
+The inverted pyramid also allows newspapers to get out the door on time. Suppose a late-breaking story forces editors to steal space from other stories. Without the inverted pyramid, they’d be forced to do a slow, careful editing job on all the other articles, trimming a word here or a phrase there. With the inverted pyramid structure, they simply lop off paragraphs from the bottom of the other articles, knowing that those paragraphs are (by construction) the least important.
+
+According to one account, perhaps apocryphal, the inverted pyramid arose during the Civil War. All the reporters wanted to use military telegraphs to transmit their stories back home, but they could be cut off at any moment; they might be bumped by military personnel, or the communication line might be lost completely—a common occurrence during battles. The reporters never knew how much time they would get to send a story, so they had to send the most important information first.
+
+Journalists obsess about their leads. Don Wycliff, a winner of prizes for editorial writing, says, “I’ve always been a believer that if I’ve got two hours in which to write a story, the best investment I can make is to spend the first hour and forty-five minutes of it getting a good lead, because after that everything will come easily.”
+
+So if finding a good lead makes everything else easy, why would a journalist ever fail to come up with one? A common mistake reporters make is that they get so steeped in the details that they fail to see the message’s core—what readers will find important or interesting. The longtime newspaper writer Ed Cray, a professor of communications at the University of Southern California, has spent almost thirty years teaching journalism. He says, “The longer you work on a story, the more you can find yourself losing direction. No detail is too small. You just don’t know what your story is anymore.”
+
+This problem of losing direction, of missing the central story, is so common that journalists have given it its own name: Burying the lead. “Burying the lead” occurs when the journalist lets the most important element of the story slip too far down in the story structure.
+
+The process of writing a lead—and avoiding the temptation to bury it—is a helpful metaphor for the process of finding the core. Finding the core and writing the lead both involve forced prioritization. Suppose you’re a wartime reporter and you can telegraph only one thing before the line gets cut, what would it be? There’s only one lead, and there’s only one core. You must choose.
+
+Forced prioritization is really painful. Smart people recognize the value of all the material. They see nuance, multiple perspectives—and because they fully appreciate the complexities of a situation, they’re often tempted to linger there. This tendency to gravitate toward complexity is perpetually at war with the need to prioritize. This difficult quest—the need to wrestle priorities out of complexity—was exactly the situation that James Carville faced in the Clinton campaign of 1992.
+
+
+
+
+
+“If You Say Three Things,
+
+You Don’t Say Anything.”
+
+
+A political campaign is a breeding ground of decision angst. If you think your organization has problems, imagine this challenge: You must build a nationwide organization from scratch, using primarily unpaid and largely unskilled workers. You’ve got about a year to pull the team together and line up an endless supply of doughnuts. Everyone in the organization needs to sing from the same hymnal, but you don’t have much time to rehearse the choir. And the media prod you to sing a new song every day. To make matters worse, you must constantly contend with opponents who will seize on every errant word.
+
+Bill Clinton’s 1992 campaign was a classic example of sticky ideas at work in a difficult environment. Not only did the campaign have the normal set of complexities, Clinton himself added a few new wrinkles. First, there were the “bimbo eruptions,” which need not be reexamined here. Second, Clinton was a policy wonk by nature, which meant that he was inclined to pontificate on virtually every issue that he was asked about, instead of staying focused on a few key principles.
+
+As his key political adviser, James Carville had to cope with this complexity. One day, struggling to maintain his focus, he wrote three phrases on a whiteboard for all the campaign workers to see. One of the phrases on the impromptu list was “It’s the economy, stupid.” This message would become the core of Clinton’s successful campaign.
+
+The word “stupid” was added as a taunt to the campaign workers themselves, reminding them not to lose focus on what was important. “It was simple and it was self-effacing,” Carville explained. “I was trying to say, ‘Let’s don’t be too clever here, don’t come down here thinking we’re too smart. Let’s just remember the basics.’”
+
+The need for focus extended to Bill Clinton himself, perhaps especially to Clinton himself. At one point, Clinton was frustrated that he’d been advised to stop talking about balanced budgets despite the fact that Ross Perot, the third-party candidate for president in 1992, was getting positive attention for his stand on the balanced budget. Clinton said, “I’ve been talking about these things for two years, why should I stop talking about them now because Perot is in?” Clinton’s advisers had to tell him, “There has to be message triage. If you say three things, you don’t say anything.”
+
+“It’s the economy, stupid” was the lead of the Clinton story—and it was a good one, because in 1992 the U.S. economy was mired in a recession. But if “It’s the economy, stupid” is the lead, then the need for a balanced budget can’t also be the lead. Carville had to stop Clinton from burying the lead.
+
+
+
+
+
+Decision Paralysis
+
+
+Why is prioritizing so difficult? In the abstract, it doesn’t sound so tough. You prioritize important goals over less important goals. You prioritize goals that are “critical” ahead of goals that are “beneficial.”
+
+But what if we can’t tell what’s “critical” and what’s “beneficial”? Sometimes it’s not obvious. We often have to make decisions between one “unknown” and another. This kind of complexity can be paralyzing. In fact, psychologists have found that people can be driven to irrational decisions by too much complexity and uncertainty.
+
+In 1954, the economist L. J. Savage described what he perceived as a basic rule of human decision-making. He called it the “sure-thing principle.” He illustrated it with this example: A businessman is thinking about buying a piece of property. There’s an election coming up soon, and he initially thinks that its outcome could be relevant to the attractiveness of the purchase. So, to clarify his decision, he thinks through both scenarios. If the Republican wins, he decides, he’ll buy. If the Democrat wins, he’ll do the same. Seeing that he’d buy in either scenario, he goes forward with the purchase, despite not knowing the outcome. This decision seems sensible—not many people would quibble with Savage’s logic.
+
+Two psychologists quibbled. Amos Tversky and Eldar Shafir later published a paper proving that the “sure-thing principle” wasn’t always a sure thing. They uncovered situations where the mere existence of uncertainty seemed to alter how people made decisions—even when the uncertainty was irrelevant to the outcome, as with the businessman’s purchase. For instance, imagine that you’re in college and you’ve just completed an important final exam a couple of weeks before the Christmas holidays. You’d been studying for this exam for weeks, because it’s in a subject that’s important to your future career.
+
+You’ve got to wait two days to get the exam results back. Meanwhile, you see an opportunity to purchase a vacation during the holidays to Hawaii at a bargain-basement price. Here are your three options: You can buy the vacation today, pass on it today, or pay a five-dollar fee to lock in the price for two days, which would allow you to make your decision after you got your grade. What would you do?
+
+You may feel some desire to know the outcome of your exam before you decide, as did the students who faced this choice in the original experiment. So Tversky and Shafir simply removed this uncertainty for two groups of participants. These groups were told up front how they did on the exam. Some students were told that they passed the exam, and 57 percent of them chose to go on the trip (after all, it makes for a good celebration). Other students were told that they failed the exam, and 54 percent of them chose to go on the trip (after all, it makes for good recuperation). Both those who passed and those who failed wanted to go to Hawaii, pronto.
+
+Here’s the twist: The group of students who, like you, didn’t know their final exam results behaved completely differently. The majority of them (61 percent) paid five dollars to wait for two days. Think about that! If you pass, you want to go to Hawaii. If you fail, you want to go to Hawaii. If you don’t know whether you passed or failed, you … wait and see? This is not the way the “sure-thing principle” is supposed to behave. It’s as if our businessman had decided to wait until after the election to buy his property, despite being willing to make the purchase regardless of the outcome.
+
+Tversky and Shafir’s study shows us that uncertainty—even irrelevant uncertainty—can paralyze us. Another study, conducted by Shafir and a colleague, Donald Redelmeier, demonstrates that paralysis can also be caused by choice. Imagine, for example, that you are in college and you face the following choice one evening. What would you do?
+
+Attend a lecture by an author you admire who is visiting just for the evening, or
+
+
+
+Go to the library and study.
+
+
+
+
+
+Studying doesn’t look so attractive compared with a once in a lifetime lecture. When this choice was given to actual college students, only 21 percent decided to study.
+
+Suppose, instead, you had been given three choices:
+
+Attend the lecture.
+
+
+
+Go to the library and study.
+
+
+
+Watch a foreign film that you’ve been wanting to see.
+
+
+
+
+
+Does your answer differ? Remarkably, when a different group of students were given the three choices, 40 percent decided to study—double the number who did before. Giving students two good alternatives to studying, rather than one, paradoxically makes them less likely to choose either. This behavior isn’t “rational,” but it is human.
+
+Prioritization rescues people from the quicksand of decision angst, and that’s why finding the core is so valuable. The people who listen to us will be constantly making decisions in an environment of uncertainty. They will suffer anxiety from the need to choose—even when the choice is between two good options, like the lecture and the foreign film.
+
+Core messages help people avoid bad choices by reminding them of what’s important. In Herb Kelleher’s parable, for instance, someone had to choose between chicken salad and no chicken salad—and the message “THE low-fare airline” led her to abandon the chicken salad.

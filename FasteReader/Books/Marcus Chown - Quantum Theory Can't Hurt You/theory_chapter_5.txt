@@ -1,0 +1,55 @@
+It’s 2041. A boy sits at a computer in his bedroom. It’s not an ordinary 				computer. It’s a quantum computer. The boy gives the computer a task … and instantly it splits into thousands upon thousands of versions of itself, each of which works on a separate strand of the problem. Finally, after just a few seconds, the strands come back together and a single answer flashes on the computer display. It’s an answer that all the normal computers in the world put together would have taken a trillion trillion years to find. Satisfied, the boy shuts the computer down and goes out to play, his night’s homework done.
+
+
+
+
+
+Surely, no computer could possibly do what the boy’s computer has 				just done? Not only could a computer do such a thing, crude versions 				are already in existence today. The only thing in serious dispute is 				whether such a quantum computer merely behaves like a vast multiplicity 				of computers or whether, as some believe, it literally exploits 				the computing power of multiple copies of itself existing in parallel 				realities, or universes.
+
+The key property of a quantum computer—the ability to do 				many calculations at once—follows directly from two things that 				waves—and therefore microscopic particles such as atoms and photons, 				which behave like waves—can do. The first of those things can 				be seen in the case of ocean waves.
+
+On the ocean there are both big waves and small ripples. But as 				anyone who has watched a heavy sea on a breezy day knows, you can 				also get big, rolling waves with tiny ripples superimposed on them. 				This is a general property of all waves. If two different waves can exist, 				so too can a combination, or superposition, of the waves. The fact 				that superpositions can exist is pretty innocuous in the everyday 				world. However, in the world of atoms and their constituents, its implications 				are nothing short of earth-shattering.
+
+Think again of a photon impinging on a windowpane. The photon 				is informed about what to do by a probability wave, described by 				the Schrödinger equation. Since the photon can either be transmitted 				or reflected, the Schrödinger equation must permit the existence 				of two waves—one corresponding to the photon going through the 				window and another corresponding to the photon bouncing back. 				Nothing surprising here. However, remember that, if two waves are 				permitted to exist, a superposition of them is also permitted to exist. 				For waves at sea such a combination is nothing out of the ordinary. 				But here the combination corresponds to something quite extraordinary—the photon being both transmitted and reflected. In other 				words, the photon can be on both sides of the windowpane simultaneously!
+
+And this unbelievable property follows unavoidably from just 				two facts: that photons are described by waves and that superpositions 				of waves are possible.
+
+This is no theoretical fantasy. In experiments it is actually possible 				to observe a photon or an atom being in two places at once—the 				everyday equivalent of you being in San Francisco and Sydney at the 				same time. (More accurately, it is possible to observe the consequences 				of a photon or an atom being in two places at once.) And since there is no limit to the number of waves that can be superposed, a photon 				or an atom can be in three places, 10 places, a million places at once.
+
+But the probability wave associated with a microscopic particle 				does more than inform it where it could be located. It informs it how to behave in all circumstances—telling a photon, for instance, whether 				or not to be transmitted or reflected by a pane of glass. Consequently, 				atoms and their like can not only be in many places at once, they can do many things at once, the equivalent of you cleaning the house, walking 				the dog, and doing the weekly supermarket shopping all at the 				same time. This is the secret behind the prodigious power of a quantum 				computer. It exploits the ability of atoms to do many things at 				once, to do many calculations at once.
+
+
+
+
+
+DOING MANY THINGS AT ONCE
+
+
+The basic elements of a conventional computer are transistors. These 				have two distinct voltage states, one of which is used to represent the 				binary digit, or bit, “0”, the other to represent a “1.” A row of such 				zeros and ones can represent a large number, which in the computer 				can be added, subtracted, multiplied, and divided by another large 				number.1 But in a quantum computer the basic elements—which 				may be single atoms—can be in a superposition of states. In other 				words, they can represent a zero and a one simultaneously. To distinguish 				them from normal bits, physicists call such schizophrenic entities 				quantum bits, or qubits.
+
+One qubit can be in two states (0 or 1), two qubits in four (00 or 				01 or 10 or 11), three qubits in eight, and so on. Consequently, when 				you calculate with a single qubit, you can do two calculations simultaneously, 				with two qubits four calculations, with three eight, and so 				on. If this doesn’t impress you, with 10 qubits you could do 1,024 				calculations all at once, with 100 qubits 100 billion billion billion! 				Not surprisingly, physicists positively salivate at the prospect of 				quantum computers. For some calculations, they could massively 				outperform conventional computers, making conventional personal 				computers appear positively retarded.
+
+But for a quantum computer to work, wave superpositions are 				not sufficient on their own. They need another essential wave ingredient: 				interference.
+
+The interference of light observed by Thomas Young in the 18th 				century was the key observation that convinced everyone that light 				was a wave. When, at the beginning of the 20th century, light was also 				shown to behave like a stream of particles, Young’s double slit experiment 				assumed a new and unexpected importance—as a means of 				exposing the central peculiarity of the microscopic world.
+
+
+
+
+
+INTERFERENCE IS THE KEY
+
+
+In the modern incarnation of Young’s experiment, a double slit in an 				opaque screen is illuminated with light, which is undeniably a stream 				of particles. In practice, this means using a light source so feeble that 				it spits out photons one at a time. Sensitive detectors at different 				positions on the second screen count the arrival of photons. After 				the experiment has been running for a while, the detectors show 				something remarkable. Some places on the screen get peppered with 				photons while other places are completely avoided. What is more, 				the places that are peppered by photons and the places that are 				avoided alternate, forming vertical stripes—exactly as in Young’s 				original experiment.
+
+But wait a minute! In Young’s experiment the dark and light bands are caused by interference. And a fundamental feature of interference 				is that it involves the mingling of two sets of waves from the 				same source—the light from one slit with the light from the other 				slit. But in this case the photons are arriving at the double slit one at a 				time. Each photon is completely alone, with no other photon to 				mingle with. How, then, can there be any interference? How can it 				know where its fellow photons will land?
+
+There would appear to be only one way—if each photon somehow 				goes through both slits simultaneously. Then it can interfere with 				itself. In other words, each photon must be in a superposition of two 				states—one a wave corresponding to a photon going through the left-hand 				slit and the other a wave corresponding to a photon going 				through the right-hand slit.
+
+The double slit experiment can be done with photons or atoms 				or any other microscopic particles. It shows graphically how the behaviour 				of such particles—where they can and cannot strike the second 				screen—is orchestrated by their wavelike alter ego. But this is not 				all the double slit experiment demonstrates. Crucially, it shows that 				the individual waves that make up a superposition are not passive but 				can actively interfere with each other. It is this ability of the individual 				states of a superposition to interfere with each other that is the 				absolute key to the microscopic world, spawning all manner of weird 				quantum phenomena.
+
+Take quantum computers. The reason they can carry out many 				calculations at once is because they can exist in a superposition of 				states. For instance, a 10-element quantum computer is simultaneously 				in 1,024 states and can therefore carry out 1,024 calculations 				at once. But all the parallel strands of a calculation are of absolutely 				no use unless they get woven together. Interference is the means by 				which this is accomplished. It is the means by which the 1,024 states 				of the superposition can interact and influence each other. Because 				of interference, the single answer coughed out by the quantum computer 				is able to reflect and synthesise what was going on in all those 				1,024 parallel calculations.
+
+Think of a problem divided into 1,024 separate pieces and one 				person working on each piece. For the problem to be solved, the 1,024 				people must communicate with each other and exchange results. This 				is what interference makes possible in a quantum computer.
+
+An important point worth making here is that, although superpositions 				are a fundamental feature of the microscopic world, it is a 				curious property of reality that they are never actually observed. All 				we ever see are the consequences of their existence—what results 				when the individual waves of a superposition interfere with each 				other. In the case of the double slit experiment, for instance, all we 				ever see is an interference pattern, from which we infer that an electron 				was in a superposition in which it went through both slits simultaneously. 				It is impossible to actually catch an electron going through 				both slits at once. This is what was meant by the earlier statement 				that it is possible only to observe the consequences of an atom being in 				two places at once, not it actually being in two places at once.

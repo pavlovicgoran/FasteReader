@@ -1,0 +1,52 @@
+Atoms are nature’s Lego bricks. They come in a variety of different 				shapes and sizes, and by joining them together in any number of different 				ways, it is possible to make a rose, a bar of gold, or a human 				being. Everything is in the combinations.
+
+The American Nobel Prize winner Richard Feynman said: “If in 				some cataclysm all of scientific knowledge were destroyed and only 				one sentence passed on to succeeding generations, what statement 				would convey the most information in the fewest words?” He was in 				no doubt: “Everything is made of atoms.”
+
+The key step in proving that atoms are nature’s Lego bricks was 				identifying the different kinds of atoms. However, the fact that atoms 				were far too small to be perceived directly by the senses made the task every bit as formidable as proving that atoms were tiny grains of matter 				in ceaseless motion. The only way to identify different types of 				atoms was to find substances that were made exclusively out of atoms 				of a single kind.
+
+In 1789 the French aristocrat Antoine Lavoisier compiled a list of 				substances that he believed could not, by any means, be broken down 				into simpler substances. There were 23 “elements” in Lavoisier’s list. 				Though some later turned out not to be elements, many—including 				gold, silver, iron, and mercury—were indeed elemental. Within 40 				years of Lavoisier’s death at the guillotine in 1794, the list of elements 				had grown to include close to 50. Nowadays, we know of 92 naturally 				occurring elements, from hydrogen, the lightest, to uranium, the 				heaviest.
+
+But what makes one atom different from another? For instance, 				how does a hydrogen atom differ from a uranium atom? The answer 				would come only by probing their internal structures. But atoms are 				so fantastically small. It seemed impossible that anyone would ever 				find a way to look inside one. But one man did—a New Zealander 				named Ernest Rutherford. His ingenious idea was to use atoms to 				look inside other atoms.
+
+
+
+
+
+THE MOTH IN THE CATHEDRAL
+
+
+The phenomenon that laid bare the structure of atoms was radioactivity, 				discovered by the French chemist Henri Becquerel in 1896. Between 				1901 and 1903, Rutherford and the English chemist Frederick 				Soddy found strong evidence that a radioactive atom is simply a heavy 				atom that is seething with excess energy. Inevitably, after a second or 				a year or a million years, it sheds this surplus energy by expelling 				some kind of particle at high speed. Physicists say it disintegrates, or 				“decays,” into an atom of a slightly lighter element.
+
+One such decay particle was the alpha particle, which Rutherford 				and the young German physicist Hans Geiger demonstrated was simply 				an atom of helium, the second lightest element after hydrogen.
+
+In 1903, Rutherford had measured the speed of alpha particles 				expelled from atoms of radioactive radium. It was an astonishing 				25,000 kilometres per second—100,000 times faster than a present-day 				passenger jet. Here, Rutherford realised, was a perfect bullet to 				smash into atoms and reveal what was deep inside.
+
+The idea was simple. Fire alpha particles into an atom. If they 				encountered anything hard blocking their way, they would be deflected 				from their path. By firing thousands upon thousands of alpha 				particles and observing how they were deflected, it would be possible 				to build up a detailed picture of the interior of an atom.
+
+Rutherford’s experiment was carried out in 1909 by Geiger and a 				young New Zealand physicist called Ernest Marsden. Their “alpha-scattering” 				experiment used a small sample of radium, which fired 				off alpha particles like microscopic fireworks. The sample was placed 				behind a lead screen containing a narrow slit, so a thread-thin stream 				of alpha particles emerged on the far side. It was the world’s smallest 				machine gun, rattling out microscopic bullets.
+
+In the firing line Geiger and Marsden placed a sheet of gold foil 				only a few thousand atoms thick. It was insubstantial enough that all 				the alpha particles from the miniature machine gun would pass 				through. But it was substantial enough that, during their transit, some 				would pass close enough to gold atoms to be deflected slightly from 				their path.
+
+At the time of Geiger and Marsden’s experiment, one particle 				from inside the atom had already been identified. The electron had 				been discovered by the British physicist “J. J.” Thomson in 1895. Ridiculously 				tiny particles—each about 2,000 times smaller than even a 				hydrogen atom—had turned out to be the elusive particles of electricity. 				Ripped free from atoms, they surged along a copper wire amid 				billions of others, creating an electric current.
+
+The electron was the first subatomic particle. It carried a negative 				electric charge. Nobody knows exactly what electric charge is, only 				that it comes in two forms: negative and positive. Ordinary matter, 				which consists of atoms, has no net electrical charge. In ordinary atoms, then, the negative charge of the electrons is always perfectly 				balanced by the positive charge of something else. It is a characteristic 				of electrical charge that unlike charges attract each other whereas 				like charges repel each other. Consequently, there is a force of attraction 				between an atom’s negatively charged electrons and its positively 				charged something else. It is this attraction that glues the whole thing 				together.
+
+Not long after the discovery of the electron, Thomson used these 				insights to concoct the first-ever scientific picture of the atom. He 				visualised it as a multitude of tiny electrons embedded “like raisins in 				a plum pudding” in a diffuse ball of positive charge. It was Thomson’s 				plum pudding model of the atom that Geiger and Marsden expected 				to confirm with their alpha-scattering experiment.
+
+They were to be disappointed.
+
+The thing that blew the plum pudding model out of the water 				was a rare but remarkable event. One out of every 8,000 alpha particles 				fired by the miniature machine gun actually bounced back from 				the gold foil!
+
+According to Thomson’s plum pudding model, an atom consisted 				of a multitude of pin-prick electrons embedded in a diffuse globe of 				positive charge. The alpha particles that Geiger and Marsden were 				firing into this flimsy arrangement, on the other hand, were unstoppable 				subatomic express trains, each as heavy as around 8,000 electrons. 				The chance of such a massive particle being wildly deflected 				from its path was about as great as that of a real express train being 				derailed by a runaway dolls pram. As Rutherford put it: “It was almost 				as incredible as if you fired a 15-inch shell at a piece of tissue 				paper and it came back and hit you!”
+
+Geiger and Marsden’s extraordinary result could only mean that 				an atom was not a flimsy thing at all. Something buried deep inside it 				could stop a subatomic express train dead in its tracks and turn 				it around. That something could only be a tiny nugget of positive 				charge sitting at the dead centre of an atom and repelling the positive 				charge of an incoming alpha particle. Since the nugget was capable of standing up to a massive alpha particle without being knocked to 				kingdom come, it too must be massive. In fact, it must contain almost 				all of the mass of an atom.
+
+Rutherford had discovered the atomic nucleus.
+
+The picture of the interior of the atom that emerged was as unlike 				Thomson’s plum pudding picture as was possible to imagine. It 				was a miniature solar system in which negatively charged electrons 				were attracted to the positive charge of the nucleus and orbited it like 				planets around the Sun. The nucleus had to be at least as massive as 				an alpha particle—and probably a lot more so—for the nucleus with 				which it collided not to be kicked out of the atom. It therefore had to 				contain more than 99.9 per cent of the atom’s mass.3
+
+The nucleus was very, very tiny. Only if nature crammed a large 				positive charge into a very small volume could a nucleus exert a repulsive 				force so overwhelming that it could make an alpha particle 				execute a U-turn. What was most striking about Rutherford’s vision 				of an atom was, therefore, its appalling emptiness. The playwright 				Tom Stoppard put it beautifully in his play Hapgood: “Now make a 				fist, and if your fist is as big as the nucleus of an atom then the atom is 				as big as St Paul’s, and if it happens to be a hydrogen atom then it has 				a single electron flitting about like a moth in an empty cathedral, now 				by the dome, now by the altar.”
+
+Despite its appearance of solidity, the familiar world was actually 				no more substantial than a ghost. Matter, whether in the form of a 				chair, a human being, or a star, was almost exclusively empty space. What substance an atom possessed resided in its impossibly small 				nucleus—100,000 times smaller than a complete atom.
+
+Put another way, matter is spread extremely thinly. If it were possible 				to squeeze out all the surplus empty space, matter would take up 				hardly any room at all. In fact, this is perfectly possible. Although an 				easy way to squeeze the human race down to the size of a sugar cube 				probably does not exist, a way does exist to squeeze the matter of a 				massive star into the smallest volume possible. The squeezing is done 				by tremendously strong gravity, and the result is a neutron star. Such 				an object packs the enormous mass of a body the size of the Sun into 				a volume no bigger than Mount Everest.

@@ -1,0 +1,86 @@
+It’s 2025 and high on a desolate mountain top a giant 100-metre telescope tracks around the night sky. It locks onto a proto-galaxy at the edge of the observable Universe and feeble light, which has been travelling through space since long before Earth was born, is concentrated by the telescope mirror onto ultrasensitive electronic detectors. Inside the telescope dome, seated at a control panel not unlike the console of the starship Enterprise, the astronomers watch a fuzzy image of the galaxy swim into view on a computer monitor. Someone turns up a loudspeaker and a deafening crackle fills the control room. It sounds like machine gun fire; it sounds like rain drumming on a tin roof. In fact, it is the sound of tiny particles of light raining down on the telescope’s detectors from the very depths of space.
+
+
+
+
+
+To these astronomers, who spend their careers straining to see the 				weakest sources of light in the Universe, it is a self-evident fact that light is a stream of tiny bulletlike particles—photons. Not long ago, 				however, the scientific community had to be dragged kicking and 				screaming to an acceptance of this idea. In fact, it’s fair to say that the 				discovery that light comes in discrete chunks, or quanta, was the 				single most shocking discovery in the history of science. It swept away 				the comfort blanket of pre-20th-century science and exposed physicists 				to the harsh reality of an Alice in Wonderland universe where 				things happen because they happen, with utter disregard for the civilised 				laws of cause and effect.
+
+The first person to realise that light was made of photons was 				Einstein. Only by imagining it as a stream of tiny particles could he 				make sense of a phenomenon known as the photoelectric effect. 				When you walk into a supermarket and the doors open for you automatically, 				they are being controlled by the photoelectric effect. 				Certain metals, when exposed to light, eject particles of electricity—electrons. When incorporated into a photocell, such a metal generates 				a small electric current as long as a light beam is falling on it. A 				shopper who breaks the beam chokes off the current, signalling the 				supermarket doors to swish aside.
+
+One of the many peculiar characteristics of the photoelectric effect 				is that, even if a very weak light is used, the electrons are kicked 				out of the metal instantaneously—that is, with no delay whatsoever.1 				This is inexplicable if light is a wave. The reason is that a wave, being a 				spread-out thing, will interact with a large number of electrons in the 				metal. Some will inevitably be kicked out after others. In fact, some of the electrons could easily be emitted 10 minutes or so after light is 				shone on the metal.
+
+So how is it possible that the electrons are kicked out of the metal 				instantaneously? There is only one way—if each electron is kicked 				out of the metal by a single particle of light.
+
+Even stronger evidence that light consists of tiny bulletlike particles 				comes from the Compton effect. When electrons are exposed to 				X-rays—a high-energy kind of light—they recoil in exactly the way 				they would if they were billiard balls being struck by other billiard 				balls.
+
+On the surface, the discovery that light behaves like a stream of 				tiny particles may not appear very remarkable or surprising. But it is. 				The reason is that there is also abundant and compelling evidence 				that light is something as different from a stream of particles as it is 				possible to imagine—a wave.
+
+
+
+
+
+RIPPLES ON A SEA OF SPACE
+
+
+At the beginning of the 19th century, the English physician Thomas 				Young, famous for decoding the Rosetta stone independently of the 				Frenchman Jean François Champollion, took an opaque screen, made 				two vertical slits in it very close together, and shone light of a single 				colour onto them. If light were a wave, he reasoned, each slit would 				serve as a new source of waves, which would spread out on the far 				side of the screen like concentric ripples on a pond.
+
+A characteristic property exhibited by waves is interference. 				When two similar waves pass through each other, they reinforce each 				other where the crest of one wave coincides with the crest of another, 				and they cancel each other out where the crest of one coincides with 				the trough of the other. Look at a puddle during a rain shower and 				you will see the ripples from each raindrop spreading out and “constructively” 				and “destructively” interfering with each other.
+
+In the path of the light emerging from his two slits Young interposed 				a second, white, screen. He immediately saw a series of alternating dark and light vertical stripes, much like the lines on a supermarket 				bar code. This interference pattern was irrefutable evidence 				that light was a wave. Where the light ripples from the two slits were 				in step, matching crest for crest, the light was boosted in brightness; 				where they were out of step, the light was cancelled out.
+
+Using his “double slit” apparatus, Young was able to determine 				the wavelength of light. He discovered it was a mere thousandth of a 				millimetre—far smaller than the width of a human hair—explaining 				why nobody had guessed light was a wave before.
+
+For the next two centuries, Young’s picture of light as ripples on a 				sea of space reigned supreme in explaining all known phenomena 				involving light. But by the end of the 19th century, trouble was brewing. 				Although few people noticed at first, the picture of light as a wave 				and the picture of the atom as a tiny mote of matter were irreconcilable. 				The difficulty was at the interface, the place where light meets 				matter.
+
+
+
+
+
+TWO FACES OF A SINGLE COIN
+
+
+The interaction between light and matter is of crucial importance to 				the everyday world. If the atoms in the filament of a bulb did not spit 				out light, we could not illuminate our homes. If the atoms in the 				retina of your eye did not absorb light, you would be unable to read 				these words. The trouble is that the emission and absorption of light 				by atoms are impossible to understand if light is a wave.
+
+An atom is a highly localised thing, confined to a tiny region of 				space, whereas a light wave is a spread-out thing that fills a large 				amount of space. So, when light is absorbed by an atom, how does 				such a big thing manage to squeeze into such a tiny thing? And when 				light is emitted by an atom, how does such a small thing manage to 				cough out such a big thing?
+
+Common sense says that the only way light can be absorbed or 				emitted by a small localised thing is if it too is a small, localised thing. 				“Nothing fits inside a snake like another snake,” as the saying goes. Light, however, is known to be a wave. The only way out of the conundrum 				was for physicists to throw up their hands in despair and 				grudgingly accept that light is both a wave and a particle. But surely 				something cannot be simultaneously localised and spreadout? In the 				everyday world, this is perfectly true. Crucially, however, we are not 				talking about the everyday world; we are talking about the microscopic 				world.
+
+The microscopic world of atoms and photons turns out to be 				nothing like the familiar realm of trees and clouds and people. Since 				it is a domain millions of times smaller than the realm of familiar 				objects, why should it be? Light really is both a particle and a wave. 				Or more correctly, light is “something else” for which there is no word 				in our everyday language and nothing to compare it with in the everyday 				world. Like a coin with two faces, all we can see are its particlelike 				face and its wavelike face. What light actually is is as unknowable 				as the colour blue is to a blind man.
+
+Light sometimes behaves like a wave and sometimes like a stream 				of particles. This was an extremely difficult thing for the physicists of 				the early 20th century to accept. But they had no choice; it was what 				nature was telling them. “On Mondays, Wednesdays and Fridays, we 				teach the wave theory and on Tuesdays, Thursdays and Saturdays the 				particle theory,” joked the English physicist William Bragg in 1921.
+
+Bragg’s pragmatism was admirable. Unfortunately, it was not 				enough to save physics from disaster. As Einstein first realised, the 				dual wave-particle nature of light was a catastrophe. It was not just 				impossible to visualise, it was completely incompatible with all physics 				that had gone before.
+
+
+
+
+
+WAVING GOODBYE TO CERTAINTY
+
+
+Take a window. If you look closely you can see a faint reflection of 				your face. This is because glass is not perfectly transparent. It transmits 				about 95 per cent of the light striking it while reflecting the remaining 				5 per cent. If light is a wave, this is perfectly easy to understand. The wave simply splits into a big wave that goes through 				the window and a much smaller wave that comes back. Think of the 				bow wave from a speedboat. If it encounters a half-submerged piece 				of driftwood, a large part of the wave continues on its way while a 				small part doubles back on itself.
+
+But while this behaviour is easy to understand if light is a wave, it 				is extremely difficult to understand if light is a stream of identical 				bulletlike particles. After all, if all the photons are identical, it stands 				to reason that each should be affected by the window in an identical 				way. Think of David Beckham taking a free kick over and over again. 				If the soccer balls are identical and he kicks each one in exactly the 				same way, they will all curl through the air and hit the same spot at 				the back of goal. It’s hard to imagine the majority of the balls peppering 				the same spot while a minority flies off to the corner flag.
+
+How, then, is it possible that a stream of absolutely identical photons 				can impinge on a window and 95 per cent can go right through 				while 5 per cent come back? As Einstein realised, there is only one 				way: if the word “identical” has a very different meaning in the microscopic 				world than in the everyday world—a diminished, cut-down 				meaning.
+
+In the microscopic domain, it turns out, identical things do not 				behave in identical ways in identical circumstances. Instead, they 				merely have an identical chance of behaving in any particular way. 				Each individual photon arriving at the window has exactly the same chance of being transmitted as any of its fellows—95 per cent—and 				exactly the same chance of being reflected—5 per cent. There is absolutely 				no way to know for certain what will happen to a given photon. 				Whether it is transmitted or reflected is entirely down to random 				chance.
+
+In the early 20th century, this unpredictability was something 				radically new in the world. Imagine a roulette wheel and a ball jouncing 				around as the wheel spins. We think of the number the ball comes 				to rest on when the wheel finally halts as inherently unpredictable. 				But it is not—not really. If it were possible to know the initial trajectory of the ball, the initial speed of the wheel, the way the air currents 				changed from instant to instant in the casino, and so on, the laws of 				physics could be used to predict with 100 per cent certainty where the 				ball will end up. The same is true with the tossing of a coin. If it were 				possible to know how much force is applied in the flipping, the exact 				shape of the coin, and so on, the laws of physics could predict with 				100 per cent certainty whether the coin will come down heads or tails.
+
+Nothing in the everyday world is fundamentally unpredictable; 				nothing is truly random. The reason we cannot predict the outcome of a 				game of roulette or of the toss of a coin is that there is simply too much 				information for us to take into account. But in principle—and this is the 				key point—there is nothing to prevent us from predicting both.
+
+Contrast this with the microscopic world of photons. It matters 				not the slightest how much information we have in our possession. It 				is impossible to predict whether a given photon will be transmitted 				or reflected by a window—even in principle. A roulette ball does what 				it does for a reason—because of the interplay of myriad subtle forces. 				A photon does what it does for no reason whatsoever! The 				unpredictability of the microscopic world is fundamental. It is truly 				something new under the Sun.
+
+And what is true of photons turns out to be true of all the denizens 				of the microscopic realm. A bomb detonates because its timer 				tells it to or because a vibration disturbs it or because its chemicals 				have suddenly become degraded. An unstable, or “radioactive,” atom 				simply detonates. There is absolutely no discernible difference between 				one that detonates at this moment and an identical atom that 				waits quietly for 10 million years before blowing itself to pieces. The 				shocking truth, which stares you in the face every time you look at a 				window, is that the whole Universe is founded on random chance. So 				upset was Einstein by this idea that he stuck out his lip and declared: 				“God does not play dice with the Universe!”
+
+The trouble is He does. As British physicist Stephen Hawking has 				wryly pointed out: “Not only does God play dice with the Universe, 				he throws the dice where we cannot see them!”
+
+When Einstein received the Nobel Prize for Physics in 1921 it was 				not for his more famous theory of relativity but for his explanation of 				the photoelectric effect. And this was no aberration on the part of the 				Nobel committee. Einstein himself considered his work on the “quantum” 				the only thing he ever did in science that was truly revolutionary. 				And the Nobel committee completely agreed with him.
+
+Quantum theory, born out of the struggle to reconcile light and 				matter, was fundamentally at odds with all science that had gone before. 				Physics, pre-1900, was basically a recipe for predicting the future 				with absolute certainty. If a planet is in a particular place now, in a 				day’s time it will have moved to another place, which can be predicted 				with 100 per cent confidence by using Newton’s laws of motion 				and the law of gravity. Contrast this with an atom flying through 				space. Nothing is knowable with certainty. All we can ever predict is 				its probable path, its probable final position.
+
+Whereas quantum is based on uncertainty, the rest of physics is 				based on certainty. To say this is a problem for physicists is a bit of an 				understatement! “Physics has given up on the problem of trying to 				predict what would happen in a given circumstance,” said Richard 				Feynman. “We can only predict the odds.”
+
+All is not lost, however. If the microworld were totally unpredictable, 				it would be a realm of total chaos. But things are not this bad. 				Although what atoms and their like get up to is intrinsically unpredictable, 				it turns out that the unpredictability is at least predictable!
