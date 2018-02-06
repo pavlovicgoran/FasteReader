@@ -9,8 +9,8 @@
 import UIKit
 import GameplayKit
 
-
-class LibraryCollectionViewController: UICollectionViewController {
+// MARK: Properties and Initialization
+class LibraryCollectionViewController: UICollectionViewController{
 
     private let reuseIdentifier = "Book"
     private let blackBookCover = "book_cover_black"
@@ -26,28 +26,35 @@ class LibraryCollectionViewController: UICollectionViewController {
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
+    
+    private func initialazeArrayOfColors(){
+        arrayOfColors.append(blackBookCover)
+        arrayOfColors.append(redBookCover)
+        arrayOfColors.append(brownBookCover)
     }
 
-   
-    // MARK: Collection view
+
+}
+
+// MARK: UICollectionViewController
+
+extension LibraryCollectionViewController{
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return 10
     }
-
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! BookCell
-    
+        
         // Configure the cell
         
         cell.bookCover.image = getBookCoverImage()
         cell.author.text = "Rango"
         
         cell.title.text = "Orlovi rano lete"
-    
+        
         return cell
     }
     
@@ -62,11 +69,8 @@ class LibraryCollectionViewController: UICollectionViewController {
         return arrayOfColors[0]
     }
     
-    private func initialazeArrayOfColors(){
-        arrayOfColors.append(blackBookCover)
-        arrayOfColors.append(redBookCover)
-        arrayOfColors.append(brownBookCover)
-    }
-
-
 }
+
+
+
+
