@@ -17,6 +17,8 @@ class LibraryCollectionViewController: UICollectionViewController{
     private let redBookCover = "book_cover_red"
     private let brownBookCover = "book_cover_brown"
     
+    private let bookContentsViewIdentifier = "BookContentsView"
+    
     private var arrayOfColors = [String]()
     
     private var books = [Book]()
@@ -68,6 +70,18 @@ extension LibraryCollectionViewController{
         cell.title.text = book.getTitle()
         
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: bookContentsViewIdentifier) as! BookContentsTableViewController
+        
+        let book = books[indexPath.item]
+        
+        vc.bookToDisplay = book
+        
+        navigationController?.pushViewController(vc, animated: true)
+        
     }
     
     private func getBookCoverImage() -> UIImage{
