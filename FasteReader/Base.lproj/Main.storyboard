@@ -60,23 +60,35 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6X-sa-Nyh">
                                         <rect key="frame" x="0.0" y="0.0" width="94" height="58"/>
-                                        <color key="backgroundColor" red="0.52549019610000003" green="0.90980392160000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" image="word_flash.png"/>
+                                        <connections>
+                                            <action selector="toolBarButtonPressed:" destination="Z41-HL-RsH" eventType="touchUpInside" id="cMo-Yd-AK4"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13m-8l-9TL">
                                         <rect key="frame" x="94" y="0.0" width="93.5" height="58"/>
-                                        <color key="backgroundColor" red="0.52549019610000003" green="0.90980392160000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" image="diamond.png"/>
+                                        <connections>
+                                            <action selector="toolBarButtonPressed:" destination="Z41-HL-RsH" eventType="touchUpInside" id="nO2-0c-Syu"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvp-JO-2QE">
                                         <rect key="frame" x="187.5" y="0.0" width="94" height="58"/>
-                                        <color key="backgroundColor" red="0.52549019610000003" green="0.90980392160000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" image="text_highlight.png"/>
+                                        <connections>
+                                            <action selector="toolBarButtonPressed:" destination="Z41-HL-RsH" eventType="touchUpInside" id="Yvf-d8-3La"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBa-ab-AqR">
                                         <rect key="frame" x="281.5" y="0.0" width="93.5" height="58"/>
-                                        <color key="backgroundColor" red="0.52549019610000003" green="0.90980392160000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" image="memory.png"/>
+                                        <connections>
+                                            <action selector="toolBarButtonPressed:" destination="Z41-HL-RsH" eventType="touchUpInside" id="JKh-fc-xMx"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -93,6 +105,12 @@
                         <viewLayoutGuide key="safeArea" id="iNE-xV-0JO"/>
                     </view>
                     <navigationItem key="navigationItem" title="Techniques" id="Xmr-67-C7b"/>
+                    <connections>
+                        <outletCollection property="toolbarButtons" destination="J6X-sa-Nyh" collectionClass="NSMutableArray" id="Lzg-5I-2Yz"/>
+                        <outletCollection property="toolbarButtons" destination="13m-8l-9TL" collectionClass="NSMutableArray" id="Ti3-hf-r34"/>
+                        <outletCollection property="toolbarButtons" destination="Wvp-JO-2QE" collectionClass="NSMutableArray" id="OIz-iK-TjU"/>
+                        <outletCollection property="toolbarButtons" destination="xBa-ab-AqR" collectionClass="NSMutableArray" id="O2X-ph-9Oy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jX-Ok-jp1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
