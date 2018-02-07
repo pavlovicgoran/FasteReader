@@ -54,14 +54,49 @@
                     <view key="view" contentMode="scaleToFill" id="ogU-Ef-mBe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gL2-tv-FJN">
+                                <rect key="frame" x="0.0" y="64" width="375" height="58"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6X-sa-Nyh">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="58"/>
+                                        <color key="backgroundColor" red="0.52549019610000003" green="0.90980392160000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="word_flash.png"/>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13m-8l-9TL">
+                                        <rect key="frame" x="94" y="0.0" width="93.5" height="58"/>
+                                        <color key="backgroundColor" red="0.52549019610000003" green="0.90980392160000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="diamond.png"/>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvp-JO-2QE">
+                                        <rect key="frame" x="187.5" y="0.0" width="94" height="58"/>
+                                        <color key="backgroundColor" red="0.52549019610000003" green="0.90980392160000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="text_highlight.png"/>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBa-ab-AqR">
+                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="58"/>
+                                        <color key="backgroundColor" red="0.52549019610000003" green="0.90980392160000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="memory.png"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="VFM-rB-TFZ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gL2-tv-FJN" firstAttribute="trailing" secondItem="iNE-xV-0JO" secondAttribute="trailing" id="069-AU-VY9"/>
+                            <constraint firstItem="gL2-tv-FJN" firstAttribute="top" secondItem="iNE-xV-0JO" secondAttribute="top" id="D6i-Sk-bLW"/>
+                            <constraint firstItem="gL2-tv-FJN" firstAttribute="leading" secondItem="iNE-xV-0JO" secondAttribute="leading" id="KU9-F5-8Sm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="iNE-xV-0JO"/>
                     </view>
                     <navigationItem key="navigationItem" title="Techniques" id="Xmr-67-C7b"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jX-Ok-jp1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1204" y="303"/>
+            <point key="canvasLocation" x="1204" y="302.6986506746627"/>
         </scene>
         <!--Test-->
         <scene sceneID="VE1-XP-C79">
@@ -273,9 +308,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="diamond.png" width="30" height="30"/>
         <image name="library.png" width="39" height="30"/>
+        <image name="memory.png" width="30" height="30"/>
         <image name="profile.png" width="34" height="30"/>
         <image name="techniques.png" width="22" height="30"/>
         <image name="test.png" width="35" height="30"/>
+        <image name="text_highlight.png" width="30" height="30"/>
+        <image name="word_flash.png" width="30" height="30"/>
     </resources>
 </document>
