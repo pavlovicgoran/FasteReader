@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F0692D2202AF1D9003A6F20 /* TechniquesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0692D1202AF1D9003A6F20 /* TechniquesViewController.swift */; };
 		5F11719D2025BE5300EE94B7 /* techniques.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1171992025BE5300EE94B7 /* techniques.png */; };
 		5F11719E2025BE5300EE94B7 /* library.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F11719A2025BE5300EE94B7 /* library.png */; };
 		5F11719F2025BE5300EE94B7 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F11719B2025BE5300EE94B7 /* test.png */; };
@@ -87,6 +88,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F0692D1202AF1D9003A6F20 /* TechniquesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechniquesViewController.swift; sourceTree = "<group>"; };
 		5F1171992025BE5300EE94B7 /* techniques.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = techniques.png; sourceTree = "<group>"; };
 		5F11719A2025BE5300EE94B7 /* library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library.png; sourceTree = "<group>"; };
 		5F11719B2025BE5300EE94B7 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
@@ -180,6 +182,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F0692D0202AF18A003A6F20 /* Techniques */ = {
+			isa = PBXGroup;
+			children = (
+				5F0692D1202AF1D9003A6F20 /* TechniquesViewController.swift */,
+			);
+			path = Techniques;
+			sourceTree = "<group>";
+		};
 		5F15A2D520248FB10038039B = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +213,7 @@
 		5F15A2E020248FB10038039B /* FasteReader */ = {
 			isa = PBXGroup;
 			children = (
+				5F0692D0202AF18A003A6F20 /* Techniques */,
 				5F9DF94C20299AC4002F14B3 /* Books */,
 				5F5B8B1D2027004B00B4801A /* Library */,
 				5F15A312202492FA0038039B /* Images */,
@@ -553,6 +564,7 @@
 				5F5B8B1F202700A700B4801A /* BookCell.swift in Sources */,
 				5F15A2E220248FB10038039B /* AppDelegate.swift in Sources */,
 				5F5B8B1C2026FDD200B4801A /* LibraryCollectionViewController.swift in Sources */,
+				5F0692D2202AF1D9003A6F20 /* TechniquesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
