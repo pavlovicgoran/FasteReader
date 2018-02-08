@@ -27,16 +27,18 @@ class TechniquesViewController: UIViewController {
     @IBOutlet var toolbarButtons: [UIButton]!
     @IBOutlet weak var playButton: UIButton!
     
-    var isPlaying = false
+    private var activeTool = ToolbarIdentifier.wordFlash
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Word Flash"
+        
+        
+        stylizingPlayButton()
     }
     
     @IBAction func playButtonPressed(_ sender: UIButton) {
-        playButtonPressed()
+        startTheTool(tool: activeTool)
     }
     
 }
@@ -53,13 +55,21 @@ extension TechniquesViewController{
         
         switch sender.tag {
         case ToolbarIdentifier.wordFlash.rawValue:
-            title = "Word Flash"
+            
+            activeTool = .wordFlash
+            
         case ToolbarIdentifier.diamond.rawValue:
-            title = "Diamond Highlighter"
+            
+            activeTool = .diamond
+            
         case ToolbarIdentifier.textHighlight.rawValue:
-            title = "Text Highlighter"
+            
+            activeTool = .textHighlight
+            
         case ToolbarIdentifier.extendVision.rawValue:
-            title = "Extend Vision"
+            
+            activeTool = .extendVision
+            
         default:
             print("Error another choice happened that was not registered")
         }
@@ -76,20 +86,17 @@ extension TechniquesViewController{
 // MARK: Play button
 extension TechniquesViewController{
     
-    func playButtonPressed(){
-        //print("Play pressed")
-        isPlaying = !isPlaying
+    private func startTheTool(tool: ToolbarIdentifier){
+        print("Active tool: \(activeTool)")
+    }
+    
+    private func stylizingPlayButton(){
         
-        if isPlaying{
-            let image = UIImage(named: stopPictureName)
-            playButton.setImage(image, for: .normal)
-           // print("is playing")
-        }else{
-            let image = UIImage(named: playPictureName)
-            playButton.setImage(image, for: .normal)
-           // print("not playing")
-        }
+        playButton.layer.cornerRadius = playButton.frame.height / 2
         
+        let selectedAttributedString = NSAttributedString(string: "Start the Session", attributes: [NSAttributedStringKey.foregroundColor : UIColor.darkGray])
+        
+        playButton.setAttributedTitle(selectedAttributedString, for: .highlighted)
     }
     
 }
