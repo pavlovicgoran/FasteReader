@@ -29,6 +29,8 @@ class TechniquesViewController: UIViewController {
     let toolNameTextHighlighter = "Text Highlighter"
     let toolNameExpandVision = "Expand Vision"
     
+    let toolbarColor = UIColor(red: 0.0, green: 165.0/255, blue: 1.0, alpha: 1.0)
+    
     @IBOutlet var toolbarButtons: [UIButton]!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var currentReadingMaterial: UIButton!
@@ -56,10 +58,9 @@ extension TechniquesViewController{
     @IBAction func toolBarButtonPressed(_ sender: UIButton){
         
         
-        setToolbarColor(color: .cyan)
+        setToolbarColor(color: toolbarColor)
         sender.backgroundColor = UIColor.white
         
-        //sender.backgroundColor = UIColor.black
         
         switch sender.tag {
         case ToolbarIdentifier.wordFlash.rawValue:
@@ -100,7 +101,7 @@ extension TechniquesViewController{
     
     private func stylizingPlayButton(){
         
-        playButton.layer.cornerRadius = playButton.frame.height / 2
+        playButton.layer.cornerRadius = 4
         
         let highlightedAttributedString = NSAttributedString(string: "Start the Session", attributes: [NSAttributedStringKey.foregroundColor : UIColor.darkGray])
         
