@@ -24,11 +24,11 @@ class TechniquesViewController: UIViewController {
     
     @IBOutlet var toolbarButtons: [UIButton]!
     
-    var previousPressedButton: UIButton?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        title = "Word Flash"
     }
 
 }
@@ -45,13 +45,13 @@ extension TechniquesViewController{
         
         switch sender.tag {
         case ToolbarIdentifier.wordFlash.rawValue:
-            print("Word flash")
+            title = "Word Flash"
         case ToolbarIdentifier.diamond.rawValue:
-            print("Diamond")
+            title = "Diamond Highlighter"
         case ToolbarIdentifier.textHighlight.rawValue:
-            print("Text highlight")
+            title = "Text Highlighter"
         case ToolbarIdentifier.extendVision.rawValue:
-            print("Extend vision")
+            title = "Extend Vision"
         default:
             print("Error another choice happened that was not registered")
         }
@@ -62,6 +62,7 @@ extension TechniquesViewController{
             button.backgroundColor = color
         }
     }
+    
     
 }
 
