@@ -21,16 +21,24 @@ enum ToolbarIdentifier: Int{
 
 class TechniquesViewController: UIViewController {
 
+    let playPictureName = "play"
+    let stopPictureName = "stop"
     
     @IBOutlet var toolbarButtons: [UIButton]!
+    @IBOutlet weak var playButton: UIButton!
     
+    var isPlaying = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "Word Flash"
     }
-
+    
+    @IBAction func playButtonPressed(_ sender: UIButton) {
+        playButtonPressed()
+    }
+    
 }
 // MARK: Toolbar
 extension TechniquesViewController{
@@ -63,6 +71,26 @@ extension TechniquesViewController{
         }
     }
     
+    
+}
+// MARK: Play button
+extension TechniquesViewController{
+    
+    func playButtonPressed(){
+        //print("Play pressed")
+        isPlaying = !isPlaying
+        
+        if isPlaying{
+            let image = UIImage(named: stopPictureName)
+            playButton.setImage(image, for: .normal)
+           // print("is playing")
+        }else{
+            let image = UIImage(named: playPictureName)
+            playButton.setImage(image, for: .normal)
+           // print("not playing")
+        }
+        
+    }
     
 }
 

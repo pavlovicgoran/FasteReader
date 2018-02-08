@@ -95,17 +95,31 @@
                                     <constraint firstAttribute="height" constant="58" id="VFM-rB-TFZ"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1t-Jt-jbn" userLabel="play">
+                                <rect key="frame" x="147" y="553" width="80" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="fBh-Wx-3Jt"/>
+                                    <constraint firstAttribute="height" constant="60" id="ffz-qm-gKr"/>
+                                </constraints>
+                                <state key="normal" image="play.png"/>
+                                <connections>
+                                    <action selector="playButtonPressed:" destination="Z41-HL-RsH" eventType="touchUpInside" id="8k4-ar-rCJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gL2-tv-FJN" firstAttribute="trailing" secondItem="iNE-xV-0JO" secondAttribute="trailing" id="069-AU-VY9"/>
                             <constraint firstItem="gL2-tv-FJN" firstAttribute="top" secondItem="iNE-xV-0JO" secondAttribute="top" id="D6i-Sk-bLW"/>
+                            <constraint firstItem="iNE-xV-0JO" firstAttribute="bottom" secondItem="L1t-Jt-jbn" secondAttribute="bottom" constant="5" id="F4P-Xa-riN"/>
                             <constraint firstItem="gL2-tv-FJN" firstAttribute="leading" secondItem="iNE-xV-0JO" secondAttribute="leading" id="KU9-F5-8Sm"/>
+                            <constraint firstItem="L1t-Jt-jbn" firstAttribute="centerX" secondItem="ogU-Ef-mBe" secondAttribute="centerX" id="aFR-aZ-242"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iNE-xV-0JO"/>
                     </view>
                     <navigationItem key="navigationItem" title="Techniques" id="Xmr-67-C7b"/>
                     <connections>
+                        <outlet property="playButton" destination="L1t-Jt-jbn" id="abv-2D-HGe"/>
                         <outletCollection property="toolbarButtons" destination="J6X-sa-Nyh" collectionClass="NSMutableArray" id="Lzg-5I-2Yz"/>
                         <outletCollection property="toolbarButtons" destination="13m-8l-9TL" collectionClass="NSMutableArray" id="Ti3-hf-r34"/>
                         <outletCollection property="toolbarButtons" destination="Wvp-JO-2QE" collectionClass="NSMutableArray" id="OIz-iK-TjU"/>
@@ -329,6 +343,7 @@
         <image name="diamond.png" width="30" height="30"/>
         <image name="library.png" width="39" height="30"/>
         <image name="memory.png" width="30" height="30"/>
+        <image name="play.png" width="100" height="72"/>
         <image name="profile.png" width="34" height="30"/>
         <image name="techniques.png" width="22" height="30"/>
         <image name="test.png" width="35" height="30"/>
