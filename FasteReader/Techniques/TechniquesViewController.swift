@@ -24,9 +24,15 @@ class TechniquesViewController: UIViewController {
     let playPictureName = "play"
     let stopPictureName = "stop"
     
+    let toolNameWordFlash = "Word Flash"
+    let toolNameDiamond = "Diamond Highlighter"
+    let toolNameTextHighlighter = "Text Highlighter"
+    let toolNameExpandVision = "Expand Vision"
+    
     @IBOutlet var toolbarButtons: [UIButton]!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var currentReadingMaterial: UIButton!
+    @IBOutlet weak var toolName: UILabel!
     
     private var activeTool = ToolbarIdentifier.wordFlash
 
@@ -38,6 +44,7 @@ class TechniquesViewController: UIViewController {
         currentReadingMaterial.disclosureButton(baseColor: view.tintColor)
     }
     
+    //Start the Session button
     @IBAction func playButtonPressed(_ sender: UIButton) {
         startTheTool(tool: activeTool)
     }
@@ -56,19 +63,19 @@ extension TechniquesViewController{
         
         switch sender.tag {
         case ToolbarIdentifier.wordFlash.rawValue:
-            
+            toolName.text = toolNameWordFlash
             activeTool = .wordFlash
             
         case ToolbarIdentifier.diamond.rawValue:
-            
+            toolName.text = toolNameDiamond
             activeTool = .diamond
             
         case ToolbarIdentifier.textHighlight.rawValue:
-            
+            toolName.text = toolNameTextHighlighter
             activeTool = .textHighlight
             
         case ToolbarIdentifier.extendVision.rawValue:
-            
+            toolName.text = toolNameExpandVision
             activeTool = .extendVision
             
         default:
@@ -101,8 +108,17 @@ extension TechniquesViewController{
     }
     
 }
+// MARK: Reading material
+extension TechniquesViewController{
+    
+}
 
-
+//MARK: TextArea management
+extension TechniquesViewController{
+    
+    
+    
+}
 
 
 

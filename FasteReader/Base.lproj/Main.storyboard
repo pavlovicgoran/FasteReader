@@ -113,19 +113,39 @@
                                 <rect key="frame" x="10" y="528" width="355" height="30"/>
                                 <state key="normal" title="Reading:"/>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbM-Om-zIw">
+                                <rect key="frame" x="10" y="166" width="355" height="354"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word Flash" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKf-6u-1ZU">
+                                <rect key="frame" x="10" y="130" width="355" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gL2-tv-FJN" firstAttribute="trailing" secondItem="iNE-xV-0JO" secondAttribute="trailing" id="069-AU-VY9"/>
+                            <constraint firstItem="mKf-6u-1ZU" firstAttribute="leading" secondItem="iNE-xV-0JO" secondAttribute="leading" constant="10" id="ANX-8Q-lsV"/>
                             <constraint firstItem="LVn-UI-0nj" firstAttribute="leading" secondItem="iNE-xV-0JO" secondAttribute="leading" constant="10" id="Aiv-CY-H5Y"/>
                             <constraint firstItem="gL2-tv-FJN" firstAttribute="top" secondItem="iNE-xV-0JO" secondAttribute="top" id="D6i-Sk-bLW"/>
+                            <constraint firstItem="iNE-xV-0JO" firstAttribute="trailing" secondItem="mKf-6u-1ZU" secondAttribute="trailing" constant="10" id="DFS-Yl-zW6"/>
                             <constraint firstItem="iNE-xV-0JO" firstAttribute="bottom" secondItem="L1t-Jt-jbn" secondAttribute="bottom" constant="5" id="F4P-Xa-riN"/>
                             <constraint firstItem="L1t-Jt-jbn" firstAttribute="top" secondItem="LVn-UI-0nj" secondAttribute="bottom" constant="15" id="FeJ-qU-g0i"/>
+                            <constraint firstItem="iNE-xV-0JO" firstAttribute="trailing" secondItem="zbM-Om-zIw" secondAttribute="trailing" constant="10" id="IVR-yo-hQZ"/>
                             <constraint firstItem="gL2-tv-FJN" firstAttribute="leading" secondItem="iNE-xV-0JO" secondAttribute="leading" id="KU9-F5-8Sm"/>
+                            <constraint firstItem="mKf-6u-1ZU" firstAttribute="top" secondItem="gL2-tv-FJN" secondAttribute="bottom" constant="8" id="Mv9-Iw-ft4"/>
                             <constraint firstItem="iNE-xV-0JO" firstAttribute="trailing" secondItem="LVn-UI-0nj" secondAttribute="trailing" constant="10" id="NAB-EW-Fep"/>
+                            <constraint firstItem="zbM-Om-zIw" firstAttribute="top" secondItem="mKf-6u-1ZU" secondAttribute="bottom" constant="8" id="XQm-od-QAK"/>
                             <constraint firstItem="L1t-Jt-jbn" firstAttribute="centerX" secondItem="ogU-Ef-mBe" secondAttribute="centerX" id="aFR-aZ-242"/>
+                            <constraint firstItem="LVn-UI-0nj" firstAttribute="top" secondItem="zbM-Om-zIw" secondAttribute="bottom" constant="8" id="hVE-AJ-Tue"/>
                             <constraint firstItem="L1t-Jt-jbn" firstAttribute="leading" secondItem="iNE-xV-0JO" secondAttribute="leading" constant="10" id="lPo-Wm-8EX"/>
                             <constraint firstItem="iNE-xV-0JO" firstAttribute="trailing" secondItem="L1t-Jt-jbn" secondAttribute="trailing" constant="10" id="p5q-ei-0tR"/>
+                            <constraint firstItem="zbM-Om-zIw" firstAttribute="leading" secondItem="iNE-xV-0JO" secondAttribute="leading" constant="10" id="pfe-w5-Yyt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iNE-xV-0JO"/>
                     </view>
@@ -133,6 +153,7 @@
                     <connections>
                         <outlet property="currentReadingMaterial" destination="LVn-UI-0nj" id="PUN-qF-yzy"/>
                         <outlet property="playButton" destination="L1t-Jt-jbn" id="abv-2D-HGe"/>
+                        <outlet property="toolName" destination="mKf-6u-1ZU" id="qe6-Be-7VR"/>
                         <outletCollection property="toolbarButtons" destination="J6X-sa-Nyh" collectionClass="NSMutableArray" id="Lzg-5I-2Yz"/>
                         <outletCollection property="toolbarButtons" destination="13m-8l-9TL" collectionClass="NSMutableArray" id="Ti3-hf-r34"/>
                         <outletCollection property="toolbarButtons" destination="Wvp-JO-2QE" collectionClass="NSMutableArray" id="OIz-iK-TjU"/>
