@@ -26,15 +26,16 @@ class TechniquesViewController: UIViewController {
     
     @IBOutlet var toolbarButtons: [UIButton]!
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var currentReadingMaterial: UIButton!
     
     private var activeTool = ToolbarIdentifier.wordFlash
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
+
         stylizingPlayButton()
+        
+        currentReadingMaterial.disclosureButton(baseColor: view.tintColor)
     }
     
     @IBAction func playButtonPressed(_ sender: UIButton) {
@@ -94,9 +95,9 @@ extension TechniquesViewController{
         
         playButton.layer.cornerRadius = playButton.frame.height / 2
         
-        let selectedAttributedString = NSAttributedString(string: "Start the Session", attributes: [NSAttributedStringKey.foregroundColor : UIColor.darkGray])
+        let highlightedAttributedString = NSAttributedString(string: "Start the Session", attributes: [NSAttributedStringKey.foregroundColor : UIColor.darkGray])
         
-        playButton.setAttributedTitle(selectedAttributedString, for: .highlighted)
+        playButton.setAttributedTitle(highlightedAttributedString, for: .highlighted)
     }
     
 }

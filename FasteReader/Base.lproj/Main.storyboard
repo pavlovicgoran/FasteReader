@@ -109,13 +109,20 @@
                                     <action selector="playButtonPressed:" destination="Z41-HL-RsH" eventType="touchUpInside" id="8k4-ar-rCJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVn-UI-0nj">
+                                <rect key="frame" x="10" y="528" width="355" height="30"/>
+                                <state key="normal" title="Reading:"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gL2-tv-FJN" firstAttribute="trailing" secondItem="iNE-xV-0JO" secondAttribute="trailing" id="069-AU-VY9"/>
+                            <constraint firstItem="LVn-UI-0nj" firstAttribute="leading" secondItem="iNE-xV-0JO" secondAttribute="leading" constant="10" id="Aiv-CY-H5Y"/>
                             <constraint firstItem="gL2-tv-FJN" firstAttribute="top" secondItem="iNE-xV-0JO" secondAttribute="top" id="D6i-Sk-bLW"/>
                             <constraint firstItem="iNE-xV-0JO" firstAttribute="bottom" secondItem="L1t-Jt-jbn" secondAttribute="bottom" constant="5" id="F4P-Xa-riN"/>
+                            <constraint firstItem="L1t-Jt-jbn" firstAttribute="top" secondItem="LVn-UI-0nj" secondAttribute="bottom" constant="15" id="FeJ-qU-g0i"/>
                             <constraint firstItem="gL2-tv-FJN" firstAttribute="leading" secondItem="iNE-xV-0JO" secondAttribute="leading" id="KU9-F5-8Sm"/>
+                            <constraint firstItem="iNE-xV-0JO" firstAttribute="trailing" secondItem="LVn-UI-0nj" secondAttribute="trailing" constant="10" id="NAB-EW-Fep"/>
                             <constraint firstItem="L1t-Jt-jbn" firstAttribute="centerX" secondItem="ogU-Ef-mBe" secondAttribute="centerX" id="aFR-aZ-242"/>
                             <constraint firstItem="L1t-Jt-jbn" firstAttribute="leading" secondItem="iNE-xV-0JO" secondAttribute="leading" constant="10" id="lPo-Wm-8EX"/>
                             <constraint firstItem="iNE-xV-0JO" firstAttribute="trailing" secondItem="L1t-Jt-jbn" secondAttribute="trailing" constant="10" id="p5q-ei-0tR"/>
@@ -124,6 +131,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Techniques" id="Xmr-67-C7b"/>
                     <connections>
+                        <outlet property="currentReadingMaterial" destination="LVn-UI-0nj" id="PUN-qF-yzy"/>
                         <outlet property="playButton" destination="L1t-Jt-jbn" id="abv-2D-HGe"/>
                         <outletCollection property="toolbarButtons" destination="J6X-sa-Nyh" collectionClass="NSMutableArray" id="Lzg-5I-2Yz"/>
                         <outletCollection property="toolbarButtons" destination="13m-8l-9TL" collectionClass="NSMutableArray" id="Ti3-hf-r34"/>
