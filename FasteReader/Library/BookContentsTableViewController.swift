@@ -19,6 +19,8 @@ class BookContentsTableViewController: UITableViewController {
     
     var bookContents = [String]();
     
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -57,13 +59,19 @@ extension BookContentsTableViewController{
         return cell
     }
     
+    // MARK : FILL - LOADING BOOK CHAPTER INTO A CLASS
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        setReadingChapter(chapterNumber: (indexPath.row + 1))
         
         let ac = UIAlertController(title: "\(bookToDisplay.getAuthor()) - \(bookToDisplay.getTitle()) Chapter \(indexPath.row + 1) Loaded", message: nil, preferredStyle: .alert)
         
         ac.addAction(UIAlertAction(title: "OK", style: .default, handler: {[unowned self](alert: UIAlertAction!) in
             
+            
             self.navigationController?.popViewController(animated: true)
+            self.tabBarController?.selectedIndex = 1
             
         }))
         
@@ -71,7 +79,69 @@ extension BookContentsTableViewController{
         
     }
     
+    private func setReadingChapter(chapterNumber: Int){
+        var chapter = ""
+        BookChapter.setChapterNumber(chapterNumber: chapterNumber)
+        
+        switch bookToDisplay.getPrefix() {
+        case .madeToStick:
+            chapter = "\(availableBookTitles.madeToStick.rawValue) Chapter \(chapterNumber)"
+            BookChapter.setBook(book: .madeToStick)
+            
+        case .creativity:
+            chapter = "\(availableBookTitles.creativity.rawValue) Chapter \(chapterNumber)"
+            BookChapter.setBook(book: .creativity)
+            
+        case .artOfLearning:
+            chapter = "\(availableBookTitles.artOfLearning.rawValue) Chapter \(chapterNumber)"
+            BookChapter.setBook(book: .artOfLearning)
+            
+        case .origin:
+            chapter = "\(availableBookTitles.origin.rawValue) Chapter \(chapterNumber)"
+            BookChapter.setBook(book: .origin)
+            
+        case .pieceOfMind:
+            chapter = "\(availableBookTitles.pieceOfMind.rawValue) Chapter \(chapterNumber)"
+            BookChapter.setBook(book: .pieceOfMind)
+            
+        case .quantumTheory:
+            chapter = "\(availableBookTitles.quantumTheory.rawValue) Chapter \(chapterNumber)"
+            BookChapter.setBook(book: .quantumTheory)
+            
+        case .spy:
+            chapter = "\(availableBookTitles.spy.rawValue) Chapter \(chapterNumber)"
+            BookChapter.setBook(book: .spy)
+            
+        default:
+           print("Book contents selection - there are more books")
+        }
+        
+        chapter = "Reading: \(chapter)"
+        BookChapter.currentlyReading = chapter
+        
+        updateReadingButtonOnTechniquesView()
+        
+    }
+    
+    private func updateReadingButtonOnTechniquesView(){
+        //gets navigation controller of Techniques view
+        let navController = tabBarController?.viewControllers?[1] as! UINavigationController
+        
+        //gets techniques view controller from navigation controller
+        let tvc = navController.viewControllers[0] as! TechniquesViewController
+        
+        //update Reading button
+        tvc.updateReadingMaterial()
+    }
+    
+    
+    
 }
+
+
+
+
+
 
 
 

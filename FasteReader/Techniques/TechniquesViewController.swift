@@ -38,6 +38,7 @@ class TechniquesViewController: UIViewController {
     @IBOutlet weak var toolDescription: UITextView!
     
     private var activeTool = ToolbarIdentifier.wordFlash
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,11 +47,18 @@ class TechniquesViewController: UIViewController {
         
         currentReadingMaterial.disclosureButton(baseColor: view.tintColor)
         setToolDescription(for: .wordFlash)
+        
+        updateReadingMaterial()
     }
     
     //Start the Session button
     @IBAction func playButtonPressed(_ sender: UIButton) {
         startTheTool(tool: activeTool)
+    }
+    
+    //Reading Material button
+    @IBAction func chooseReadingMaterial(_ sender: UIButton) {
+        chooseReadingMaterial()
     }
     
 }
@@ -116,8 +124,15 @@ extension TechniquesViewController{
 }
 // MARK: Reading material
 extension TechniquesViewController{
+    //Switch to library collection view controller
+    func chooseReadingMaterial(){
+        
+        tabBarController?.selectedIndex = 3
+    }
     
-    
+    func updateReadingMaterial(){
+        currentReadingMaterial.setTitle(BookChapter.currentlyReading, for: .normal)
+    }
 }
 
 //MARK: TextArea management

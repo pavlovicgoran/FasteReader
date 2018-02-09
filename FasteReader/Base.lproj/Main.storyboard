@@ -112,6 +112,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVn-UI-0nj">
                                 <rect key="frame" x="10" y="528" width="355" height="30"/>
                                 <state key="normal" title="Reading:"/>
+                                <connections>
+                                    <action selector="chooseReadingMaterial:" destination="Z41-HL-RsH" eventType="touchUpInside" id="vOZ-F5-ysH"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbM-Om-zIw">
                                 <rect key="frame" x="10" y="166" width="355" height="354"/>

@@ -18,6 +18,15 @@ enum BookPrefixes: String{
     case pieceOfMind = "mind"
 }
 
+enum availableBookTitles: String{
+    case madeToStick = "Chip Heath - Made To Stick"
+    case origin = "Dan Brown - Origin"
+    case creativity = "Ed Catmul - Creativity Inc"
+    case spy = "Janson Hanson - Spy Secrets"
+    case artOfLearning = "Josh Waitzkin - The Art Of Learning"
+    case quantumTheory = "Marcus Chown - Quantum Theory"
+    case pieceOfMind = "Seneca - Piece of Mind"
+}
 
 class Book{
     
@@ -40,8 +49,12 @@ class Book{
         return title
     }
     
-    public func getPrefix() -> String{
+    public func getPrefixRawValue() -> String{
         return prefixForBookFile.rawValue
+    }
+    
+    public func getPrefix() -> BookPrefixes{
+        return prefixForBookFile
     }
     
 }
