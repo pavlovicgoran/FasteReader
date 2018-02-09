@@ -28,6 +28,8 @@ class LibraryCollectionViewController: UICollectionViewController{
 
         initialazeArrayOfColors()
         initializeBooksArray()
+        
+        
     }
 
     
