@@ -153,6 +153,7 @@
                     <connections>
                         <outlet property="currentReadingMaterial" destination="LVn-UI-0nj" id="PUN-qF-yzy"/>
                         <outlet property="playButton" destination="L1t-Jt-jbn" id="abv-2D-HGe"/>
+                        <outlet property="toolDescription" destination="zbM-Om-zIw" id="p2r-gl-LJr"/>
                         <outlet property="toolName" destination="mKf-6u-1ZU" id="qe6-Be-7VR"/>
                         <outletCollection property="toolbarButtons" destination="J6X-sa-Nyh" collectionClass="NSMutableArray" id="Lzg-5I-2Yz"/>
                         <outletCollection property="toolbarButtons" destination="13m-8l-9TL" collectionClass="NSMutableArray" id="Ti3-hf-r34"/>

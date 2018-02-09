@@ -35,6 +35,7 @@ class TechniquesViewController: UIViewController {
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var currentReadingMaterial: UIButton!
     @IBOutlet weak var toolName: UILabel!
+    @IBOutlet weak var toolDescription: UITextView!
     
     private var activeTool = ToolbarIdentifier.wordFlash
 
@@ -44,6 +45,7 @@ class TechniquesViewController: UIViewController {
         stylizingPlayButton()
         
         currentReadingMaterial.disclosureButton(baseColor: view.tintColor)
+        setToolDescription(for: .wordFlash)
     }
     
     //Start the Session button
@@ -67,6 +69,7 @@ extension TechniquesViewController{
             toolName.text = toolNameWordFlash
             activeTool = .wordFlash
             
+            
         case ToolbarIdentifier.diamond.rawValue:
             toolName.text = toolNameDiamond
             activeTool = .diamond
@@ -82,6 +85,8 @@ extension TechniquesViewController{
         default:
             print("Error another choice happened that was not registered")
         }
+        
+        setToolDescription(for: activeTool)
     }
     
     func setToolbarColor(color: UIColor){
@@ -112,11 +117,29 @@ extension TechniquesViewController{
 // MARK: Reading material
 extension TechniquesViewController{
     
+    
 }
 
 //MARK: TextArea management
 extension TechniquesViewController{
     
+    func setToolDescription(for tool: ToolbarIdentifier){
+        
+        switch tool {
+        case .wordFlash:
+            toolDescription.text = ToolsDescription.wordFlashDescription
+        case .diamond:
+            toolDescription.text = ToolsDescription.diamondHighlighterDescription
+        case .textHighlight:
+            toolDescription.text = ToolsDescription.textHighlighterDescription
+        case .extendVision:
+            toolDescription.text = ToolsDescription.expandVisionDescription
+        default:
+            print("TextArea management - another tool exists")
+        }
+        
+        
+    }
     
     
 }
