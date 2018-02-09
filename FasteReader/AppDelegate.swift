@@ -16,12 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        UINavigationBar.appearance().barTintColor = UIColor(red: 0.0, green: 165.0/255.0, blue: 255.0/255.0, alpha: 1.0)
-        UINavigationBar.appearance().tintColor = UIColor.white
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        stylizingNavigationBar()
+        setToolTabOnOpening()
         
         return true
     }
+    
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -47,4 +47,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
+extension AppDelegate{
+    func stylizingNavigationBar(){
+        UINavigationBar.appearance().barTintColor = UIColor(red: 0.0, green: 165.0/255.0, blue: 255.0/255.0, alpha: 1.0)
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+    }
+    
+    func setToolTabOnOpening(){
+        let tabBarController = self.window?.rootViewController as! UITabBarController
+        tabBarController.selectedIndex = 1
+    }
+}
+
+
+
+
 
