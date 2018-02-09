@@ -69,7 +69,7 @@ extension BookContentsTableViewController{
         
         ac.addAction(UIAlertAction(title: "OK", style: .default, handler: {[unowned self](alert: UIAlertAction!) in
             
-            
+            //this order of 2 statements - first pop then switch
             self.navigationController?.popViewController(animated: true)
             self.tabBarController?.selectedIndex = 1
             

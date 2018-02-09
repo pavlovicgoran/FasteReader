@@ -50,7 +50,9 @@ extension UIButton
         self.imageEdgeInsets = UIEdgeInsetsMake(0, self.bounds.size.width-image.size.width*1.5, 0, 0);
         self.layer.borderWidth = 0.5
         self.layer.borderColor = UIColor.darkGray.cgColor
+        
         self.layer.cornerRadius = 4
+        self.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 23)
         
         self.contentEdgeInsets = UIEdgeInsetsMake(10,0,10,0)
     }

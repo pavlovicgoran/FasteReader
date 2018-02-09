@@ -109,7 +109,7 @@
                                     <action selector="playButtonPressed:" destination="Z41-HL-RsH" eventType="touchUpInside" id="8k4-ar-rCJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVn-UI-0nj">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVn-UI-0nj">
                                 <rect key="frame" x="10" y="528" width="355" height="30"/>
                                 <state key="normal" title="Reading:"/>
                                 <connections>
