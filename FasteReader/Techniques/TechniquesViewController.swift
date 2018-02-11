@@ -126,8 +126,10 @@ extension TechniquesViewController{
 extension TechniquesViewController{
     //Switch to library collection view controller
     func chooseReadingMaterial(){
+        let tabBar = tabBarController as! BookTabController
+        tabBar.tabBarController(tabBar, shouldSelect: tabBar.viewControllers![3])
+        tabBar.selectedIndex = 3
         
-        tabBarController?.selectedIndex = 3
     }
     
     func updateReadingMaterial(){

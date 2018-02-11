@@ -68,9 +68,11 @@ extension BookContentsTableViewController{
         let ac = UIAlertController(title: "\(bookToDisplay.getAuthor()) - \(bookToDisplay.getTitle()) Chapter \(indexPath.row + 1) Loaded", message: nil, preferredStyle: .alert)
         
         ac.addAction(UIAlertAction(title: "OK", style: .default, handler: {[unowned self](alert: UIAlertAction!) in
-            
+            let tabBar = self.tabBarController as! BookTabController
             //this order of 2 statements - first pop then switch
             self.navigationController?.popViewController(animated: true)
+            
+            tabBar.tabBarController(tabBar, shouldSelect: tabBar.viewControllers![1])
             self.tabBarController?.selectedIndex = 1
             
         }))
