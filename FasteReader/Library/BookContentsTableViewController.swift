@@ -72,7 +72,7 @@ extension BookContentsTableViewController{
             //this order of 2 statements - first pop then switch
             self.navigationController?.popViewController(animated: true)
             
-            tabBar.tabBarController(tabBar, shouldSelect: tabBar.viewControllers![1])
+            tabBar.beginTransition(tabBar, shouldSelect: tabBar.viewControllers![1], duration: BookTabController.shortDurationOfTransition)
             self.tabBarController?.selectedIndex = 1
             
         }))

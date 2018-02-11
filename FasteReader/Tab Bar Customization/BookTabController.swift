@@ -10,7 +10,9 @@ import UIKit
 
 class BookTabController: UITabBarController, UITabBarControllerDelegate {
 
-    private let durationOfTransition: Double = 0.7
+    public static let longDurationOfTransition: Double = 0.7
+    
+    public static let shortDurationOfTransition: Double = 0.5
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,18 +22,18 @@ class BookTabController: UITabBarController, UITabBarControllerDelegate {
     
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         
-        return beginTransition(tabBarController, shouldSelect: viewController)
+        return beginTransition(tabBarController, shouldSelect: viewController, duration: BookTabController.longDurationOfTransition)
         
     }
 
-    public func beginTransition(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool{
+    public func beginTransition(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController, duration: TimeInterval) -> Bool{
         let fromView: UIView = tabBarController.selectedViewController!.view
         let toView  : UIView = viewController.view
         if fromView == toView {
             return false
         }
         
-        UIView.transition(from: fromView, to: toView, duration: durationOfTransition, options: .transitionCurlUp)
+        UIView.transition(from: fromView, to: toView, duration: duration, options: .transitionCurlUp)
         return true
     }
    
