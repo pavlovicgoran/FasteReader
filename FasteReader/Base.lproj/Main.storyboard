@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="1204" y="-385"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Book Tab Controller-->
         <scene sceneID="11F-bZ-NGd">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Us1-vd-K9v" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Us1-vd-K9v" customClass="BookTabController" customModule="FasteReader" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wXb-FM-xUP">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
