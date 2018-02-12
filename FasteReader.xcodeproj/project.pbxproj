@@ -86,6 +86,7 @@
 		5FA5AEB82031816900377543 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA5AEB72031816900377543 /* ProfileViewController.swift */; };
 		5FA5AEBA203185DC00377543 /* LibraryPickerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA5AEB9203185DC00377543 /* LibraryPickerProtocol.swift */; };
 		5FA5AEBC20319D2E00377543 /* profile_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA5AEBB20319D2E00377543 /* profile_empty.png */; };
+		5FA5AEBE2031D9A600377543 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA5AEBD2031D9A600377543 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,6 +192,7 @@
 		5FA5AEB72031816900377543 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5FA5AEB9203185DC00377543 /* LibraryPickerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryPickerProtocol.swift; sourceTree = "<group>"; };
 		5FA5AEBB20319D2E00377543 /* profile_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_empty.png; sourceTree = "<group>"; };
+		5FA5AEBD2031D9A600377543 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -457,6 +459,7 @@
 			isa = PBXGroup;
 			children = (
 				5FA5AEB72031816900377543 /* ProfileViewController.swift */,
+				5FA5AEBD2031D9A600377543 /* Profile.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -660,6 +663,7 @@
 				5F9DF9B12029B1ED002F14B3 /* BookContentsTableViewController.swift in Sources */,
 				5F9DF9AD2029A859002F14B3 /* Book.swift in Sources */,
 				5F8ADBFE202D8FF2002BCBDD /* TechniquesTextArea.swift in Sources */,
+				5FA5AEBE2031D9A600377543 /* Profile.swift in Sources */,
 				5FA5AEBA203185DC00377543 /* LibraryPickerProtocol.swift in Sources */,
 				5F8ADC00202D9D60002BCBDD /* BookChapter.swift in Sources */,
 				5F62A1D8202C80100020C626 /* ButtonDisclosureIndicator.swift in Sources */,

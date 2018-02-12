@@ -46,16 +46,19 @@ class ProfileViewController: UIViewController {
     //Line length stepper
     @IBAction func lineLengthChanged(_ sender: UIStepper) {
         lineLength.text = "Line Length: \(Int(sender.value))"
+        Profile.sharedInstance.setLineLength(lineLength: Int(sender.value))
     }
     
     //Number of lines stepper
     @IBAction func numberOfLinesChanged(_ sender: UIStepper) {
         numberOfLines.text = "Number of Lines: \(Int(sender.value))"
+        Profile.sharedInstance.setNumberOfLines(numberOfLines: Int(sender.value))
     }
     
     //Words per minute slider
     @IBAction func wordsPerMinuteChanged(_ sender: UISlider) {
         wordsPerMinute.text = "\(Int(sender.value))"
+        Profile.sharedInstance.setWordsPerMinute(wpm: Int(sender.value))
     }
     
     
@@ -90,6 +93,7 @@ extension ProfileViewController{
             
             if (!(ac.textFields![0].text?.isEmpty)!){
                 self.username.text = ac.textFields![0].text
+                Profile.sharedInstance.setUsername(username: self.username.text!)
             }
         }))
         
@@ -136,6 +140,8 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
         
         
         profileImage.image = image
+        
+        Profile.sharedInstance.setProfileImage(image: image)
         
         dismiss(animated: true)
     }
