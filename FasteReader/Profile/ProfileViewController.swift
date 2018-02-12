@@ -76,7 +76,7 @@ extension ProfileViewController: LibraryPicker{
 }
 
 // MARK: Navbar buttons
-extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+extension ProfileViewController{
     
     //Right bar button
     @objc func changeUsername(){
@@ -115,6 +115,12 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
         present(ac, animated: true)
     }
     
+    
+    
+}
+// MARK: Picking images from a library
+
+extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     private func imagePicker(){
         let picker = UIImagePickerController()
         picker.allowsEditing = true
@@ -142,7 +148,6 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
         let documentsDirectory = paths[0]
         return documentsDirectory
     }
-    
 }
 
 
