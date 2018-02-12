@@ -103,11 +103,11 @@ extension ProfileViewController{
         let ac = UIAlertController(title: "Upload the profile image", message: nil, preferredStyle: .actionSheet)
         ac.addAction(UIAlertAction(title: "Take a photo", style: .default, handler: {[unowned self](_ action: UIAlertAction) in
             
-            
+            self.imagePicker(source: .camera)
         }))
         
         ac.addAction(UIAlertAction(title: "Pick a photo", style: .default, handler: {[unowned self](_ action: UIAlertAction) in
-            self.imagePicker()
+            self.imagePicker(source: .photoLibrary)
         }))
         
         ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
@@ -121,22 +121,19 @@ extension ProfileViewController{
 // MARK: Picking images from a library
 
 extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
-    private func imagePicker(){
+    private func imagePicker(source: UIImagePickerControllerSourceType){
         let picker = UIImagePickerController()
         picker.allowsEditing = true
         picker.delegate = self
+        
+        picker.sourceType = source
+        
         present(picker, animated: true)
     }
     // MARK: Image picker delegate
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         guard let image = info[UIImagePickerControllerEditedImage] as? UIImage else { return }
         
-        let imageName = UUID().uuidString
-        let imagePath = getDocumentsDirectory().appendingPathComponent(imageName)
-        
-        if let jpegData = UIImageJPEGRepresentation(image, 80) {
-            try? jpegData.write(to: imagePath)
-        }
         
         profileImage.image = image
         
