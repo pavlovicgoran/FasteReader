@@ -85,6 +85,7 @@
 		5FA5AEB5203176A000377543 /* word_flash_description.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5FA5AEB1203176A000377543 /* word_flash_description.txt */; };
 		5FA5AEB82031816900377543 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA5AEB72031816900377543 /* ProfileViewController.swift */; };
 		5FA5AEBA203185DC00377543 /* LibraryPickerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA5AEB9203185DC00377543 /* LibraryPickerProtocol.swift */; };
+		5FA5AEBC20319D2E00377543 /* profile_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA5AEBB20319D2E00377543 /* profile_empty.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -189,6 +190,7 @@
 		5FA5AEB1203176A000377543 /* word_flash_description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = word_flash_description.txt; sourceTree = "<group>"; };
 		5FA5AEB72031816900377543 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5FA5AEB9203185DC00377543 /* LibraryPickerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryPickerProtocol.swift; sourceTree = "<group>"; };
+		5FA5AEBB20319D2E00377543 /* profile_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_empty.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +288,7 @@
 		5F15A312202492FA0038039B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5FA5AEBB20319D2E00377543 /* profile_empty.png */,
 				5F62A1D9202C830C0020C626 /* disclosure_indicator.png */,
 				5F62A1CE202C4BAC0020C626 /* play.png */,
 				5F62A1D2202C53D20020C626 /* stop.png */,
@@ -582,6 +585,7 @@
 				5F9DF98120299AC4002F14B3 /* stick_chapter_4.txt in Resources */,
 				5F9DF99820299AC4002F14B3 /* learning_chapter_3.txt in Resources */,
 				5F9DF99B20299AC4002F14B3 /* learning_chapter_6.txt in Resources */,
+				5FA5AEBC20319D2E00377543 /* profile_empty.png in Resources */,
 				5F9DF99620299AC4002F14B3 /* learning_chapter_1.txt in Resources */,
 				5F9DF99520299AC4002F14B3 /* spy_chapter_6.txt in Resources */,
 				5F11719F2025BE5300EE94B7 /* test.png in Resources */,
