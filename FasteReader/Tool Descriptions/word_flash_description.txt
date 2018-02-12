@@ -3,3 +3,6 @@ The words appear on the screen at constant speed. Thus training you to process t
 Benefits:
 Reduces subvocalization
 Reduces fixation intervals
+
+Variables:
+Words per Minute

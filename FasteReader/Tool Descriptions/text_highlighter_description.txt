@@ -3,3 +3,6 @@ Text is showed on the screen and the tracker highlights the words sequentially. 
 Benefits:
 Reduces back-skipping
 Improves focus
+
+Variables:
+Words per Minute

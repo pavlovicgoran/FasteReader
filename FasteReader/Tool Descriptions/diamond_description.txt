@@ -5,3 +5,7 @@ Reduces subvocalization
 Increases vision span
 Improves focus
 Reduces back-skipping
+
+Varaibles:
+Words per Minute
+Line Length

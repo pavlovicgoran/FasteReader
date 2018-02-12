@@ -4,3 +4,8 @@ Benefits:
 Increases vision span
 Reduces subvocalization
 Improves focus
+
+Variables:
+Words per Minute
+Line Length
+Line Number
