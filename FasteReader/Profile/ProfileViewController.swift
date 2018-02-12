@@ -76,10 +76,11 @@ extension ProfileViewController: LibraryPicker{
 }
 
 // MARK: Navbar buttons
-extension ProfileViewController{
+extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
+    //Right bar button
     @objc func changeUsername(){
-        print("changeUsername")
+        
         let ac = UIAlertController(title: "Enter your username", message: nil, preferredStyle: .alert)
         ac.addTextField(configurationHandler:{ (_ textField: UITextField) -> Void in
             textField.placeholder = "Enter username"
@@ -97,12 +98,57 @@ extension ProfileViewController{
         
         present(ac, animated: true)
     }
-    
+    //Left bar button
     @objc func pickPhoto(){
-        print("pickPhoto")
+        let ac = UIAlertController(title: "Upload the profile image", message: nil, preferredStyle: .actionSheet)
+        ac.addAction(UIAlertAction(title: "Take a photo", style: .default, handler: {[unowned self](_ action: UIAlertAction) in
+            
+            
+        }))
+        
+        ac.addAction(UIAlertAction(title: "Pick a photo", style: .default, handler: {[unowned self](_ action: UIAlertAction) in
+            self.imagePicker()
+        }))
+        
+        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        
+        present(ac, animated: true)
+    }
+    
+    private func imagePicker(){
+        let picker = UIImagePickerController()
+        picker.allowsEditing = true
+        picker.delegate = self
+        present(picker, animated: true)
+    }
+    // MARK: Image picker delegate
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        guard let image = info[UIImagePickerControllerEditedImage] as? UIImage else { return }
+        
+        let imageName = UUID().uuidString
+        let imagePath = getDocumentsDirectory().appendingPathComponent(imageName)
+        
+        if let jpegData = UIImageJPEGRepresentation(image, 80) {
+            try? jpegData.write(to: imagePath)
+        }
+        
+        profileImage.image = image
+        
+        dismiss(animated: true)
+    }
+    
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
     }
     
 }
+
+
+
+
+
 
 
 
