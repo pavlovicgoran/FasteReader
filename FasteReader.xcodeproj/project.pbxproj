@@ -83,6 +83,8 @@
 		5FA5AEB3203176A000377543 /* expand_vision_description.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5FA5AEAF203176A000377543 /* expand_vision_description.txt */; };
 		5FA5AEB4203176A000377543 /* text_highlighter_description.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5FA5AEB0203176A000377543 /* text_highlighter_description.txt */; };
 		5FA5AEB5203176A000377543 /* word_flash_description.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5FA5AEB1203176A000377543 /* word_flash_description.txt */; };
+		5FA5AEB82031816900377543 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA5AEB72031816900377543 /* ProfileViewController.swift */; };
+		5FA5AEBA203185DC00377543 /* LibraryPickerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA5AEB9203185DC00377543 /* LibraryPickerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -185,6 +187,8 @@
 		5FA5AEAF203176A000377543 /* expand_vision_description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = expand_vision_description.txt; sourceTree = "<group>"; };
 		5FA5AEB0203176A000377543 /* text_highlighter_description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = text_highlighter_description.txt; sourceTree = "<group>"; };
 		5FA5AEB1203176A000377543 /* word_flash_description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = word_flash_description.txt; sourceTree = "<group>"; };
+		5FA5AEB72031816900377543 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5FA5AEB9203185DC00377543 /* LibraryPickerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryPickerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +248,7 @@
 		5F15A2E020248FB10038039B /* FasteReader */ = {
 			isa = PBXGroup;
 			children = (
+				5FA5AEB62031814300377543 /* Profile */,
 				5FA5AEAD2031767800377543 /* Tool Descriptions */,
 				5F1D3F4D20304B4C00A05FB3 /* Tab Bar Customization */,
 				5F62A1D6202C7FD00020C626 /* Button Disclosure Indicator */,
@@ -316,6 +321,7 @@
 				5F9DF9AC2029A859002F14B3 /* Book.swift */,
 				5F9DF9B02029B1ED002F14B3 /* BookContentsTableViewController.swift */,
 				5F8ADBFF202D9D60002BCBDD /* BookChapter.swift */,
+				5FA5AEB9203185DC00377543 /* LibraryPickerProtocol.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -442,6 +448,14 @@
 				5FA5AEB1203176A000377543 /* word_flash_description.txt */,
 			);
 			path = "Tool Descriptions";
+			sourceTree = "<group>";
+		};
+		5FA5AEB62031814300377543 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5FA5AEB72031816900377543 /* ProfileViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -642,9 +656,11 @@
 				5F9DF9B12029B1ED002F14B3 /* BookContentsTableViewController.swift in Sources */,
 				5F9DF9AD2029A859002F14B3 /* Book.swift in Sources */,
 				5F8ADBFE202D8FF2002BCBDD /* TechniquesTextArea.swift in Sources */,
+				5FA5AEBA203185DC00377543 /* LibraryPickerProtocol.swift in Sources */,
 				5F8ADC00202D9D60002BCBDD /* BookChapter.swift in Sources */,
 				5F62A1D8202C80100020C626 /* ButtonDisclosureIndicator.swift in Sources */,
 				5F5B8B1F202700A700B4801A /* BookCell.swift in Sources */,
+				5FA5AEB82031816900377543 /* ProfileViewController.swift in Sources */,
 				5F1D3F4F20304B8300A05FB3 /* BookTabController.swift in Sources */,
 				5F15A2E220248FB10038039B /* AppDelegate.swift in Sources */,
 				5F5B8B1C2026FDD200B4801A /* LibraryCollectionViewController.swift in Sources */,

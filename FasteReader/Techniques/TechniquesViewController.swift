@@ -132,7 +132,7 @@ extension TechniquesViewController{
     
 }
 // MARK: Reading material
-extension TechniquesViewController{
+extension TechniquesViewController: LibraryPicker{
     //Switch to library collection view controller
     func chooseReadingMaterial(){
         let tabBar = tabBarController as! BookTabController
