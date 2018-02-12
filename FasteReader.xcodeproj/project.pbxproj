@@ -79,6 +79,10 @@
 		5F9DF9A720299AC4002F14B3 /* mind_chapter_6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF97D20299AC4002F14B3 /* mind_chapter_6.txt */; };
 		5F9DF9AD2029A859002F14B3 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9DF9AC2029A859002F14B3 /* Book.swift */; };
 		5F9DF9B12029B1ED002F14B3 /* BookContentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9DF9B02029B1ED002F14B3 /* BookContentsTableViewController.swift */; };
+		5FA5AEB2203176A000377543 /* diamond_description.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5FA5AEAE203176A000377543 /* diamond_description.txt */; };
+		5FA5AEB3203176A000377543 /* expand_vision_description.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5FA5AEAF203176A000377543 /* expand_vision_description.txt */; };
+		5FA5AEB4203176A000377543 /* text_highlighter_description.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5FA5AEB0203176A000377543 /* text_highlighter_description.txt */; };
+		5FA5AEB5203176A000377543 /* word_flash_description.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5FA5AEB1203176A000377543 /* word_flash_description.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +181,10 @@
 		5F9DF97D20299AC4002F14B3 /* mind_chapter_6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mind_chapter_6.txt; sourceTree = "<group>"; };
 		5F9DF9AC2029A859002F14B3 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		5F9DF9B02029B1ED002F14B3 /* BookContentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookContentsTableViewController.swift; sourceTree = "<group>"; };
+		5FA5AEAE203176A000377543 /* diamond_description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = diamond_description.txt; sourceTree = "<group>"; };
+		5FA5AEAF203176A000377543 /* expand_vision_description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = expand_vision_description.txt; sourceTree = "<group>"; };
+		5FA5AEB0203176A000377543 /* text_highlighter_description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = text_highlighter_description.txt; sourceTree = "<group>"; };
+		5FA5AEB1203176A000377543 /* word_flash_description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = word_flash_description.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +244,7 @@
 		5F15A2E020248FB10038039B /* FasteReader */ = {
 			isa = PBXGroup;
 			children = (
+				5FA5AEAD2031767800377543 /* Tool Descriptions */,
 				5F1D3F4D20304B4C00A05FB3 /* Tab Bar Customization */,
 				5F62A1D6202C7FD00020C626 /* Button Disclosure Indicator */,
 				5F0692D0202AF18A003A6F20 /* Techniques */,
@@ -424,6 +433,17 @@
 			path = "Seneca - Piece of Mind";
 			sourceTree = "<group>";
 		};
+		5FA5AEAD2031767800377543 /* Tool Descriptions */ = {
+			isa = PBXGroup;
+			children = (
+				5FA5AEAE203176A000377543 /* diamond_description.txt */,
+				5FA5AEAF203176A000377543 /* expand_vision_description.txt */,
+				5FA5AEB0203176A000377543 /* text_highlighter_description.txt */,
+				5FA5AEB1203176A000377543 /* word_flash_description.txt */,
+			);
+			path = "Tool Descriptions";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -551,6 +571,7 @@
 				5F9DF99620299AC4002F14B3 /* learning_chapter_1.txt in Resources */,
 				5F9DF99520299AC4002F14B3 /* spy_chapter_6.txt in Resources */,
 				5F11719F2025BE5300EE94B7 /* test.png in Resources */,
+				5FA5AEB5203176A000377543 /* word_flash_description.txt in Resources */,
 				5F15A314202493250038039B /* pile of books.jpg in Resources */,
 				5F9DF98D20299AC4002F14B3 /* create_chapter_4.txt in Resources */,
 				5F9DF98420299AC4002F14B3 /* origin_chapter_1.txt in Resources */,
@@ -562,6 +583,7 @@
 				5F9DF9A620299AC4002F14B3 /* mind_chapter_5.txt in Resources */,
 				5F9DF98320299AC4002F14B3 /* stick_chapter_6.txt in Resources */,
 				5F9DF99120299AC4002F14B3 /* spy_chapter_2.txt in Resources */,
+				5FA5AEB2203176A000377543 /* diamond_description.txt in Resources */,
 				5F15A2E920248FB10038039B /* Assets.xcassets in Resources */,
 				5F0692DF202AFAB7003A6F20 /* diamond.png in Resources */,
 				5F9DF98E20299AC4002F14B3 /* create_chapter_5.txt in Resources */,
@@ -573,11 +595,13 @@
 				5F9DF98220299AC4002F14B3 /* stick_chapter_5.txt in Resources */,
 				5F9DF99720299AC4002F14B3 /* learning_chapter_2.txt in Resources */,
 				5F9DF99C20299AC4002F14B3 /* theory_chapter_1.txt in Resources */,
+				5FA5AEB3203176A000377543 /* expand_vision_description.txt in Resources */,
 				5F9DF99F20299AC4002F14B3 /* theory_chapter_4.txt in Resources */,
 				5F11719D2025BE5300EE94B7 /* techniques.png in Resources */,
 				5F62A1CF202C4BAC0020C626 /* play.png in Resources */,
 				5F9DF97E20299AC4002F14B3 /* stick_chapter_1.txt in Resources */,
 				5F9DF99A20299AC4002F14B3 /* learning_chapter_5.txt in Resources */,
+				5FA5AEB4203176A000377543 /* text_highlighter_description.txt in Resources */,
 				5F9DF9A120299AC4002F14B3 /* theory_chapter_6.txt in Resources */,
 				5F5B8B192026FC2600B4801A /* book_cover_black.png in Resources */,
 				5F9DF98020299AC4002F14B3 /* stick_chapter_3.txt in Resources */,

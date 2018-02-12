@@ -46,9 +46,18 @@ class TechniquesViewController: UIViewController {
         stylizingPlayButton()
         
         currentReadingMaterial.disclosureButton(baseColor: view.tintColor)
-        setToolDescription(for: .wordFlash)
+        
+        populateToolDescriptions()
+        
         
         updateReadingMaterial()
+    }
+    
+    private func populateToolDescriptions(){
+        DispatchQueue.main.async {[unowned self] in
+            ToolsDescription.populateDescriptions()
+            self.setToolDescription(for: .wordFlash)
+        }
     }
     
     //Start the Session button

@@ -1,0 +1,5 @@
+Text is showed on the screen and the tracker highlights the words sequentially. Using the tracker improves your focus and prevents your eyes to “jump around” the text. To use this tool, just follow the tracker while reading.
+
+Benefits:
+Reduces back-skipping
+Improves focus
