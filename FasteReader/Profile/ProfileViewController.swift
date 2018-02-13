@@ -42,7 +42,7 @@ class ProfileViewController: UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(changeUsername))
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(pickPhoto))
         
-        
+        stylizingProfilePic()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -54,6 +54,12 @@ class ProfileViewController: UIViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         saveToUserDefaults()
+    }
+    
+    //Rounding image view
+    private func stylizingProfilePic(){
+        profileImage.layer.cornerRadius = profileImage.frame.width / 2
+        profileImage.clipsToBounds = true
     }
     
     //Reading material button
