@@ -117,10 +117,13 @@
                     <connections>
                         <outlet property="currentlyReading" destination="m7b-cv-ecD" id="Frg-jX-eku"/>
                         <outlet property="lineLength" destination="ZIX-1h-cx6" id="2Th-0s-G7c"/>
+                        <outlet property="lineLengthStepper" destination="7UB-cH-71G" id="yO2-gR-Rsb"/>
                         <outlet property="numberOfLines" destination="Hfu-6Z-LOl" id="bPx-DK-JyY"/>
+                        <outlet property="numberOfLinesStepper" destination="NEF-a5-8PK" id="mke-op-vbj"/>
                         <outlet property="profileImage" destination="wgV-1V-hJv" id="LlH-27-ycJ"/>
                         <outlet property="username" destination="hlc-y7-6xF" id="fFx-0C-TeT"/>
                         <outlet property="wordsPerMinute" destination="kXR-cZ-834" id="uIb-fr-DgP"/>
+                        <outlet property="wpmSlider" destination="RaM-zm-txo" id="kHI-FX-eNf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F0312CD2032E677000D00E8 /* DigitsOnlyString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0312CC2032E677000D00E8 /* DigitsOnlyString.swift */; };
 		5F0692D2202AF1D9003A6F20 /* TechniquesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0692D1202AF1D9003A6F20 /* TechniquesViewController.swift */; };
 		5F0692DF202AFAB7003A6F20 /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0692DB202AFAB6003A6F20 /* diamond.png */; };
 		5F0692E0202AFAB7003A6F20 /* memory.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0692DC202AFAB6003A6F20 /* memory.png */; };
@@ -107,6 +108,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F0312CC2032E677000D00E8 /* DigitsOnlyString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitsOnlyString.swift; sourceTree = "<group>"; };
 		5F0692D1202AF1D9003A6F20 /* TechniquesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechniquesViewController.swift; sourceTree = "<group>"; };
 		5F0692DB202AFAB6003A6F20 /* diamond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diamond.png; sourceTree = "<group>"; };
 		5F0692DC202AFAB6003A6F20 /* memory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = memory.png; sourceTree = "<group>"; };
@@ -220,6 +222,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F0312CB2032E651000D00E8 /* String Digits Only Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5F0312CC2032E677000D00E8 /* DigitsOnlyString.swift */,
+			);
+			path = "String Digits Only Extension";
+			sourceTree = "<group>";
+		};
 		5F0692D0202AF18A003A6F20 /* Techniques */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +262,7 @@
 		5F15A2E020248FB10038039B /* FasteReader */ = {
 			isa = PBXGroup;
 			children = (
+				5F0312CB2032E651000D00E8 /* String Digits Only Extension */,
 				5FA5AEB62031814300377543 /* Profile */,
 				5FA5AEAD2031767800377543 /* Tool Descriptions */,
 				5F1D3F4D20304B4C00A05FB3 /* Tab Bar Customization */,
@@ -670,6 +681,7 @@
 				5F5B8B1F202700A700B4801A /* BookCell.swift in Sources */,
 				5FA5AEB82031816900377543 /* ProfileViewController.swift in Sources */,
 				5F1D3F4F20304B8300A05FB3 /* BookTabController.swift in Sources */,
+				5F0312CD2032E677000D00E8 /* DigitsOnlyString.swift in Sources */,
 				5F15A2E220248FB10038039B /* AppDelegate.swift in Sources */,
 				5F5B8B1C2026FDD200B4801A /* LibraryCollectionViewController.swift in Sources */,
 				5F0692D2202AF1D9003A6F20 /* TechniquesViewController.swift in Sources */,

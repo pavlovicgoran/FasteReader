@@ -11,6 +11,14 @@ import UIKit
 // MARK: Properties and Initialization
 class ProfileViewController: UIViewController {
 
+    private let keyUsername = "USERNAME"
+    private let keyWPM = "WORDS_PER_MINUTE"
+    private let keyNumberOfLines = "NUMBER_OF_LINES"
+    private let keyLineLength = "LINE_LENGTH"
+    private let keyImage = "IMAGE"
+    
+    private let defaultProfileImage = "profile_empty"
+    
     @IBOutlet weak var currentlyReading: UIButton!
     
     @IBOutlet weak var lineLength: UILabel!
@@ -20,6 +28,9 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var profileImage: UIImageView!
     
+    @IBOutlet weak var wpmSlider: UISlider!
+    @IBOutlet weak var numberOfLinesStepper: UIStepper!
+    @IBOutlet weak var lineLengthStepper: UIStepper!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,12 +41,19 @@ class ProfileViewController: UIViewController {
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(changeUsername))
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(pickPhoto))
+        
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         updateReadingMaterial()
+        restoreState()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        saveToUserDefaults()
     }
     
     //Reading material button
@@ -47,18 +65,21 @@ class ProfileViewController: UIViewController {
     @IBAction func lineLengthChanged(_ sender: UIStepper) {
         lineLength.text = "Line Length: \(Int(sender.value))"
         Profile.sharedInstance.setLineLength(lineLength: Int(sender.value))
+        saveToUserDefaults()
     }
     
     //Number of lines stepper
     @IBAction func numberOfLinesChanged(_ sender: UIStepper) {
         numberOfLines.text = "Number of Lines: \(Int(sender.value))"
         Profile.sharedInstance.setNumberOfLines(numberOfLines: Int(sender.value))
+        saveToUserDefaults()
     }
     
     //Words per minute slider
     @IBAction func wordsPerMinuteChanged(_ sender: UISlider) {
         wordsPerMinute.text = "\(Int(sender.value))"
         Profile.sharedInstance.setWordsPerMinute(wpm: Int(sender.value))
+        saveToUserDefaults()
     }
     
     
@@ -94,6 +115,7 @@ extension ProfileViewController{
             if (!(ac.textFields![0].text?.isEmpty)!){
                 self.username.text = ac.textFields![0].text
                 Profile.sharedInstance.setUsername(username: self.username.text!)
+                self.saveToUserDefaults()
             }
         }))
         
@@ -140,7 +162,7 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
         
         
         profileImage.image = image
-        
+        saveToUserDefaults()
         Profile.sharedInstance.setProfileImage(image: image)
         
         dismiss(animated: true)
@@ -151,6 +173,53 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
         let documentsDirectory = paths[0]
         return documentsDirectory
     }
+}
+
+// MARK: Saving to User defaults
+
+extension ProfileViewController{
+    
+    private func saveToUserDefaults(){
+        
+        let defaults = UserDefaults.standard
+        defaults.set(lineLength.text, forKey: keyLineLength)
+        defaults.set(numberOfLines.text, forKey: keyNumberOfLines)
+        defaults.set(username.text, forKey: keyUsername)
+        defaults.set(wordsPerMinute.text, forKey: keyWPM)
+        
+        if let profilePic = profileImage.image{
+            defaults.set(UIImageJPEGRepresentation(profilePic, 0.8), forKey: keyImage)
+        }
+        
+    }
+    
+    private func restoreState(){
+        let defaults = UserDefaults.standard
+        lineLength.text = defaults.string(forKey: keyLineLength)
+        numberOfLines.text = defaults.string(forKey: keyNumberOfLines)
+        username.text = defaults.string(forKey: keyUsername)
+        wordsPerMinute.text = defaults.string(forKey: keyWPM)
+        
+         //profileImage.image = defaults.object(forKey: keyImage) as? UIImage
+        if let imgData = defaults.object(forKey: keyImage) as? Data{
+            let img = UIImage(data: imgData)
+            profileImage.image = img
+        }else{
+            profileImage.image = UIImage(named: defaultProfileImage)
+        }
+        
+        restoreSliderAndSteppers()
+    }
+    
+    private func restoreSliderAndSteppers(){
+        wpmSlider.value = Float(wordsPerMinute.text!)!
+        let lineLengthValue = Int((lineLength.text?.digitsOnly())!)
+        lineLengthStepper.value = Double(lineLengthValue!)
+        let numberOfLinesValue = Int((numberOfLines.text?.digitsOnly())!)
+        numberOfLinesStepper.value = Double(numberOfLinesValue!)
+
+    }
+    
 }
 
 

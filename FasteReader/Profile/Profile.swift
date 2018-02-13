@@ -23,7 +23,11 @@ class Profile: NSObject {
     static let sharedInstance = Profile()
     private override init() {}
     
+    
+    
 }
+
+
 // MARK: Getters and Setters
 extension Profile{
     
@@ -35,7 +39,7 @@ extension Profile{
         return username
     }
     
-    public func gerWordsPerMinute() -> Int{
+    public func getWordsPerMinute() -> Int{
         return wordsPerMinute
     }
     
