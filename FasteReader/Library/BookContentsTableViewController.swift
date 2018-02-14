@@ -29,6 +29,8 @@ class BookContentsTableViewController: UITableViewController {
         initialazeBookContentsArray()
     }
     
+    
+    
     private func initialazeBookContentsArray(){
         
         for i in 0 ..< numberOfAvailableChapters{
@@ -64,6 +66,7 @@ extension BookContentsTableViewController{
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         setReadingChapter(chapterNumber: (indexPath.row + 1))
+        BookChapter.saveCurrentChapter()
         
         let ac = UIAlertController(title: "\(bookToDisplay.getAuthor()) - \(bookToDisplay.getTitle()) Chapter \(indexPath.row + 1) Loaded", message: nil, preferredStyle: .alert)
         

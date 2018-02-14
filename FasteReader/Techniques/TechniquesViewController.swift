@@ -53,6 +53,17 @@ class TechniquesViewController: UIViewController {
         updateReadingMaterial()
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        BookChapter.saveCurrentChapter()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        BookChapter.restoreCurrentChapter()
+        updateReadingMaterial()
+    }
+    
     private func populateToolDescriptions(){
         DispatchQueue.main.async {[unowned self] in
             ToolsDescription.populateDescriptions()
@@ -146,7 +157,7 @@ extension TechniquesViewController: LibraryPicker{
     }
 }
 
-//MARK: TextArea management
+// MARK: TextArea management
 extension TechniquesViewController{
     
     func setToolDescription(for tool: ToolbarIdentifier){
@@ -169,6 +180,12 @@ extension TechniquesViewController{
     
     
 }
+
+
+
+
+
+
 
 
 

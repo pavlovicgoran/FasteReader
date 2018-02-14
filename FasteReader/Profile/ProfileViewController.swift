@@ -197,6 +197,8 @@ extension ProfileViewController{
             defaults.set(UIImageJPEGRepresentation(profilePic, 0.8), forKey: keyImage)
         }
         
+        BookChapter.saveCurrentChapter()
+        
     }
     
     private func restoreState(){
@@ -215,6 +217,9 @@ extension ProfileViewController{
         }
         
         restoreSliderAndSteppers()
+        
+        BookChapter.restoreCurrentChapter()
+        updateReadingMaterial()
     }
     
     private func restoreSliderAndSteppers(){
