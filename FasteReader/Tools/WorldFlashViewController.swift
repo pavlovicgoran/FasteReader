@@ -13,6 +13,7 @@ class WorldFlashViewController: UIViewController {
     var wordsPerMinute: Int!
     var book: BookPrefixes!
     var chapterNumber: Int!
+    var textToRead = [String]()
     
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var progressMeter: UIProgressView!
@@ -20,20 +21,19 @@ class WorldFlashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Word Flash"
+        
         stylizingPlayButton()
         stylizingProgressMeter()
         initialize()
-        
+        initialazeText()
+        print("aaaaa")
     }
     
     private func initialize(){
         wordsPerMinute = Profile.sharedInstance.getWordsPerMinute()
         book = BookChapter.getBook()
         chapterNumber = BookChapter.getChapterNumber()
-    }
-    
-    private func initialazeTextToRead(){
-        
     }
     
 }
@@ -46,6 +46,13 @@ extension WorldFlashViewController: ReadingTool{
     }
     
     func initialazeText() {
+        let textLoader = TextLoader(book: book, chapterNumber: chapterNumber)
+        print(textLoader.textFileName)
+        
+        textToRead = textLoader.loadText()!
+        print("**************************************")
+        print(textToRead)
+        print("**************************************")
         
     }
     

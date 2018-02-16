@@ -36,6 +36,7 @@
 		5F62A1DA202C830C0020C626 /* disclosure_indicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F62A1D9202C830C0020C626 /* disclosure_indicator.png */; };
 		5F6491812036C91F00FDBF83 /* ReadingTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6491802036C91F00FDBF83 /* ReadingTools.swift */; };
 		5F6491832036CCD100FDBF83 /* WorldFlashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6491822036CCD100FDBF83 /* WorldFlashViewController.swift */; };
+		5F6491852037098C00FDBF83 /* TextLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6491842037098C00FDBF83 /* TextLoader.swift */; };
 		5F8ADBFE202D8FF2002BCBDD /* TechniquesTextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8ADBFD202D8FF2002BCBDD /* TechniquesTextArea.swift */; };
 		5F8ADC00202D9D60002BCBDD /* BookChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8ADBFF202D9D60002BCBDD /* BookChapter.swift */; };
 		5F9DF97E20299AC4002F14B3 /* stick_chapter_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF94E20299AC4002F14B3 /* stick_chapter_1.txt */; };
@@ -145,6 +146,7 @@
 		5F62A1D9202C830C0020C626 /* disclosure_indicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure_indicator.png; sourceTree = "<group>"; };
 		5F6491802036C91F00FDBF83 /* ReadingTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingTools.swift; sourceTree = "<group>"; };
 		5F6491822036CCD100FDBF83 /* WorldFlashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldFlashViewController.swift; sourceTree = "<group>"; };
+		5F6491842037098C00FDBF83 /* TextLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLoader.swift; sourceTree = "<group>"; };
 		5F8ADBFD202D8FF2002BCBDD /* TechniquesTextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechniquesTextArea.swift; sourceTree = "<group>"; };
 		5F8ADBFF202D9D60002BCBDD /* BookChapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookChapter.swift; sourceTree = "<group>"; };
 		5F9DF94E20299AC4002F14B3 /* stick_chapter_1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stick_chapter_1.txt; sourceTree = "<group>"; };
@@ -360,6 +362,7 @@
 			children = (
 				5F6491802036C91F00FDBF83 /* ReadingTools.swift */,
 				5F6491822036CCD100FDBF83 /* WorldFlashViewController.swift */,
+				5F6491842037098C00FDBF83 /* TextLoader.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -700,6 +703,7 @@
 				5F15A2E220248FB10038039B /* AppDelegate.swift in Sources */,
 				5F5B8B1C2026FDD200B4801A /* LibraryCollectionViewController.swift in Sources */,
 				5F6491832036CCD100FDBF83 /* WorldFlashViewController.swift in Sources */,
+				5F6491852037098C00FDBF83 /* TextLoader.swift in Sources */,
 				5F0692D2202AF1D9003A6F20 /* TechniquesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -131,7 +131,7 @@ extension TechniquesViewController{
 extension TechniquesViewController{
     
     private func startTheTool(tool: ToolbarIdentifier){
-        print("Active tool: \(activeTool)")
+        
         
         switch activeTool {
         case .wordFlash:
