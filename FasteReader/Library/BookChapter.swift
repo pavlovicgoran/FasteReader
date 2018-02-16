@@ -82,6 +82,14 @@ extension BookChapter{
             return
         }
     }
+    
+    static func getBook() -> BookPrefixes{
+        return book
+    }
+    
+    static func getChapterNumber() -> Int{
+        return chapterNumber
+    }
 }
 
 

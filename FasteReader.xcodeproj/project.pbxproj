@@ -34,6 +34,8 @@
 		5F62A1D3202C53D20020C626 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F62A1D2202C53D20020C626 /* stop.png */; };
 		5F62A1D8202C80100020C626 /* ButtonDisclosureIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F62A1D7202C80100020C626 /* ButtonDisclosureIndicator.swift */; };
 		5F62A1DA202C830C0020C626 /* disclosure_indicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F62A1D9202C830C0020C626 /* disclosure_indicator.png */; };
+		5F6491812036C91F00FDBF83 /* ReadingTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6491802036C91F00FDBF83 /* ReadingTools.swift */; };
+		5F6491832036CCD100FDBF83 /* WorldFlashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6491822036CCD100FDBF83 /* WorldFlashViewController.swift */; };
 		5F8ADBFE202D8FF2002BCBDD /* TechniquesTextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8ADBFD202D8FF2002BCBDD /* TechniquesTextArea.swift */; };
 		5F8ADC00202D9D60002BCBDD /* BookChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8ADBFF202D9D60002BCBDD /* BookChapter.swift */; };
 		5F9DF97E20299AC4002F14B3 /* stick_chapter_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF94E20299AC4002F14B3 /* stick_chapter_1.txt */; };
@@ -141,6 +143,8 @@
 		5F62A1D2202C53D20020C626 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
 		5F62A1D7202C80100020C626 /* ButtonDisclosureIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDisclosureIndicator.swift; sourceTree = "<group>"; };
 		5F62A1D9202C830C0020C626 /* disclosure_indicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure_indicator.png; sourceTree = "<group>"; };
+		5F6491802036C91F00FDBF83 /* ReadingTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingTools.swift; sourceTree = "<group>"; };
+		5F6491822036CCD100FDBF83 /* WorldFlashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldFlashViewController.swift; sourceTree = "<group>"; };
 		5F8ADBFD202D8FF2002BCBDD /* TechniquesTextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechniquesTextArea.swift; sourceTree = "<group>"; };
 		5F8ADBFF202D9D60002BCBDD /* BookChapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookChapter.swift; sourceTree = "<group>"; };
 		5F9DF94E20299AC4002F14B3 /* stick_chapter_1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stick_chapter_1.txt; sourceTree = "<group>"; };
@@ -262,6 +266,7 @@
 		5F15A2E020248FB10038039B /* FasteReader */ = {
 			isa = PBXGroup;
 			children = (
+				5F64917F2036C80600FDBF83 /* Tools */,
 				5F0312CB2032E651000D00E8 /* String Digits Only Extension */,
 				5FA5AEB62031814300377543 /* Profile */,
 				5FA5AEAD2031767800377543 /* Tool Descriptions */,
@@ -348,6 +353,15 @@
 				5F62A1D7202C80100020C626 /* ButtonDisclosureIndicator.swift */,
 			);
 			path = "Button Disclosure Indicator";
+			sourceTree = "<group>";
+		};
+		5F64917F2036C80600FDBF83 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				5F6491802036C91F00FDBF83 /* ReadingTools.swift */,
+				5F6491822036CCD100FDBF83 /* WorldFlashViewController.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		5F9DF94C20299AC4002F14B3 /* Books */ = {
@@ -682,8 +696,10 @@
 				5FA5AEB82031816900377543 /* ProfileViewController.swift in Sources */,
 				5F1D3F4F20304B8300A05FB3 /* BookTabController.swift in Sources */,
 				5F0312CD2032E677000D00E8 /* DigitsOnlyString.swift in Sources */,
+				5F6491812036C91F00FDBF83 /* ReadingTools.swift in Sources */,
 				5F15A2E220248FB10038039B /* AppDelegate.swift in Sources */,
 				5F5B8B1C2026FDD200B4801A /* LibraryCollectionViewController.swift in Sources */,
+				5F6491832036CCD100FDBF83 /* WorldFlashViewController.swift in Sources */,
 				5F0692D2202AF1D9003A6F20 /* TechniquesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

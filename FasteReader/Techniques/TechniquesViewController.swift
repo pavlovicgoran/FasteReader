@@ -24,6 +24,8 @@ class TechniquesViewController: UIViewController {
     let playPictureName = "play"
     let stopPictureName = "stop"
     
+    let worldFlashView = "worldFlash"
+    
     let toolNameWordFlash = "Word Flash"
     let toolNameDiamond = "Diamond Highlighter"
     let toolNameTextHighlighter = "Text Highlighter"
@@ -130,6 +132,24 @@ extension TechniquesViewController{
     
     private func startTheTool(tool: ToolbarIdentifier){
         print("Active tool: \(activeTool)")
+        
+        switch activeTool {
+        case .wordFlash:
+            
+            let worldFlash = storyboard?.instantiateViewController(withIdentifier: worldFlashView) as! WorldFlashViewController
+            
+            navigationController?.pushViewController(worldFlash, animated: true)
+            
+            break
+        case .diamond:
+            break
+        case .textHighlight:
+            break
+        case .extendVision:
+            break
+        default:
+            print("start tool - another tool exists")
+        }
     }
     
     private func stylizingPlayButton(){

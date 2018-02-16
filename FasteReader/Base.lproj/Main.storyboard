@@ -133,6 +133,61 @@
             </objects>
             <point key="canvasLocation" x="1204" y="-385.45727136431788"/>
         </scene>
+        <!--World Flash-->
+        <scene sceneID="TNo-tm-YaV">
+            <objects>
+                <viewController storyboardIdentifier="worldFlash" hidesBottomBarWhenPushed="YES" id="7lY-jh-Jf1" userLabel="World Flash" customClass="WorldFlashViewController" customModule="FasteReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1cY-gK-tih">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3F9-ON-1D8">
+                                <rect key="frame" x="10" y="577" width="355" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.64705882349999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ZZO-xp-NLr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.95821445586192544" green="1" blue="0.95632215349248673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dFZ-xT-ICU">
+                                <rect key="frame" x="10" y="638" width="355" height="2"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When you are ready" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wng-Xq-bBX">
+                                <rect key="frame" x="10" y="72" width="355" height="497"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3F9-ON-1D8" firstAttribute="leading" secondItem="Bjf-87-kHh" secondAttribute="leading" constant="10" id="0pu-Nt-900"/>
+                            <constraint firstItem="Bjf-87-kHh" firstAttribute="bottom" secondItem="dFZ-xT-ICU" secondAttribute="bottom" constant="27" id="GRA-JL-Sax"/>
+                            <constraint firstItem="dFZ-xT-ICU" firstAttribute="leading" secondItem="1cY-gK-tih" secondAttribute="leading" constant="10" id="NDN-rt-ckv"/>
+                            <constraint firstItem="Bjf-87-kHh" firstAttribute="trailing" secondItem="Wng-Xq-bBX" secondAttribute="trailing" constant="10" id="PTJ-QP-R4s"/>
+                            <constraint firstAttribute="trailing" secondItem="dFZ-xT-ICU" secondAttribute="trailing" constant="10" id="Sh2-ka-Sa7"/>
+                            <constraint firstItem="dFZ-xT-ICU" firstAttribute="top" secondItem="3F9-ON-1D8" secondAttribute="bottom" constant="21" id="UEh-NU-JlI"/>
+                            <constraint firstItem="Bjf-87-kHh" firstAttribute="trailing" secondItem="3F9-ON-1D8" secondAttribute="trailing" constant="10" id="WMj-WJ-TNy"/>
+                            <constraint firstItem="Wng-Xq-bBX" firstAttribute="leading" secondItem="Bjf-87-kHh" secondAttribute="leading" constant="10" id="faY-VN-sfd"/>
+                            <constraint firstItem="Wng-Xq-bBX" firstAttribute="top" secondItem="Bjf-87-kHh" secondAttribute="top" constant="8" id="qmG-OA-s9m"/>
+                            <constraint firstItem="3F9-ON-1D8" firstAttribute="top" secondItem="Wng-Xq-bBX" secondAttribute="bottom" constant="8" id="rwV-bN-mjk"/>
+                            <constraint firstItem="3F9-ON-1D8" firstAttribute="centerX" secondItem="1cY-gK-tih" secondAttribute="centerX" id="vjG-kc-45k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bjf-87-kHh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dc7-46-OAy"/>
+                    <connections>
+                        <outlet property="playButton" destination="3F9-ON-1D8" id="cTG-QT-WAZ"/>
+                        <outlet property="progressMeter" destination="dFZ-xT-ICU" id="t5B-dP-GyU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NBU-xs-QTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3194.4000000000001" y="-188.45577211394306"/>
+        </scene>
         <!--Book Tab Controller-->
         <scene sceneID="11F-bZ-NGd">
             <objects>
@@ -486,6 +541,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iyb-gc-XO9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-996" y="1675"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="h78-kX-fQh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="at3-XR-tTf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ruw-8G-01f">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7lY-jh-Jf1" kind="relationship" relationship="rootViewController" id="kXu-4N-w0A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vee-HO-tXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2535" y="-188"/>
         </scene>
     </scenes>
     <resources>
