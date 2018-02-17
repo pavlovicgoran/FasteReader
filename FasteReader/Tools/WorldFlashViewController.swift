@@ -27,7 +27,7 @@ class WorldFlashViewController: UIViewController {
         stylizingProgressMeter()
         initialize()
         initialazeText()
-        print("aaaaa")
+        
     }
     
     private func initialize(){
@@ -50,10 +50,7 @@ extension WorldFlashViewController: ReadingTool{
         print(textLoader.textFileName)
         
         textToRead = textLoader.loadText()!
-        print("**************************************")
         print(textToRead)
-        print("**************************************")
-        
     }
     
     
