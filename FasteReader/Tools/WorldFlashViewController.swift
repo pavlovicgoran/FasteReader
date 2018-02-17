@@ -87,9 +87,9 @@ extension WorldFlashViewController{
         playButton.setAttributedTitle(highlightedAttributedString, for: .highlighted)
         
         let disabledAttributedString = NSAttributedString(string: "READING...", attributes:
-            [NSAttributedStringKey.foregroundColor : UIColor.red])
+            [NSAttributedStringKey.foregroundColor : UIColor.white])
         playButton.setAttributedTitle(disabledAttributedString, for: .disabled)
-        
+        playButton.setBackgroundColor(color: .red, forState: .disabled)
         
     }
     

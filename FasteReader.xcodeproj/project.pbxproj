@@ -83,6 +83,7 @@
 		5F9DF9A720299AC4002F14B3 /* mind_chapter_6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF97D20299AC4002F14B3 /* mind_chapter_6.txt */; };
 		5F9DF9AD2029A859002F14B3 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9DF9AC2029A859002F14B3 /* Book.swift */; };
 		5F9DF9B12029B1ED002F14B3 /* BookContentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9DF9B02029B1ED002F14B3 /* BookContentsTableViewController.swift */; };
+		5FA0876D203830B3005D9810 /* ButtonBackgroundForState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA0876C203830B3005D9810 /* ButtonBackgroundForState.swift */; };
 		5FA5AEB2203176A000377543 /* diamond_description.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5FA5AEAE203176A000377543 /* diamond_description.txt */; };
 		5FA5AEB3203176A000377543 /* expand_vision_description.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5FA5AEAF203176A000377543 /* expand_vision_description.txt */; };
 		5FA5AEB4203176A000377543 /* text_highlighter_description.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5FA5AEB0203176A000377543 /* text_highlighter_description.txt */; };
@@ -193,6 +194,7 @@
 		5F9DF97D20299AC4002F14B3 /* mind_chapter_6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mind_chapter_6.txt; sourceTree = "<group>"; };
 		5F9DF9AC2029A859002F14B3 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		5F9DF9B02029B1ED002F14B3 /* BookContentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookContentsTableViewController.swift; sourceTree = "<group>"; };
+		5FA0876C203830B3005D9810 /* ButtonBackgroundForState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBackgroundForState.swift; sourceTree = "<group>"; };
 		5FA5AEAE203176A000377543 /* diamond_description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = diamond_description.txt; sourceTree = "<group>"; };
 		5FA5AEAF203176A000377543 /* expand_vision_description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = expand_vision_description.txt; sourceTree = "<group>"; };
 		5FA5AEB0203176A000377543 /* text_highlighter_description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = text_highlighter_description.txt; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				5F62A1D7202C80100020C626 /* ButtonDisclosureIndicator.swift */,
+				5FA0876C203830B3005D9810 /* ButtonBackgroundForState.swift */,
 			);
 			path = "Button Expansions";
 			sourceTree = "<group>";
@@ -699,6 +702,7 @@
 				5FA5AEB82031816900377543 /* ProfileViewController.swift in Sources */,
 				5F1D3F4F20304B8300A05FB3 /* BookTabController.swift in Sources */,
 				5F0312CD2032E677000D00E8 /* DigitsOnlyString.swift in Sources */,
+				5FA0876D203830B3005D9810 /* ButtonBackgroundForState.swift in Sources */,
 				5F6491812036C91F00FDBF83 /* ReadingTools.swift in Sources */,
 				5F15A2E220248FB10038039B /* AppDelegate.swift in Sources */,
 				5F5B8B1C2026FDD200B4801A /* LibraryCollectionViewController.swift in Sources */,
