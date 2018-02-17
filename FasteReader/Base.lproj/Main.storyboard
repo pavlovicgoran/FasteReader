@@ -148,7 +148,7 @@
                                     <constraint firstAttribute="height" constant="40" id="ZZO-xp-NLr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                <state key="normal" title="Start">
+                                <state key="normal" title="START READING">
                                     <color key="titleColor" red="0.95821445586192544" green="1" blue="0.95632215349248673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>

@@ -10,10 +10,13 @@ import UIKit
 // MARK: Properties and Initialization
 class WorldFlashViewController: UIViewController {
     
-    var wordsPerMinute: Int!
-    var book: BookPrefixes!
-    var chapterNumber: Int!
-    var textToRead = [String]()
+    private var wordsPerMinute: Int!
+    private var book: BookPrefixes!
+    private var chapterNumber: Int!
+    private var textToRead = [String]()
+    private var timer = Timer()
+    private let totalTime = 60
+    private var passedTime = 0
     
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var progressMeter: UIProgressView!
@@ -47,14 +50,44 @@ extension WorldFlashViewController{
     private func play(){
         hideNavBar()
         toggleButton()
+        startTimer()
     }
     
     private func hideNavBar(){
        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
+    private func showNavBar(){
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
     private func toggleButton(){
         playButton.isEnabled = !playButton.isEnabled
+    }
+    
+    private func startTimer(){
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateProgressMeter), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateProgressMeter(){
+        passedTime += 1
+        let completed = Float(passedTime) / Float(totalTime)
+        progressMeter.setProgress(completed, animated: true)
+        timeExpired()
+    }
+    
+    private func timeExpired(){
+        if passedTime >= totalTime{
+            timer.invalidate()
+            reset()
+            toggleButton()
+            showNavBar()
+        }
+    }
+    
+    private func reset(){
+        passedTime = 0
+        progressMeter.progress = 0.0
     }
 }
 
@@ -82,7 +115,7 @@ extension WorldFlashViewController{
         
         playButton.layer.cornerRadius = 4
         
-        let highlightedAttributedString = NSAttributedString(string: "Start", attributes: [NSAttributedStringKey.foregroundColor : UIColor.darkGray])
+        let highlightedAttributedString = NSAttributedString(string: "START READING", attributes: [NSAttributedStringKey.foregroundColor : UIColor.darkGray])
         
         playButton.setAttributedTitle(highlightedAttributedString, for: .highlighted)
         
@@ -95,6 +128,7 @@ extension WorldFlashViewController{
     
     private func stylizingProgressMeter(){
         progressMeter.transform = CGAffineTransform(scaleX: 1.0, y: 5.0)
+        progressMeter.progress = 0.0
     }
 }
 
