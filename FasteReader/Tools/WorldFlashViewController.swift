@@ -10,16 +10,26 @@ import UIKit
 // MARK: Properties and Initialization
 class WorldFlashViewController: UIViewController {
     
+    private let MIN_TO_SEC = 60.0
+    private let SEC_TO_MILSEC = 1000.0
+    
     private var wordsPerMinute: Int!
     private var book: BookPrefixes!
     private var chapterNumber: Int!
     private var textToRead = [String]()
-    private var timer = Timer()
+    
+    private var timerProgress = Timer()
+    private var timerReading = Timer()
+    
     private let totalTime = 60
     private var passedTime = 0
+    private var wordIndex = 0
+    
+    private var delay = 0.0
     
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var progressMeter: UIProgressView!
+    @IBOutlet weak var showLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +47,8 @@ class WorldFlashViewController: UIViewController {
         wordsPerMinute = Profile.sharedInstance.getWordsPerMinute()
         book = BookChapter.getBook()
         chapterNumber = BookChapter.getChapterNumber()
+        
+        delay = (SEC_TO_MILSEC / (Double(wordsPerMinute) / (MIN_TO_SEC))) * 0.001
     }
     
     @IBAction func play(_ sender: UIButton) {
@@ -51,6 +63,7 @@ extension WorldFlashViewController{
         hideNavBar()
         toggleButton()
         startTimer()
+        read()
     }
     
     private func hideNavBar(){
@@ -66,7 +79,7 @@ extension WorldFlashViewController{
     }
     
     private func startTimer(){
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateProgressMeter), userInfo: nil, repeats: true)
+        timerProgress = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateProgressMeter), userInfo: nil, repeats: true)
     }
     
     @objc func updateProgressMeter(){
@@ -78,16 +91,24 @@ extension WorldFlashViewController{
     
     private func timeExpired(){
         if passedTime >= totalTime{
-            timer.invalidate()
+            
             reset()
-            toggleButton()
-            showNavBar()
         }
     }
     
     private func reset(){
+        timerProgress.invalidate()
+        timerReading.invalidate()
+        toggleButton()
+        showNavBar()
         passedTime = 0
         progressMeter.progress = 0.0
+        wordIndex = 0
+        setOverLabel()
+    }
+    
+    private func setOverLabel(){
+        showLabel.text = "Congratulations \n Choose another text to read"
     }
 }
 
@@ -95,15 +116,32 @@ extension WorldFlashViewController{
 extension WorldFlashViewController: ReadingTool{
     
     func read() {
+        print("usao u read")
+        timerReading = Timer.scheduledTimer(timeInterval: delay, target: self, selector: #selector(showingWords), userInfo: nil, repeats: true)
+        print(delay)
+    }
+    
+    @objc func showingWords(){
+       // print("wordIndex: \(wordIndex)")
+        guard wordIndex < textToRead.count else {
+            print("Reading over")
+            reset()
+            return
+        }
+        
+        let wordToShow = textToRead[wordIndex]
+        wordIndex += 1
+        showLabel.text = wordToShow
         
     }
     
+    
     func initialazeText() {
         let textLoader = TextLoader(book: book, chapterNumber: chapterNumber)
-        print(textLoader.textFileName)
+        //print(textLoader.textFileName)
         
         textToRead = textLoader.loadText()!
-        print(textToRead)
+       // print(textToRead)
     }
     
     

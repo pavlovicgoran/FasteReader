@@ -185,6 +185,7 @@
                     <connections>
                         <outlet property="playButton" destination="3F9-ON-1D8" id="cTG-QT-WAZ"/>
                         <outlet property="progressMeter" destination="dFZ-xT-ICU" id="t5B-dP-GyU"/>
+                        <outlet property="showLabel" destination="Wng-Xq-bBX" id="F8h-4c-y50"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NBU-xs-QTO" userLabel="First Responder" sceneMemberID="firstResponder"/>

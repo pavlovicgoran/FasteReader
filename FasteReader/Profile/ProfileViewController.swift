@@ -216,6 +216,8 @@ extension ProfileViewController{
             profileImage.image = UIImage(named: defaultProfileImage)
         }
         
+        
+        
         restoreSliderAndSteppers()
         
         BookChapter.restoreCurrentChapter()
@@ -229,6 +231,13 @@ extension ProfileViewController{
         let numberOfLinesValue = Int((numberOfLines.text?.digitsOnly())!)
         numberOfLinesStepper.value = Double(numberOfLinesValue!)
 
+        restoreProfileInstance(wpm: Int(wpmSlider.value), lineLenght: lineLengthValue!, numberOfLines: numberOfLinesValue!)
+    }
+    
+    private func restoreProfileInstance(wpm: Int, lineLenght: Int, numberOfLines: Int){
+        Profile.sharedInstance.setWordsPerMinute(wpm: wpm)
+        Profile.sharedInstance.setLineLength(lineLength: lineLenght)
+        Profile.sharedInstance.setNumberOfLines(numberOfLines: numberOfLines)
     }
     
 }
