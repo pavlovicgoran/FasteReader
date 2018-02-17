@@ -203,10 +203,10 @@ extension ProfileViewController{
     
     private func restoreState(){
         let defaults = UserDefaults.standard
-        lineLength.text = defaults.string(forKey: keyLineLength)
-        numberOfLines.text = defaults.string(forKey: keyNumberOfLines)
+        lineLength.text = defaults.string(forKey: keyLineLength) ?? "Line Length: 1"
+        numberOfLines.text = defaults.string(forKey: keyNumberOfLines) ?? "Number of Lines: 1"
         username.text = defaults.string(forKey: keyUsername)
-        wordsPerMinute.text = defaults.string(forKey: keyWPM)
+        wordsPerMinute.text = defaults.string(forKey: keyWPM) ?? "500"
         
          //profileImage.image = defaults.object(forKey: keyImage) as? UIImage
         if let imgData = defaults.object(forKey: keyImage) as? Data{
