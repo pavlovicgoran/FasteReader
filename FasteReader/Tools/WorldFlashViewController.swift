@@ -36,6 +36,26 @@ class WorldFlashViewController: UIViewController {
         chapterNumber = BookChapter.getChapterNumber()
     }
     
+    @IBAction func play(_ sender: UIButton) {
+        play()
+    }
+    
+}
+// MARK: START READING
+extension WorldFlashViewController{
+    
+    private func play(){
+        hideNavBar()
+        toggleButton()
+    }
+    
+    private func hideNavBar(){
+       navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    private func toggleButton(){
+        playButton.isEnabled = !playButton.isEnabled
+    }
 }
 
 // MARK: Reading tool protocol
@@ -66,12 +86,24 @@ extension WorldFlashViewController{
         
         playButton.setAttributedTitle(highlightedAttributedString, for: .highlighted)
         
+        let disabledAttributedString = NSAttributedString(string: "READING...", attributes:
+            [NSAttributedStringKey.foregroundColor : UIColor.red])
+        playButton.setAttributedTitle(disabledAttributedString, for: .disabled)
+        
+        
     }
     
     private func stylizingProgressMeter(){
         progressMeter.transform = CGAffineTransform(scaleX: 1.0, y: 5.0)
     }
 }
+
+
+
+
+
+
+
 
 
 

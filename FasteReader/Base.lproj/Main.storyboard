@@ -151,6 +151,9 @@
                                 <state key="normal" title="Start">
                                     <color key="titleColor" red="0.95821445586192544" green="1" blue="0.95632215349248673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="play:" destination="7lY-jh-Jf1" eventType="touchUpInside" id="Mok-I1-FeB"/>
+                                </connections>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dFZ-xT-ICU">
                                 <rect key="frame" x="10" y="638" width="355" height="2"/>

@@ -32,6 +32,5 @@ class TextLoader{
         
         return nil
     }
-    
-    
+
 }

@@ -273,7 +273,7 @@
 				5FA5AEB62031814300377543 /* Profile */,
 				5FA5AEAD2031767800377543 /* Tool Descriptions */,
 				5F1D3F4D20304B4C00A05FB3 /* Tab Bar Customization */,
-				5F62A1D6202C7FD00020C626 /* Button Disclosure Indicator */,
+				5F62A1D6202C7FD00020C626 /* Button Expansions */,
 				5F0692D0202AF18A003A6F20 /* Techniques */,
 				5F9DF94C20299AC4002F14B3 /* Books */,
 				5F5B8B1D2027004B00B4801A /* Library */,
@@ -349,12 +349,12 @@
 			path = Library;
 			sourceTree = "<group>";
 		};
-		5F62A1D6202C7FD00020C626 /* Button Disclosure Indicator */ = {
+		5F62A1D6202C7FD00020C626 /* Button Expansions */ = {
 			isa = PBXGroup;
 			children = (
 				5F62A1D7202C80100020C626 /* ButtonDisclosureIndicator.swift */,
 			);
-			path = "Button Disclosure Indicator";
+			path = "Button Expansions";
 			sourceTree = "<group>";
 		};
 		5F64917F2036C80600FDBF83 /* Tools */ = {
