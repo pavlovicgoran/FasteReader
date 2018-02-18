@@ -14,7 +14,7 @@ class Profile: NSObject {
     private let maximumWPM = 750
     
     private var username = ""
-    private var wordsPerMinute = 250
+    private var wordsPerMinute = 500
     private var numberOfLines = 1
     private var lineLength = 1
     
