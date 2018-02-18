@@ -99,16 +99,23 @@ extension WorldFlashViewController{
     private func reset(){
         timerProgress.invalidate()
         timerReading.invalidate()
-        toggleButton()
-        showNavBar()
-        passedTime = 0
-        progressMeter.progress = 0.0
-        wordIndex = 0
+        
         setOverLabel()
+        returnToTechniquesView()
     }
     
     private func setOverLabel(){
-        showLabel.text = "Congratulations \n Choose another text to read"
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){[unowned self] in
+            self.showLabel.text = "Congratulations \n Choose another text to read"
+        }
+        
+    }
+    
+    private func returnToTechniquesView(){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1){[unowned self] in
+                self.showNavBar()
+                self.navigationController?.popViewController(animated: true)
+        }
     }
 }
 
