@@ -25,6 +25,7 @@ class TechniquesViewController: UIViewController {
     let stopPictureName = "stop"
     
     let worldFlashView = "worldFlash"
+    let diamondHighlighterView = "diamondHighlighter"
     
     let toolNameWordFlash = "Word Flash"
     let toolNameDiamond = "Diamond Highlighter"
@@ -142,6 +143,9 @@ extension TechniquesViewController{
             
             break
         case .diamond:
+            let diamondHighlighter = storyboard?.instantiateViewController(withIdentifier: diamondHighlighterView) as! DiamondHighlighterUIViewController
+            
+            navigationController?.pushViewController(diamondHighlighter, animated: true)
             break
         case .textHighlight:
             break

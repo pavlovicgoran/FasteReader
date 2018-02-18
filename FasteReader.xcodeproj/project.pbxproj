@@ -37,6 +37,7 @@
 		5F6491812036C91F00FDBF83 /* ReadingTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6491802036C91F00FDBF83 /* ReadingTools.swift */; };
 		5F6491832036CCD100FDBF83 /* WorldFlashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6491822036CCD100FDBF83 /* WorldFlashViewController.swift */; };
 		5F6491852037098C00FDBF83 /* TextLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6491842037098C00FDBF83 /* TextLoader.swift */; };
+		5F732C172039CF060057DD43 /* DiamondHighlighterUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F732C162039CF060057DD43 /* DiamondHighlighterUIViewController.swift */; };
 		5F8ADBFE202D8FF2002BCBDD /* TechniquesTextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8ADBFD202D8FF2002BCBDD /* TechniquesTextArea.swift */; };
 		5F8ADC00202D9D60002BCBDD /* BookChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8ADBFF202D9D60002BCBDD /* BookChapter.swift */; };
 		5F9DF97E20299AC4002F14B3 /* stick_chapter_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF94E20299AC4002F14B3 /* stick_chapter_1.txt */; };
@@ -148,6 +149,7 @@
 		5F6491802036C91F00FDBF83 /* ReadingTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingTools.swift; sourceTree = "<group>"; };
 		5F6491822036CCD100FDBF83 /* WorldFlashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldFlashViewController.swift; sourceTree = "<group>"; };
 		5F6491842037098C00FDBF83 /* TextLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLoader.swift; sourceTree = "<group>"; };
+		5F732C162039CF060057DD43 /* DiamondHighlighterUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondHighlighterUIViewController.swift; sourceTree = "<group>"; };
 		5F8ADBFD202D8FF2002BCBDD /* TechniquesTextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechniquesTextArea.swift; sourceTree = "<group>"; };
 		5F8ADBFF202D9D60002BCBDD /* BookChapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookChapter.swift; sourceTree = "<group>"; };
 		5F9DF94E20299AC4002F14B3 /* stick_chapter_1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stick_chapter_1.txt; sourceTree = "<group>"; };
@@ -366,6 +368,7 @@
 				5F6491802036C91F00FDBF83 /* ReadingTools.swift */,
 				5F6491822036CCD100FDBF83 /* WorldFlashViewController.swift */,
 				5F6491842037098C00FDBF83 /* TextLoader.swift */,
+				5F732C162039CF060057DD43 /* DiamondHighlighterUIViewController.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -702,6 +705,7 @@
 				5FA5AEB82031816900377543 /* ProfileViewController.swift in Sources */,
 				5F1D3F4F20304B8300A05FB3 /* BookTabController.swift in Sources */,
 				5F0312CD2032E677000D00E8 /* DigitsOnlyString.swift in Sources */,
+				5F732C172039CF060057DD43 /* DiamondHighlighterUIViewController.swift in Sources */,
 				5FA0876D203830B3005D9810 /* ButtonBackgroundForState.swift in Sources */,
 				5F6491812036C91F00FDBF83 /* ReadingTools.swift in Sources */,
 				5F15A2E220248FB10038039B /* AppDelegate.swift in Sources */,
