@@ -11,11 +11,11 @@ import UIKit
 // MARK: Properties and Initialization
 class ProfileViewController: UIViewController {
 
-    private let keyUsername = "USERNAME"
-    private let keyWPM = "WORDS_PER_MINUTE"
-    private let keyNumberOfLines = "NUMBER_OF_LINES"
-    private let keyLineLength = "LINE_LENGTH"
-    private let keyImage = "IMAGE"
+    public static let keyUsername = "USERNAME"
+    public static let keyWPM = "WORDS_PER_MINUTE"
+    public static let keyNumberOfLines = "NUMBER_OF_LINES"
+    public static let keyLineLength = "LINE_LENGTH"
+    public static let keyImage = "IMAGE"
     
     private let defaultProfileImage = "profile_empty"
     
@@ -188,13 +188,13 @@ extension ProfileViewController{
     private func saveToUserDefaults(){
         
         let defaults = UserDefaults.standard
-        defaults.set(lineLength.text, forKey: keyLineLength)
-        defaults.set(numberOfLines.text, forKey: keyNumberOfLines)
-        defaults.set(username.text, forKey: keyUsername)
-        defaults.set(wordsPerMinute.text, forKey: keyWPM)
+        defaults.set(lineLength.text, forKey: ProfileViewController.keyLineLength)
+        defaults.set(numberOfLines.text, forKey: ProfileViewController.keyNumberOfLines)
+        defaults.set(username.text, forKey: ProfileViewController.keyUsername)
+        defaults.set(wordsPerMinute.text, forKey: ProfileViewController.keyWPM)
         
         if let profilePic = profileImage.image{
-            defaults.set(UIImageJPEGRepresentation(profilePic, 0.8), forKey: keyImage)
+            defaults.set(UIImageJPEGRepresentation(profilePic, 0.8), forKey: ProfileViewController.keyImage)
         }
         
         BookChapter.saveCurrentChapter()
@@ -203,13 +203,13 @@ extension ProfileViewController{
     
     private func restoreState(){
         let defaults = UserDefaults.standard
-        lineLength.text = defaults.string(forKey: keyLineLength) ?? "Line Length: 1"
-        numberOfLines.text = defaults.string(forKey: keyNumberOfLines) ?? "Number of Lines: 1"
-        username.text = defaults.string(forKey: keyUsername)
-        wordsPerMinute.text = defaults.string(forKey: keyWPM) ?? "500"
+        lineLength.text = defaults.string(forKey: ProfileViewController.keyLineLength) ?? "Line Length: 1"
+        numberOfLines.text = defaults.string(forKey: ProfileViewController.keyNumberOfLines) ?? "Number of Lines: 1"
+        username.text = defaults.string(forKey: ProfileViewController.keyUsername)
+        wordsPerMinute.text = defaults.string(forKey: ProfileViewController.keyWPM) ?? "500"
         
          //profileImage.image = defaults.object(forKey: keyImage) as? UIImage
-        if let imgData = defaults.object(forKey: keyImage) as? Data{
+        if let imgData = defaults.object(forKey: ProfileViewController.keyImage) as? Data{
             let img = UIImage(data: imgData)
             profileImage.image = img
         }else{

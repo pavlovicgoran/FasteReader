@@ -59,12 +59,14 @@ class TechniquesViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         BookChapter.saveCurrentChapter()
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         BookChapter.restoreCurrentChapter()
         updateReadingMaterial()
+        restore()
     }
     
     private func populateToolDescriptions(){
@@ -202,6 +204,33 @@ extension TechniquesViewController{
         
     }
     
+    
+}
+
+//MARK: Restoring Profile values
+extension TechniquesViewController{
+    
+    private func restore(){
+        let defaults = UserDefaults.standard
+        
+        let wpmText = defaults.string(forKey: ProfileViewController.keyWPM) ?? "500"
+        let wpm = Int(wpmText)
+        
+        let lineLengthText = defaults.string(forKey: ProfileViewController.keyLineLength) ?? "Line Length: 1"
+        let lineLength = Int(lineLengthText.digitsOnly())
+        
+        let numberOfLinesText = defaults.string(forKey: ProfileViewController.keyNumberOfLines) ?? "Number of Lines: 1"
+        let numberOfLines = Int(numberOfLinesText.digitsOnly())
+        
+        restoreProfileInstance(wpm: wpm!, lineLenght: lineLength!, numberOfLines: numberOfLines!)
+        
+    }
+    
+    private func restoreProfileInstance(wpm: Int, lineLenght: Int, numberOfLines: Int){
+        Profile.sharedInstance.setWordsPerMinute(wpm: wpm)
+        Profile.sharedInstance.setLineLength(lineLength: lineLenght)
+        Profile.sharedInstance.setNumberOfLines(numberOfLines: numberOfLines)
+    }
     
 }
 
