@@ -27,6 +27,8 @@ class WorldFlashViewController: UIViewController {
     
     private var delay = 0.0
     
+    private let toolStyle = ToolStyle()
+    
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var progressMeter: UIProgressView!
     @IBOutlet weak var showLabel: UILabel!
@@ -36,8 +38,8 @@ class WorldFlashViewController: UIViewController {
         
         title = "Word Flash"
         
-        stylizingPlayButton()
-        stylizingProgressMeter()
+        toolStyle.playButtonStyle(for: playButton)
+        toolStyle.progressMeterStyle(for: progressMeter)
         initialize()
         initialazeText()
         
@@ -60,19 +62,13 @@ class WorldFlashViewController: UIViewController {
 extension WorldFlashViewController{
     
     private func play(){
-        hideNavBar()
+        
+        toolStyle.hidingNavBar(navigationController: navigationController!)
         toggleButton()
         startTimer()
         read()
     }
     
-    private func hideNavBar(){
-       navigationController?.setNavigationBarHidden(true, animated: true)
-    }
-    
-    private func showNavBar(){
-        navigationController?.setNavigationBarHidden(false, animated: true)
-    }
     
     private func toggleButton(){
         playButton.isEnabled = !playButton.isEnabled
@@ -113,7 +109,8 @@ extension WorldFlashViewController{
     
     private func returnToTechniquesView(){
         DispatchQueue.main.asyncAfter(deadline: .now() + 1){[unowned self] in
-                self.showNavBar()
+            
+                self.toolStyle.showingNavBar(navigationController: self.navigationController!)
                 self.navigationController?.popViewController(animated: true)
         }
     }
@@ -123,13 +120,13 @@ extension WorldFlashViewController{
 extension WorldFlashViewController: ReadingTool{
     
     func read() {
-        print("usao u read")
+        
         timerReading = Timer.scheduledTimer(timeInterval: delay, target: self, selector: #selector(showingWords), userInfo: nil, repeats: true)
         print(delay)
     }
     
     @objc func showingWords(){
-       // print("wordIndex: \(wordIndex)")
+       
         guard wordIndex < textToRead.count else {
             print("Reading over")
             reset()
@@ -145,37 +142,13 @@ extension WorldFlashViewController: ReadingTool{
     
     func initialazeText() {
         let textLoader = TextLoader(book: book, chapterNumber: chapterNumber)
-        //print(textLoader.textFileName)
-        
         textToRead = textLoader.loadText()!
-       // print(textToRead)
+       
     }
     
     
 }
 
-// MARK: View controls
-extension WorldFlashViewController{
-    private func stylizingPlayButton(){
-        
-        playButton.layer.cornerRadius = 4
-        
-        let highlightedAttributedString = NSAttributedString(string: "START READING", attributes: [NSAttributedStringKey.foregroundColor : UIColor.darkGray])
-        
-        playButton.setAttributedTitle(highlightedAttributedString, for: .highlighted)
-        
-        let disabledAttributedString = NSAttributedString(string: "READING...", attributes:
-            [NSAttributedStringKey.foregroundColor : UIColor.white])
-        playButton.setAttributedTitle(disabledAttributedString, for: .disabled)
-        playButton.setBackgroundColor(color: .red, forState: .disabled)
-        
-    }
-    
-    private func stylizingProgressMeter(){
-        progressMeter.transform = CGAffineTransform(scaleX: 1.0, y: 5.0)
-        progressMeter.progress = 0.0
-    }
-}
 
 
 

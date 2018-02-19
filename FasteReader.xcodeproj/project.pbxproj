@@ -40,6 +40,7 @@
 		5F732C172039CF060057DD43 /* DiamondHighlighterUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F732C162039CF060057DD43 /* DiamondHighlighterUIViewController.swift */; };
 		5F8ADBFE202D8FF2002BCBDD /* TechniquesTextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8ADBFD202D8FF2002BCBDD /* TechniquesTextArea.swift */; };
 		5F8ADC00202D9D60002BCBDD /* BookChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8ADBFF202D9D60002BCBDD /* BookChapter.swift */; };
+		5F99ED24203AFE12007686DF /* ToolStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F99ED23203AFE12007686DF /* ToolStyle.swift */; };
 		5F9DF97E20299AC4002F14B3 /* stick_chapter_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF94E20299AC4002F14B3 /* stick_chapter_1.txt */; };
 		5F9DF97F20299AC4002F14B3 /* stick_chapter_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF94F20299AC4002F14B3 /* stick_chapter_2.txt */; };
 		5F9DF98020299AC4002F14B3 /* stick_chapter_3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF95020299AC4002F14B3 /* stick_chapter_3.txt */; };
@@ -152,6 +153,7 @@
 		5F732C162039CF060057DD43 /* DiamondHighlighterUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondHighlighterUIViewController.swift; sourceTree = "<group>"; };
 		5F8ADBFD202D8FF2002BCBDD /* TechniquesTextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechniquesTextArea.swift; sourceTree = "<group>"; };
 		5F8ADBFF202D9D60002BCBDD /* BookChapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookChapter.swift; sourceTree = "<group>"; };
+		5F99ED23203AFE12007686DF /* ToolStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolStyle.swift; sourceTree = "<group>"; };
 		5F9DF94E20299AC4002F14B3 /* stick_chapter_1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stick_chapter_1.txt; sourceTree = "<group>"; };
 		5F9DF94F20299AC4002F14B3 /* stick_chapter_2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stick_chapter_2.txt; sourceTree = "<group>"; };
 		5F9DF95020299AC4002F14B3 /* stick_chapter_3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stick_chapter_3.txt; sourceTree = "<group>"; };
@@ -369,6 +371,7 @@
 				5F6491822036CCD100FDBF83 /* WorldFlashViewController.swift */,
 				5F6491842037098C00FDBF83 /* TextLoader.swift */,
 				5F732C162039CF060057DD43 /* DiamondHighlighterUIViewController.swift */,
+				5F99ED23203AFE12007686DF /* ToolStyle.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -699,6 +702,7 @@
 				5F8ADBFE202D8FF2002BCBDD /* TechniquesTextArea.swift in Sources */,
 				5FA5AEBE2031D9A600377543 /* Profile.swift in Sources */,
 				5FA5AEBA203185DC00377543 /* LibraryPickerProtocol.swift in Sources */,
+				5F99ED24203AFE12007686DF /* ToolStyle.swift in Sources */,
 				5F8ADC00202D9D60002BCBDD /* BookChapter.swift in Sources */,
 				5F62A1D8202C80100020C626 /* ButtonDisclosureIndicator.swift in Sources */,
 				5F5B8B1F202700A700B4801A /* BookCell.swift in Sources */,
