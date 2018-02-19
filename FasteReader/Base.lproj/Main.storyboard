@@ -384,6 +384,10 @@
                         <viewLayoutGuide key="safeArea" id="VlH-2H-qTL"/>
                     </view>
                     <navigationItem key="navigationItem" id="0l5-vL-PJg"/>
+                    <connections>
+                        <outlet property="playButton" destination="o5m-EK-ILC" id="ifp-qW-gE3"/>
+                        <outlet property="progressMeter" destination="rao-gb-qjF" id="JVa-LR-XBz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4C-dg-h18" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

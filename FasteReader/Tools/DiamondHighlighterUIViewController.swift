@@ -7,14 +7,42 @@
 //
 
 import UIKit
-
+// MARK: Properties and Initialization
 class DiamondHighlighterUIViewController: UIViewController {
 
+    @IBOutlet weak var progressMeter: UIProgressView!
+    @IBOutlet weak var playButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        stylizingPlayButton()
+        stylizingProgressMeter()
     }
 
+    
+}
+
+// MARK: UI Stylizing
+extension DiamondHighlighterUIViewController{
+    
+    private func stylizingPlayButton(){
+        playButton.layer.cornerRadius = 4
+        
+        let highlightedAttributedString = NSAttributedString(string: "START READING", attributes: [NSAttributedStringKey.foregroundColor : UIColor.darkGray])
+        
+        playButton.setAttributedTitle(highlightedAttributedString, for: .highlighted)
+        
+        let disabledAttributedString = NSAttributedString(string: "READING...", attributes:
+            [NSAttributedStringKey.foregroundColor : UIColor.white])
+        playButton.setAttributedTitle(disabledAttributedString, for: .disabled)
+        playButton.setBackgroundColor(color: .red, forState: .disabled)
+    }
+    
+    private func stylizingProgressMeter(){
+        progressMeter.transform = CGAffineTransform(scaleX: 1.0, y: 5.0)
+        progressMeter.progress = 0.0
+    }
     
 }
