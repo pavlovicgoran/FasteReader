@@ -217,21 +217,29 @@
                                     <action selector="playButtonTapped:" destination="iIo-NR-o5u" eventType="touchUpInside" id="31E-h5-cRr"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Oh3-nR-XBx">
+                                <rect key="frame" x="10" y="74" width="355" height="493"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="VlH-2H-qTL" firstAttribute="trailing" secondItem="o5m-EK-ILC" secondAttribute="trailing" constant="10" id="4lb-MI-yIB"/>
+                            <constraint firstItem="Oh3-nR-XBx" firstAttribute="top" secondItem="VlH-2H-qTL" secondAttribute="top" constant="10" id="8Zy-Jj-jjr"/>
                             <constraint firstItem="o5m-EK-ILC" firstAttribute="leading" secondItem="VlH-2H-qTL" secondAttribute="leading" constant="10" id="EW7-Kt-eTe"/>
+                            <constraint firstItem="Oh3-nR-XBx" firstAttribute="leading" secondItem="VlH-2H-qTL" secondAttribute="leading" constant="10" id="NMS-gc-0RU"/>
                             <constraint firstItem="o5m-EK-ILC" firstAttribute="centerX" secondItem="FAv-13-YbW" secondAttribute="centerX" id="XGQ-Ta-wD4"/>
                             <constraint firstItem="rao-gb-qjF" firstAttribute="top" secondItem="o5m-EK-ILC" secondAttribute="bottom" constant="27" id="Zu1-tk-hea"/>
                             <constraint firstItem="VlH-2H-qTL" firstAttribute="bottom" secondItem="rao-gb-qjF" secondAttribute="bottom" constant="21" id="lSF-Q5-KbD"/>
+                            <constraint firstItem="o5m-EK-ILC" firstAttribute="top" secondItem="Oh3-nR-XBx" secondAttribute="bottom" constant="10" id="thb-dw-pdz"/>
                             <constraint firstAttribute="trailing" secondItem="rao-gb-qjF" secondAttribute="trailing" constant="10" id="uTu-UI-4MF"/>
                             <constraint firstItem="rao-gb-qjF" firstAttribute="leading" secondItem="FAv-13-YbW" secondAttribute="leading" constant="10" id="yLo-Cp-x9b"/>
+                            <constraint firstItem="VlH-2H-qTL" firstAttribute="trailing" secondItem="Oh3-nR-XBx" secondAttribute="trailing" constant="10" id="yUE-ED-Tkt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VlH-2H-qTL"/>
                     </view>
                     <navigationItem key="navigationItem" id="0l5-vL-PJg"/>
                     <connections>
+                        <outlet property="labelContainer" destination="Oh3-nR-XBx" id="O5Q-M4-Ecj"/>
                         <outlet property="playButton" destination="o5m-EK-ILC" id="ifp-qW-gE3"/>
                         <outlet property="progressMeter" destination="rao-gb-qjF" id="JVa-LR-XBz"/>
                     </connections>

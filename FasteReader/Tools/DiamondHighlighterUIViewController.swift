@@ -10,9 +10,13 @@ import UIKit
 // MARK: Properties and Initialization
 class DiamondHighlighterUIViewController: UIViewController {
 
+    private let numberOfLabels = 12
+    
     @IBOutlet weak var progressMeter: UIProgressView!
     @IBOutlet weak var playButton: UIButton!
-   
+    @IBOutlet weak var labelContainer: UIStackView!
+    
+    private var labelArray = [UILabel]()
     
     private var timerProgress = Timer()
     private let totalTime = 60.0
@@ -27,9 +31,21 @@ class DiamondHighlighterUIViewController: UIViewController {
         
         toolStyle.playButtonStyle(for: playButton)
         toolStyle.progressMeterStyle(for: progressMeter)
+        initialazeLabelContainer()
+    }
+    
+    private func initialazeLabelContainer(){
         
-       
+        for i in 0 ..< numberOfLabels{
+            let label = UILabel()
+            label.text = "\(i) label"
+            label.textAlignment = .center
+            labelArray.append(label)
+            labelContainer.addArrangedSubview(label)
+        }
         
+        labelContainer.spacing = 0.0
+        labelContainer.distribution = .fillEqually
     }
 
     @IBAction func playButtonTapped(_ sender: UIButton) {
