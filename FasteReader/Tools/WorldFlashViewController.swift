@@ -10,8 +10,7 @@ import UIKit
 // MARK: Properties and Initialization
 class WorldFlashViewController: UIViewController {
     
-    private let MIN_TO_SEC = 60.0
-    private let SEC_TO_MILSEC = 1000.0
+   
     
     private var wordsPerMinute: Int!
     private var book: BookPrefixes!
@@ -50,7 +49,7 @@ class WorldFlashViewController: UIViewController {
         book = BookChapter.getBook()
         chapterNumber = BookChapter.getChapterNumber()
         
-        delay = (SEC_TO_MILSEC / (Double(wordsPerMinute) / (MIN_TO_SEC))) * 0.001
+        delay = (TimeConstants.SEC_TO_MILSEC / (Double(wordsPerMinute) / (TimeConstants.MIN_TO_SEC))) * 0.001
     }
     
     @IBAction func play(_ sender: UIButton) {
@@ -89,6 +88,7 @@ extension WorldFlashViewController{
         if passedTime >= totalTime{
             
             reset()
+            return
         }
     }
     
@@ -102,7 +102,8 @@ extension WorldFlashViewController{
     
     private func setOverLabel(){
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){[unowned self] in
-            self.showLabel.text = "Congratulations \n Choose another text to read"
+            self.showLabel.textColor = UIColor.red
+            self.showLabel.text = "Session finished successfully\n Congratulations"
         }
         
     }
@@ -122,13 +123,13 @@ extension WorldFlashViewController: ReadingTool{
     func read() {
         
         timerReading = Timer.scheduledTimer(timeInterval: delay, target: self, selector: #selector(showingWords), userInfo: nil, repeats: true)
-        print(delay)
+        
     }
     
     @objc func showingWords(){
        
         guard wordIndex < textToRead.count else {
-            print("Reading over")
+            
             reset()
             return
         }
