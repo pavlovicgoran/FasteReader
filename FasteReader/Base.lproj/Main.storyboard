@@ -181,7 +181,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bjf-87-kHh"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Dc7-46-OAy"/>
+                    <navigationItem key="navigationItem" id="Dc7-46-OAy">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="mJI-G1-gGa">
+                            <connections>
+                                <segue destination="KtD-bX-kKL" kind="unwind" identifier="unwindFromWorldFlash" unwindAction="unwindToTechniquesViewWithUnwindSegue:" id="0gG-5x-mfG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="playButton" destination="3F9-ON-1D8" id="cTG-QT-WAZ"/>
                         <outlet property="progressMeter" destination="dFZ-xT-ICU" id="t5B-dP-GyU"/>
@@ -189,6 +195,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NBU-xs-QTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="KtD-bX-kKL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3194.4000000000001" y="-188.45577211394306"/>
         </scene>
@@ -237,7 +244,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VlH-2H-qTL"/>
                     </view>
-                    <navigationItem key="navigationItem" id="0l5-vL-PJg"/>
+                    <navigationItem key="navigationItem" id="0l5-vL-PJg">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="sEn-ww-ZFR">
+                            <connections>
+                                <segue destination="awR-wI-HtA" kind="unwind" identifier="unwindFromDiamond" unwindAction="unwindToTechniquesViewWithUnwindSegue:" id="Eib-C9-ofW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="labelContainer" destination="Oh3-nR-XBx" id="O5Q-M4-Ecj"/>
                         <outlet property="playButton" destination="o5m-EK-ILC" id="ifp-qW-gE3"/>
@@ -245,6 +258,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4C-dg-h18" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="awR-wI-HtA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3192.8000000000002" y="500.59970014992507"/>
         </scene>
@@ -388,6 +402,8 @@
                         <outletCollection property="toolbarButtons" destination="13m-8l-9TL" collectionClass="NSMutableArray" id="Ti3-hf-r34"/>
                         <outletCollection property="toolbarButtons" destination="Wvp-JO-2QE" collectionClass="NSMutableArray" id="OIz-iK-TjU"/>
                         <outletCollection property="toolbarButtons" destination="xBa-ab-AqR" collectionClass="NSMutableArray" id="O2X-ph-9Oy"/>
+                        <segue destination="hEJ-aW-1uR" kind="presentation" identifier="diamondSegue" modalTransitionStyle="flipHorizontal" id="OJt-sO-Zw5"/>
+                        <segue destination="at3-XR-tTf" kind="presentation" identifier="worldFlashSegue" modalTransitionStyle="flipHorizontal" id="31s-z5-eWx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jX-Ok-jp1" userLabel="First Responder" sceneMemberID="firstResponder"/>

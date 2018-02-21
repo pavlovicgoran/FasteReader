@@ -10,7 +10,7 @@ import UIKit
 // MARK: Properties and Initialization
 class WorldFlashViewController: UIViewController {
     
-   
+   private let unwindSegueID = "unwindFromWorldFlash"
     
     private var wordsPerMinute: Int!
     private var book: BookPrefixes!
@@ -112,7 +112,7 @@ extension WorldFlashViewController{
         DispatchQueue.main.asyncAfter(deadline: .now() + 1){[unowned self] in
             
                 self.toolStyle.showingNavBar(navigationController: self.navigationController!)
-                self.navigationController?.popViewController(animated: true)
+                self.performSegue(withIdentifier: self.unwindSegueID, sender: nil)
         }
     }
 }
@@ -149,6 +149,7 @@ extension WorldFlashViewController: ReadingTool{
     
     
 }
+
 
 
 

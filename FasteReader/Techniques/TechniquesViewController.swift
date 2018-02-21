@@ -24,8 +24,9 @@ class TechniquesViewController: UIViewController {
     let playPictureName = "play"
     let stopPictureName = "stop"
     
-    let worldFlashView = "worldFlash"
-    let diamondHighlighterView = "diamondHighlighter"
+    let worldFlashSegueID = "worldFlashSegue"
+    let diamondSegueID = "diamondSegue"
+    
     
     let toolNameWordFlash = "Word Flash"
     let toolNameDiamond = "Diamond Highlighter"
@@ -139,15 +140,12 @@ extension TechniquesViewController{
         switch activeTool {
         case .wordFlash:
             
-            let worldFlash = storyboard?.instantiateViewController(withIdentifier: worldFlashView) as! WorldFlashViewController
-            
-            navigationController?.pushViewController(worldFlash, animated: true)
+           performSegue(withIdentifier: worldFlashSegueID, sender: nil)
             
             break
         case .diamond:
-            let diamondHighlighter = storyboard?.instantiateViewController(withIdentifier: diamondHighlighterView) as! DiamondHighlighterUIViewController
-            
-            navigationController?.pushViewController(diamondHighlighter, animated: true)
+           
+            performSegue(withIdentifier: diamondSegueID, sender: nil)
             break
         case .textHighlight:
             break
@@ -156,6 +154,10 @@ extension TechniquesViewController{
         default:
             print("start tool - another tool exists")
         }
+    }
+    
+    @IBAction func unwindToTechniquesView(unwindSegue: UIStoryboardSegue){
+        
     }
     
     private func stylizingPlayButton(){

@@ -16,6 +16,8 @@ enum ShowingOrder{
 // MARK: Properties and Initialization
 class DiamondHighlighterUIViewController: UIViewController {
 
+    private let unwindSegueID = "unwindFromDiamond"
+    
     private let numberOfLabels = 12
     
     private var numberOfTheGuidingLabel: Int{
@@ -137,7 +139,7 @@ extension DiamondHighlighterUIViewController{
     private func returnToTechniquesView(){
         DispatchQueue.main.asyncAfter(deadline: .now() + 1){
             self.toolStyle.showingNavBar(navigationController: self.navigationController!)
-            self.navigationController?.popViewController(animated: true)
+            self.performSegue(withIdentifier: self.unwindSegueID, sender: nil)
         }
     }
     
