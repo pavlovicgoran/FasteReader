@@ -30,6 +30,7 @@
 		5F5B8B1A2026FC2600B4801A /* book_cover_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5B8B172026FC2600B4801A /* book_cover_red.png */; };
 		5F5B8B1C2026FDD200B4801A /* LibraryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B8B1B2026FDD200B4801A /* LibraryCollectionViewController.swift */; };
 		5F5B8B1F202700A700B4801A /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B8B1E202700A700B4801A /* BookCell.swift */; };
+		5F61B1E5203D70BC00EA4782 /* TextHighlighterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F61B1E4203D70BC00EA4782 /* TextHighlighterViewController.swift */; };
 		5F62A1CF202C4BAC0020C626 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F62A1CE202C4BAC0020C626 /* play.png */; };
 		5F62A1D3202C53D20020C626 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F62A1D2202C53D20020C626 /* stop.png */; };
 		5F62A1D8202C80100020C626 /* ButtonDisclosureIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F62A1D7202C80100020C626 /* ButtonDisclosureIndicator.swift */; };
@@ -144,6 +145,7 @@
 		5F5B8B172026FC2600B4801A /* book_cover_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_cover_red.png; sourceTree = "<group>"; };
 		5F5B8B1B2026FDD200B4801A /* LibraryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCollectionViewController.swift; sourceTree = "<group>"; };
 		5F5B8B1E202700A700B4801A /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		5F61B1E4203D70BC00EA4782 /* TextHighlighterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHighlighterViewController.swift; sourceTree = "<group>"; };
 		5F62A1CE202C4BAC0020C626 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		5F62A1D2202C53D20020C626 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
 		5F62A1D7202C80100020C626 /* ButtonDisclosureIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDisclosureIndicator.swift; sourceTree = "<group>"; };
@@ -373,6 +375,14 @@
 			path = DiamondHighlighter;
 			sourceTree = "<group>";
 		};
+		5F61B1E3203D709300EA4782 /* TextHighlighter */ = {
+			isa = PBXGroup;
+			children = (
+				5F61B1E4203D70BC00EA4782 /* TextHighlighterViewController.swift */,
+			);
+			path = TextHighlighter;
+			sourceTree = "<group>";
+		};
 		5F62A1D6202C7FD00020C626 /* Button Expansions */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +395,7 @@
 		5F64917F2036C80600FDBF83 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				5F61B1E3203D709300EA4782 /* TextHighlighter */,
 				5F61B1E2203D6F7A00EA4782 /* DiamondHighlighter */,
 				5F61B1E1203D6EAD00EA4782 /* WorldFlash */,
 				5F6491802036C91F00FDBF83 /* ReadingTools.swift */,
@@ -725,6 +736,7 @@
 				5F8ADC00202D9D60002BCBDD /* BookChapter.swift in Sources */,
 				5F62A1D8202C80100020C626 /* ButtonDisclosureIndicator.swift in Sources */,
 				5F5B8B1F202700A700B4801A /* BookCell.swift in Sources */,
+				5F61B1E5203D70BC00EA4782 /* TextHighlighterViewController.swift in Sources */,
 				5FA5AEB82031816900377543 /* ProfileViewController.swift in Sources */,
 				5F1D3F4F20304B8300A05FB3 /* BookTabController.swift in Sources */,
 				5F0312CD2032E677000D00E8 /* DigitsOnlyString.swift in Sources */,
