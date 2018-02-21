@@ -284,13 +284,23 @@
                                 <state key="normal" title="START READING">
                                     <color key="titleColor" red="0.99057014852431624" green="1" blue="0.98394183713933825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="playButtonTapped:" destination="vYa-Pt-f5d" eventType="touchUpInside" id="Ct0-WS-0vz"/>
+                                </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Naw-RL-sUP">
+                                <rect key="frame" x="15" y="74" width="345" height="483"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Lze-H0-djS" firstAttribute="top" secondItem="Naw-RL-sUP" secondAttribute="bottom" constant="20" id="2EX-A0-3pF"/>
+                            <constraint firstItem="sUe-I6-kJW" firstAttribute="trailing" secondItem="Naw-RL-sUP" secondAttribute="trailing" constant="15" id="Bg5-Ni-pxT"/>
+                            <constraint firstItem="Naw-RL-sUP" firstAttribute="top" secondItem="sUe-I6-kJW" secondAttribute="top" constant="10" id="Kh3-bV-j2L"/>
                             <constraint firstItem="Y5w-lg-pu7" firstAttribute="leading" secondItem="mFy-Py-clt" secondAttribute="leadingMargin" id="Nsr-Dk-dLD"/>
                             <constraint firstItem="Y5w-lg-pu7" firstAttribute="top" secondItem="Lze-H0-djS" secondAttribute="bottom" constant="27" id="WAj-rO-xbD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Y5w-lg-pu7" secondAttribute="trailing" id="YeR-Cd-WBp"/>
+                            <constraint firstItem="Naw-RL-sUP" firstAttribute="leading" secondItem="sUe-I6-kJW" secondAttribute="leading" constant="15" id="abq-ev-EVx"/>
                             <constraint firstItem="sUe-I6-kJW" firstAttribute="trailing" secondItem="Lze-H0-djS" secondAttribute="trailing" constant="15" id="bsF-Tf-fUK"/>
                             <constraint firstItem="Lze-H0-djS" firstAttribute="leading" secondItem="sUe-I6-kJW" secondAttribute="leading" constant="15" id="d1E-un-lA4"/>
                             <constraint firstItem="sUe-I6-kJW" firstAttribute="bottom" secondItem="Y5w-lg-pu7" secondAttribute="bottom" constant="21" id="xEX-Sw-vsw"/>
@@ -307,6 +317,7 @@
                     <connections>
                         <outlet property="playButton" destination="Lze-H0-djS" id="j8g-8s-ao1"/>
                         <outlet property="progressMeter" destination="Y5w-lg-pu7" id="Php-cb-sJ2"/>
+                        <outlet property="textContainer" destination="Naw-RL-sUP" id="521-Ed-Nfb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="En0-Ev-qI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
