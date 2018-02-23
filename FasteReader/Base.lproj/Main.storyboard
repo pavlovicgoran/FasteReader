@@ -48,7 +48,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="NEF-a5-8PK">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="NEF-a5-8PK">
                                 <rect key="frame" x="271" y="481" width="94" height="29"/>
                                 <connections>
                                     <action selector="numberOfLinesChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ram-3u-x8S"/>
@@ -75,7 +75,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="wgV-1V-hJv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="wgV-1V-hJv">
                                 <rect key="frame" x="88" y="89" width="200" height="203"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Onz-Jy-P7V"/>
@@ -325,6 +325,29 @@
             </objects>
             <point key="canvasLocation" x="3228" y="615.74212893553226"/>
         </scene>
+        <!--Expand Vision-->
+        <scene sceneID="YFh-Oe-uB9">
+            <objects>
+                <viewController id="QbJ-nY-rjJ" userLabel="Expand Vision" customClass="ExpandVisionViewController" customModule="FasteReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G10-Aj-zBI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="3VC-5y-Zvm"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Expand Vision" id="Pfp-lU-eWZ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="TpL-NC-ScZ">
+                            <connections>
+                                <segue destination="d2i-Jz-ykc" kind="unwind" identifier="unwindFromExpand" unwindAction="unwindToTechniquesViewWithUnwindSegue:" id="FDW-sK-shj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hHt-A1-ZKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="d2i-Jz-ykc" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3228" y="1296"/>
+        </scene>
         <!--Book Tab Controller-->
         <scene sceneID="11F-bZ-NGd">
             <objects>
@@ -468,6 +491,7 @@
                         <segue destination="hEJ-aW-1uR" kind="presentation" identifier="diamondSegue" modalTransitionStyle="flipHorizontal" id="OJt-sO-Zw5"/>
                         <segue destination="at3-XR-tTf" kind="presentation" identifier="worldFlashSegue" modalTransitionStyle="flipHorizontal" id="31s-z5-eWx"/>
                         <segue destination="MAm-fg-kry" kind="presentation" identifier="textHighlighterSegue" modalTransitionStyle="flipHorizontal" id="G3w-VS-mV6"/>
+                        <segue destination="izI-Jh-9or" kind="presentation" identifier="expandVisionSegue" modalTransitionStyle="flipHorizontal" id="u7L-rQ-Y21"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jX-Ok-jp1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -735,6 +759,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6O-BP-mXS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2534" y="616"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dAY-k4-uob">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="izI-Jh-9or" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cO5-IF-yIT">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QbJ-nY-rjJ" kind="relationship" relationship="rootViewController" id="xW1-FD-wNk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l59-jt-k6D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2534" y="1296"/>
         </scene>
     </scenes>
     <resources>

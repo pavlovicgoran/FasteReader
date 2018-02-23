@@ -27,6 +27,7 @@ class TechniquesViewController: UIViewController {
     let worldFlashSegueID = "worldFlashSegue"
     let diamondSegueID = "diamondSegue"
     let textHighlighterSegueID = "textHighlighterSegue"
+    let expandVisionSegueID = "expandVisionSegue"
     
     let toolNameWordFlash = "Word Flash"
     let toolNameDiamond = "Diamond Highlighter"
@@ -151,6 +152,7 @@ extension TechniquesViewController{
             performSegue(withIdentifier: textHighlighterSegueID, sender: nil)
             break
         case .extendVision:
+            performSegue(withIdentifier: expandVisionSegueID, sender: nil)
             break
         default:
             print("start tool - another tool exists")
