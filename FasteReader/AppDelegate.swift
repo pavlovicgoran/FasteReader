@@ -31,6 +31,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        let navCtrl = window?.rootViewController?.presentedViewController as? UINavigationController
+        
+        if let vc = navCtrl?.viewControllers[0]{
+            if vc is ReadingTool{
+                vc.dismiss(animated: true)
+            }
+        }
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {

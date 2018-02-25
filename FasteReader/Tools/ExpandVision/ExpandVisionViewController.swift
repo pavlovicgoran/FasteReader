@@ -48,6 +48,7 @@ class ExpandVisionViewController: UIViewController {
         initialaze()
     }
     
+    
     private func initialaze(){
         wordsPerMinute = Profile.sharedInstance.getWordsPerMinute()
         lineLength = Profile.sharedInstance.getLineLength()
@@ -113,7 +114,7 @@ extension ExpandVisionViewController{
 extension ExpandVisionViewController: ReadingTool{
     func read() {
         timerReading = Timer.scheduledTimer(timeInterval: delay, target: self, selector: #selector(showingText), userInfo: nil, repeats: true)
-        print(delay)
+        
     }
     
     @objc func showingText(){
@@ -139,7 +140,7 @@ extension ExpandVisionViewController: ReadingTool{
     func initialazeText() {
         let textLoader = TextLoader(book: book, chapterNumber: chapterNumber)
         textToRead = textLoader.loadText()!
-        print(textToRead)
+        
     }
     
     
