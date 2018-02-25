@@ -543,18 +543,58 @@
         <!--Test-->
         <scene sceneID="VE1-XP-C79">
             <objects>
-                <viewController id="dJr-Gj-5Xn" userLabel="Test" sceneMemberID="viewController">
+                <viewController id="dJr-Gj-5Xn" userLabel="Test" customClass="TestViewController" customModule="FasteReader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pN5-ve-n2v">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front_cover.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XcE-X3-jpj">
+                                <rect key="frame" x="8" y="72" width="359" height="539"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find out your current reading speed" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5T-j2-6Lz">
+                                <rect key="frame" x="30" y="126" width="315" height="168"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
+                                <color key="textColor" red="1" green="0.86717011939567701" blue="0.50451063525359185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgk-cC-T7a">
+                                <rect key="frame" x="83" y="456" width="208" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="Fw6-aa-CCn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                <state key="normal" title="Start Reading">
+                                    <color key="titleColor" red="1" green="0.8666666666666667" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonTapped:" destination="dJr-Gj-5Xn" eventType="touchUpInside" id="unL-4X-UH5"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XcE-X3-jpj" firstAttribute="leading" secondItem="svK-Jz-eyy" secondAttribute="leading" constant="8" id="2Ag-pk-Euy"/>
+                            <constraint firstItem="svK-Jz-eyy" firstAttribute="bottom" secondItem="XcE-X3-jpj" secondAttribute="bottom" constant="7" id="A9X-oN-fYJ"/>
+                            <constraint firstItem="XcE-X3-jpj" firstAttribute="top" secondItem="svK-Jz-eyy" secondAttribute="top" constant="8" id="DyF-Pj-SRo"/>
+                            <constraint firstItem="XcE-X3-jpj" firstAttribute="centerX" secondItem="r5T-j2-6Lz" secondAttribute="centerX" id="E5x-5h-fNq"/>
+                            <constraint firstItem="XcE-X3-jpj" firstAttribute="centerX" secondItem="pN5-ve-n2v" secondAttribute="centerX" id="Gtf-Up-cnq"/>
+                            <constraint firstItem="Kgk-cC-T7a" firstAttribute="leading" secondItem="svK-Jz-eyy" secondAttribute="leading" constant="83" id="Nhi-VG-Tvb"/>
+                            <constraint firstItem="svK-Jz-eyy" firstAttribute="bottom" secondItem="r5T-j2-6Lz" secondAttribute="bottom" constant="324" id="O77-Ef-7lw"/>
+                            <constraint firstItem="r5T-j2-6Lz" firstAttribute="top" secondItem="svK-Jz-eyy" secondAttribute="top" constant="62" id="cvq-3u-uAh"/>
+                            <constraint firstItem="Kgk-cC-T7a" firstAttribute="centerX" secondItem="r5T-j2-6Lz" secondAttribute="centerX" id="d7o-QV-9St"/>
+                            <constraint firstItem="svK-Jz-eyy" firstAttribute="bottom" secondItem="Kgk-cC-T7a" secondAttribute="bottom" constant="100" id="nox-5t-fTD"/>
+                            <constraint firstItem="r5T-j2-6Lz" firstAttribute="leading" secondItem="svK-Jz-eyy" secondAttribute="leading" constant="30" id="seF-X6-b6m"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="svK-Jz-eyy"/>
                     </view>
                     <navigationItem key="navigationItem" title="Test" id="faY-zh-yDr"/>
+                    <connections>
+                        <outlet property="startButton" destination="Kgk-cC-T7a" id="aoa-af-RO9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eod-xG-oyr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1543.2" y="1016.9415292353824"/>
+            <point key="canvasLocation" x="1204" y="1069.1154422788607"/>
         </scene>
         <!--Profile-->
         <scene sceneID="OsN-i9-4He">
@@ -611,7 +651,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LR6-7d-Nk6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="832.79999999999995" y="1016.9415292353824"/>
+            <point key="canvasLocation" x="494" y="1070"/>
         </scene>
         <!--Library-->
         <scene sceneID="uOD-hs-KFw">
@@ -823,6 +863,7 @@
     </scenes>
     <resources>
         <image name="diamond.png" width="30" height="30"/>
+        <image name="front_cover.jpg" width="459" height="612"/>
         <image name="library.png" width="39" height="30"/>
         <image name="memory.png" width="30" height="30"/>
         <image name="profile.png" width="34" height="30"/>
