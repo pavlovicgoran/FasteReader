@@ -10,8 +10,8 @@ import UIKit
 //Properties and initialization
 class QuizTextViewController: UIViewController {
 
-    private let backgroundColor = UIColor(red: 99/255, green: 4/255, blue: 0, alpha: 1) // DARK RED
-    private let textColor =  UIColor(red: 255/255, green: 221/255, blue: 129/255, alpha: 1) // GOLD
+    private let backgroundColor = UIColor(red: 0, green: 165/255, blue: 255/255, alpha: 1) // BLUE
+    private let textColor =  UIColor.white
     
     @IBOutlet weak var continueButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
@@ -44,6 +44,11 @@ extension QuizTextViewController{
         button.layer.borderColor = textColor.cgColor
         button.layer.cornerRadius = 8
         button.setTitleColor(textColor, for: .normal)
+        
+        
+        //button.setTitleColor(backgroundColor, for: .highlighted)
+        //button.setBackgroundColor(color: .white, forState: .highlighted)
+        
     }
     private func stylizingTextView(){
         textView.isEditable = false

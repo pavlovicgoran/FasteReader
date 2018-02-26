@@ -548,13 +548,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front_cover.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XcE-X3-jpj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank_blue.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XcE-X3-jpj">
                                 <rect key="frame" x="8" y="72" width="359" height="539"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find out your current reading speed" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5T-j2-6Lz">
                                 <rect key="frame" x="30" y="126" width="315" height="168"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
-                                <color key="textColor" red="1" green="0.86717011939567701" blue="0.50451063525359185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.95577786824367683" green="1" blue="0.98839178428293828" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgk-cC-T7a">
@@ -564,7 +564,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
                                 <state key="normal" title="Start Reading">
-                                    <color key="titleColor" red="1" green="0.8666666666666667" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.95364795218177645" green="1" blue="0.98792181747484875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="t7T-0I-qha" kind="presentation" modalTransitionStyle="flipHorizontal" id="IFF-QW-kC7"/>
@@ -907,8 +907,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="blank_blue.jpg" width="501" height="612"/>
         <image name="diamond.png" width="30" height="30"/>
-        <image name="front_cover.jpg" width="459" height="612"/>
         <image name="library.png" width="39" height="30"/>
         <image name="memory.png" width="30" height="30"/>
         <image name="profile.png" width="34" height="30"/>

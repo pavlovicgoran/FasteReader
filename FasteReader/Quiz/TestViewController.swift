@@ -19,7 +19,7 @@ class TestViewController: UIViewController {
 
     private func stylizingStartButton(){
         startButton.layer.borderWidth = 2
-        startButton.layer.borderColor = UIColor(red: 255/255, green: 221/255, blue: 129/255, alpha: 1).cgColor
+        startButton.layer.borderColor = UIColor.white.cgColor
         startButton.layer.cornerRadius = 8
         
     }

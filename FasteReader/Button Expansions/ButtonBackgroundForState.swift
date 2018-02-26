@@ -19,4 +19,7 @@ extension UIButton {
         
         self.setBackgroundImage(colorImage, for: forState)
         self.clipsToBounds = true
-    }}
+    }
+    
+}
+
