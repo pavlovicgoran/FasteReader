@@ -28,6 +28,8 @@
 		5F1D3F4F20304B8300A05FB3 /* BookTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1D3F4E20304B8300A05FB3 /* BookTabController.swift */; };
 		5F459FAE2043F60A00AC8DE1 /* QuizTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F459FAD2043F60A00AC8DE1 /* QuizTextViewController.swift */; };
 		5F459FB0204404AE00AC8DE1 /* blank_blue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F459FAF204404AE00AC8DE1 /* blank_blue.jpg */; };
+		5F5A5F1620442DB4001EE9E3 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A5F1520442DB4001EE9E3 /* QuestionViewController.swift */; };
+		5F5A5F1920443388001EE9E3 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A5F1820443388001EE9E3 /* KDCircularProgress.swift */; };
 		5F5B8B182026FC2600B4801A /* book_cover_brown.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5B8B152026FC2500B4801A /* book_cover_brown.png */; };
 		5F5B8B192026FC2600B4801A /* book_cover_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5B8B162026FC2600B4801A /* book_cover_black.png */; };
 		5F5B8B1A2026FC2600B4801A /* book_cover_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5B8B172026FC2600B4801A /* book_cover_red.png */; };
@@ -147,6 +149,8 @@
 		5F1D3F4E20304B8300A05FB3 /* BookTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTabController.swift; sourceTree = "<group>"; };
 		5F459FAD2043F60A00AC8DE1 /* QuizTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTextViewController.swift; sourceTree = "<group>"; };
 		5F459FAF204404AE00AC8DE1 /* blank_blue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blank_blue.jpg; sourceTree = "<group>"; };
+		5F5A5F1520442DB4001EE9E3 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		5F5A5F1820443388001EE9E3 /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgress.swift; sourceTree = "<group>"; };
 		5F5B8B152026FC2500B4801A /* book_cover_brown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_cover_brown.png; sourceTree = "<group>"; };
 		5F5B8B162026FC2600B4801A /* book_cover_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_cover_black.png; sourceTree = "<group>"; };
 		5F5B8B172026FC2600B4801A /* book_cover_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_cover_red.png; sourceTree = "<group>"; };
@@ -259,6 +263,7 @@
 			children = (
 				5F03478320434EBA00847FE1 /* TestViewController.swift */,
 				5F459FAD2043F60A00AC8DE1 /* QuizTextViewController.swift */,
+				5F5A5F1520442DB4001EE9E3 /* QuestionViewController.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 		5F15A2E020248FB10038039B /* FasteReader */ = {
 			isa = PBXGroup;
 			children = (
+				5F5A5F172044336E001EE9E3 /* KDCircularProgress */,
 				5F03478220434E8D00847FE1 /* Quiz */,
 				5F64917F2036C80600FDBF83 /* Tools */,
 				5F0312CB2032E651000D00E8 /* String Digits Only Extension */,
@@ -363,6 +369,14 @@
 				5F1D3F4E20304B8300A05FB3 /* BookTabController.swift */,
 			);
 			path = "Tab Bar Customization";
+			sourceTree = "<group>";
+		};
+		5F5A5F172044336E001EE9E3 /* KDCircularProgress */ = {
+			isa = PBXGroup;
+			children = (
+				5F5A5F1820443388001EE9E3 /* KDCircularProgress.swift */,
+			);
+			path = KDCircularProgress;
 			sourceTree = "<group>";
 		};
 		5F5B8B1D2027004B00B4801A /* Library */ = {
@@ -762,8 +776,10 @@
 				5FA5AEBE2031D9A600377543 /* Profile.swift in Sources */,
 				5FA5AEBA203185DC00377543 /* LibraryPickerProtocol.swift in Sources */,
 				5F99ED24203AFE12007686DF /* ToolStyle.swift in Sources */,
+				5F5A5F1620442DB4001EE9E3 /* QuestionViewController.swift in Sources */,
 				5F8ADC00202D9D60002BCBDD /* BookChapter.swift in Sources */,
 				5F62A1D8202C80100020C626 /* ButtonDisclosureIndicator.swift in Sources */,
+				5F5A5F1920443388001EE9E3 /* KDCircularProgress.swift in Sources */,
 				5F5B8B1F202700A700B4801A /* BookCell.swift in Sources */,
 				5F61B1E5203D70BC00EA4782 /* TextHighlighterViewController.swift in Sources */,
 				5F03478420434EBA00847FE1 /* TestViewController.swift in Sources */,

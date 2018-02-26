@@ -26,6 +26,11 @@ class QuizTextViewController: UIViewController {
     
 
 }
+// MARK: Start the Quiz
+extension QuizTextViewController{
+    
+}
+
 // MARK: Stylizing
 extension QuizTextViewController{
     private func stylizing(){

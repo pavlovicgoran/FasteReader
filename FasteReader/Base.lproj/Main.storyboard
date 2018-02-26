@@ -604,22 +604,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1m-Fe-ZmY" customClass="QuizButton" customModule="FasteReader" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1m-Fe-ZmY" customClass="QuizButton" customModule="FasteReader" customModuleProvider="target">
                                 <rect key="frame" x="16" y="560" width="343" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9Fz-wa-q5P"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="CONTINUE"/>
+                                <connections>
+                                    <segue destination="pUV-lj-XWr" kind="presentation" modalTransitionStyle="flipHorizontal" id="Os1-LD-6Rp"/>
+                                </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ts4-1E-SId">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ts4-1E-SId">
                                 <rect key="frame" x="16" y="29" width="343" height="523"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.aasukbdiabuibsdfkbdsfkasbdkdajsbkasbdfkajbdfksjbdfkjsbadfkjbskdjfbaskdgiusadiudsafiasubfiudsbasobdfoasbfsdfoishdfoisfbdiosdnvikdsbvksjdnclasdnolsdnoilcnasdoilnsdiknvdhsildhdsncisdncilndscobsdvosibduoibdscoisbdaidniodbsovibsdiobviosdbvihsdiouhfoaishdfpapfsdihsadhuisfhpfiushifdshuishiidsbivdibdviudvsibuvadsiuuipsdhiudshiudsuihpsavdhiuhuvidsiuhvsdpihsudapihsdapiuhsdpiuhvdspiuhsdipuhdsvipuvdsabpiuadsbiudibsuvdbsiuiudsvuibvdsbiudsviubsdvuibsdvuisdiusdavbpiusdvibbpivsdbpidsvabvsdibpudsiudsvbiuvdibusbiudsvaibuvdsibupsadviubvdsbiudsubidspbidsbiuvppiuhsdiusadhuihfuidsuihsdhuisfadhuifshduipuhsfiadhuisdfhiudsfhiusdfahuidsafuisdfiuhsdfhuihudfshuisdfhuipsfdahuifsadhuipsdfhuisdfahuipsadfuhipsdhuipsdfhuipfdshvdbhobfvbovadbdsvbisdviubsdvibobivdsaibvsdiibvsdabobiosvdbisvdbuvvafbiujinvnjdisinjdsnisbhuoyvduaubvdhsoboibdsvbisoibncsnicsbidsbyuvbyduuoyvdsubdsbdsvbisadbidsbidbsdsbbdsbcsuybcsuosdinvdiainvdsusaydubscnisddsuydvnopjicsdbuovduyasfasdfasf</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVM-Xe-bkZ" customClass="QuizButton" customModule="FasteReader" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVM-Xe-bkZ" customClass="QuizButton" customModule="FasteReader" customModuleProvider="target">
                                 <rect key="frame" x="16" y="608" width="343" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bsx-mO-kry"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="CANCEL"/>
                                 <connections>
@@ -628,6 +634,18 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eVM-Xe-bkZ" firstAttribute="top" secondItem="Q1m-Fe-ZmY" secondAttribute="bottom" constant="8" symbolic="YES" id="4RO-Gh-HXk"/>
+                            <constraint firstItem="Q1m-Fe-ZmY" firstAttribute="leading" secondItem="eVM-Xe-bkZ" secondAttribute="leading" id="4q9-kq-iLM"/>
+                            <constraint firstItem="ts4-1E-SId" firstAttribute="trailing" secondItem="Q1m-Fe-ZmY" secondAttribute="trailing" id="9dl-vU-U4G"/>
+                            <constraint firstItem="ts4-1E-SId" firstAttribute="leading" secondItem="p6Q-44-XYV" secondAttribute="leadingMargin" id="Ibj-r5-c9O"/>
+                            <constraint firstItem="ts4-1E-SId" firstAttribute="top" secondItem="PCQ-Xe-bVu" secondAttribute="top" constant="9" id="Sml-Oa-aVM"/>
+                            <constraint firstItem="Q1m-Fe-ZmY" firstAttribute="top" secondItem="ts4-1E-SId" secondAttribute="bottom" constant="8" symbolic="YES" id="WZU-iG-e8z"/>
+                            <constraint firstItem="Q1m-Fe-ZmY" firstAttribute="trailing" secondItem="eVM-Xe-bkZ" secondAttribute="trailing" id="ePK-W7-lCV"/>
+                            <constraint firstItem="PCQ-Xe-bVu" firstAttribute="bottom" secondItem="eVM-Xe-bkZ" secondAttribute="bottom" constant="19" id="h4K-Um-VuC"/>
+                            <constraint firstItem="ts4-1E-SId" firstAttribute="leading" secondItem="Q1m-Fe-ZmY" secondAttribute="leading" id="juU-Jt-b6g"/>
+                            <constraint firstItem="ts4-1E-SId" firstAttribute="trailing" secondItem="p6Q-44-XYV" secondAttribute="trailingMargin" id="kKI-8I-qdo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PCQ-Xe-bVu"/>
                     </view>
                     <connections>
@@ -640,6 +658,118 @@
                 <exit id="uXP-zY-fUf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1204" y="1781.5592203898052"/>
+        </scene>
+        <!--Question View Controller-->
+        <scene sceneID="eyI-76-mdg">
+            <objects>
+                <viewController id="pUV-lj-XWr" customClass="QuestionViewController" customModule="FasteReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hbm-Aw-tZK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tpg-jW-ijU" customClass="QuizButton" customModule="FasteReader" customModuleProvider="target">
+                                <rect key="frame" x="16" y="518" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gXb-q3-b9G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="OPTION">
+                                    <color key="titleColor" red="0.0" green="0.64705882349999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UaB-ok-oaG" customClass="QuizButton" customModule="FasteReader" customModuleProvider="target">
+                                <rect key="frame" x="16" y="470" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Syf-ah-Fi1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="OPTION">
+                                    <color key="titleColor" red="0.0" green="0.64705882349999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aw4-VN-rNT" customClass="QuizButton" customModule="FasteReader" customModuleProvider="target">
+                                <rect key="frame" x="16" y="356" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6Wn-nd-na7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="OPTION">
+                                    <color key="titleColor" red="0.0" green="0.64705882349999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mqq-52-rrL" customClass="QuizButton" customModule="FasteReader" customModuleProvider="target">
+                                <rect key="frame" x="16" y="413" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="99B-wL-jsU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="OPTION">
+                                    <color key="titleColor" red="0.0" green="0.64705882349999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is my name?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1d-Hz-jjq">
+                                <rect key="frame" x="16" y="50" width="343" height="261"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="261" id="7ZL-KB-pgv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.42691220469554869" green="0.761523886258343" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJa-mR-XDh" customClass="KDCircularProgress" customModule="FasteReader" customModuleProvider="target">
+                                <rect key="frame" x="143" y="566" width="89" height="81"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                        <color key="value" red="0.0" green="0.76078431372549016" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="IBColor1">
+                                        <color key="value" red="0.96943230569050842" green="1" blue="0.98736987644200347" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="angle">
+                                        <real key="value" value="90"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                                        <real key="value" value="90"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mqq-52-rrL" firstAttribute="leading" secondItem="UaB-ok-oaG" secondAttribute="leading" id="2XY-Xb-KJe"/>
+                            <constraint firstItem="UaB-ok-oaG" firstAttribute="top" secondItem="Mqq-52-rrL" secondAttribute="bottom" constant="17" id="5M6-hx-qhu"/>
+                            <constraint firstItem="Mqq-52-rrL" firstAttribute="top" secondItem="aw4-VN-rNT" secondAttribute="bottom" constant="17" id="7N1-vM-dmQ"/>
+                            <constraint firstItem="Z1d-Hz-jjq" firstAttribute="leading" secondItem="Hbm-Aw-tZK" secondAttribute="leadingMargin" id="PaX-av-f8u"/>
+                            <constraint firstAttribute="bottom" secondItem="eJa-mR-XDh" secondAttribute="bottom" constant="20" symbolic="YES" id="Sx0-jf-T4f"/>
+                            <constraint firstItem="aw4-VN-rNT" firstAttribute="trailing" secondItem="Mqq-52-rrL" secondAttribute="trailing" id="XYk-i2-l1B"/>
+                            <constraint firstItem="Z1d-Hz-jjq" firstAttribute="leading" secondItem="aw4-VN-rNT" secondAttribute="leading" id="Zsm-be-Pqe"/>
+                            <constraint firstItem="eJa-mR-XDh" firstAttribute="leading" secondItem="Uas-fZ-JDW" secondAttribute="leading" constant="143" id="avl-ln-knw"/>
+                            <constraint firstItem="aw4-VN-rNT" firstAttribute="top" secondItem="Z1d-Hz-jjq" secondAttribute="bottom" constant="45" id="cAO-dq-LnO"/>
+                            <constraint firstItem="Z1d-Hz-jjq" firstAttribute="top" secondItem="Uas-fZ-JDW" secondAttribute="top" constant="30" id="hM5-pp-UtX"/>
+                            <constraint firstItem="eJa-mR-XDh" firstAttribute="top" secondItem="Tpg-jW-ijU" secondAttribute="bottom" constant="8" symbolic="YES" id="m7T-tX-WB5"/>
+                            <constraint firstItem="Tpg-jW-ijU" firstAttribute="top" secondItem="UaB-ok-oaG" secondAttribute="bottom" constant="8" symbolic="YES" id="ndq-Xb-tWo"/>
+                            <constraint firstItem="UaB-ok-oaG" firstAttribute="trailing" secondItem="Tpg-jW-ijU" secondAttribute="trailing" id="qaq-HU-HYU"/>
+                            <constraint firstItem="Mqq-52-rrL" firstAttribute="trailing" secondItem="UaB-ok-oaG" secondAttribute="trailing" id="sB5-wr-SVE"/>
+                            <constraint firstItem="Z1d-Hz-jjq" firstAttribute="trailing" secondItem="Hbm-Aw-tZK" secondAttribute="trailingMargin" id="umG-H4-SoJ"/>
+                            <constraint firstItem="aw4-VN-rNT" firstAttribute="leading" secondItem="Mqq-52-rrL" secondAttribute="leading" id="vss-vY-swt"/>
+                            <constraint firstItem="Z1d-Hz-jjq" firstAttribute="trailing" secondItem="aw4-VN-rNT" secondAttribute="trailing" id="xAS-QY-eCk"/>
+                            <constraint firstItem="Tpg-jW-ijU" firstAttribute="centerX" secondItem="eJa-mR-XDh" secondAttribute="centerX" id="xAr-q5-6nr"/>
+                            <constraint firstItem="UaB-ok-oaG" firstAttribute="leading" secondItem="Tpg-jW-ijU" secondAttribute="leading" id="yN9-Sm-ZlX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Uas-fZ-JDW"/>
+                    </view>
+                    <connections>
+                        <outlet property="question" destination="Z1d-Hz-jjq" id="yeg-hN-bOW"/>
+                        <outletCollection property="questionOptions" destination="aw4-VN-rNT" collectionClass="NSMutableArray" id="4UZ-sO-YuT"/>
+                        <outletCollection property="questionOptions" destination="Mqq-52-rrL" collectionClass="NSMutableArray" id="kpx-s6-FUP"/>
+                        <outletCollection property="questionOptions" destination="UaB-ok-oaG" collectionClass="NSMutableArray" id="Vtu-ZU-Cft"/>
+                        <outletCollection property="questionOptions" destination="Tpg-jW-ijU" collectionClass="NSMutableArray" id="ENa-hV-LlL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CK6-HF-Oou" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2008.8" y="2185.4572713643179"/>
         </scene>
         <!--Profile-->
         <scene sceneID="OsN-i9-4He">
