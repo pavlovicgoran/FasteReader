@@ -567,7 +567,7 @@
                                     <color key="titleColor" red="1" green="0.8666666666666667" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="startButtonTapped:" destination="dJr-Gj-5Xn" eventType="touchUpInside" id="unL-4X-UH5"/>
+                                    <segue destination="t7T-0I-qha" kind="presentation" modalTransitionStyle="flipHorizontal" id="IFF-QW-kC7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -595,6 +595,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eod-xG-oyr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1204" y="1069.1154422788607"/>
+        </scene>
+        <!--Quiz Text View Controller-->
+        <scene sceneID="7Me-US-0Mc">
+            <objects>
+                <viewController id="t7T-0I-qha" customClass="QuizTextViewController" customModule="FasteReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p6Q-44-XYV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1m-Fe-ZmY">
+                                <rect key="frame" x="16" y="560" width="343" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="CONTINUE"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ts4-1E-SId">
+                                <rect key="frame" x="16" y="29" width="343" height="523"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.aasukbdiabuibsdfkbdsfkasbdkdajsbkasbdfkajbdfksjbdfkjsbadfkjbskdjfbaskdgiusadiudsafiasubfiudsbasobdfoasbfsdfoishdfoisfbdiosdnvikdsbvksjdnclasdnolsdnoilcnasdoilnsdiknvdhsildhdsncisdncilndscobsdvosibduoibdscoisbdaidniodbsovibsdiobviosdbvihsdiouhfoaishdfpapfsdihsadhuisfhpfiushifdshuishiidsbivdibdviudvsibuvadsiuuipsdhiudshiudsuihpsavdhiuhuvidsiuhvsdpihsudapihsdapiuhsdpiuhvdspiuhsdipuhdsvipuvdsabpiuadsbiudibsuvdbsiuiudsvuibvdsbiudsviubsdvuibsdvuisdiusdavbpiusdvibbpivsdbpidsvabvsdibpudsiudsvbiuvdibusbiudsvaibuvdsibupsadviubvdsbiudsubidspbidsbiuvppiuhsdiusadhuihfuidsuihsdhuisfadhuifshduipuhsfiadhuisdfhiudsfhiusdfahuidsafuisdfiuhsdfhuihudfshuisdfhuipsfdahuifsadhuipsdfhuisdfahuipsadfuhipsdhuipsdfhuipfdshvdbhobfvbovadbdsvbisdviubsdvibobivdsaibvsdiibvsdabobiosvdbisvdbuvvafbiujinvnjdisinjdsnisbhuoyvduaubvdhsoboibdsvbisoibncsnicsbidsbyuvbyduuoyvdsubdsbdsvbisadbidsbidbsdsbbdsbcsuybcsuosdinvdiainvdsusaydubscnisddsuydvnopjicsdbuovduyasfasdfasf</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVM-Xe-bkZ">
+                                <rect key="frame" x="16" y="608" width="343" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="CANCEL"/>
+                                <connections>
+                                    <segue destination="uXP-zY-fUf" kind="unwind" unwindAction="unwindToQuizBeginWithUnwindSegue:" id="KR5-Pt-Tgf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="PCQ-Xe-bVu"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="eVM-Xe-bkZ" id="06h-wE-2HE"/>
+                        <outlet property="continueButton" destination="Q1m-Fe-ZmY" id="Fek-n0-MpZ"/>
+                        <outlet property="textView" destination="ts4-1E-SId" id="Imf-c3-4Oa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIu-vB-4pv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="uXP-zY-fUf" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="1781.5592203898052"/>
         </scene>
         <!--Profile-->
         <scene sceneID="OsN-i9-4He">
