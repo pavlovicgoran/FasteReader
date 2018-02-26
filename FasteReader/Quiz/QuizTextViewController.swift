@@ -24,7 +24,6 @@ class QuizTextViewController: UIViewController {
         
     }
     
-   
 
 }
 // MARK: Stylizing
@@ -43,11 +42,9 @@ extension QuizTextViewController{
         button.layer.borderWidth = 2
         button.layer.borderColor = textColor.cgColor
         button.layer.cornerRadius = 8
+        
         button.setTitleColor(textColor, for: .normal)
-        
-        
-        //button.setTitleColor(backgroundColor, for: .highlighted)
-        //button.setBackgroundColor(color: .white, forState: .highlighted)
+        button.setTitleColor(backgroundColor, for: .highlighted)
         
     }
     private func stylizingTextView(){
