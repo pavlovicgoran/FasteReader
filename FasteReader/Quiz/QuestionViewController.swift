@@ -23,6 +23,7 @@ class QuestionViewController: UIViewController {
     
     var readingTime = 0
     var questionFile = ""
+    var numberOfWords = 0
     
     private var progressView: KDCircularProgress!
     
@@ -42,7 +43,7 @@ class QuestionViewController: UIViewController {
     private func updateQuestion(){
         let questionContent = questions[currentlyShowingAnswer]
         
-        print(questionContent.description)
+        //print(questionContent.description)
         
         question.text = questionContent.questionText
         var answers = questionContent.answers
@@ -56,7 +57,18 @@ class QuestionViewController: UIViewController {
     }
     
     private func updateProgressView(){
-        progressView.angle = 360.0 * Double(currentlyShowingAnswer + 1)/Double(questions.count)
+        progressView.angle = 360.0 * Double(currentlyShowingAnswer)/Double(questions.count)
+    }
+    
+    @IBAction func answerButton(_ sender: QuizButton) {
+        //print(sender.isCorrectAnswer)
+        guard currentlyShowingAnswer + 1 < questions.count else{
+            print("QUIZ OVER")
+            return
+        }
+        currentlyShowingAnswer += 1
+        updateQuestion()
+        updateProgressView()
     }
     
 
@@ -146,7 +158,7 @@ extension QuestionViewController{
         progressView.startAngle = 90
         progressView.angle = 0
         progressView.trackColor = .white
-        progressView.progressColors = [backgroundColor]
+        progressView.progressColors = [.lightGray, backgroundColor]
         progressView.center = view.center
         progressView.center.y = view.frame.maxY - 60
         progressView.layer.zPosition = 3

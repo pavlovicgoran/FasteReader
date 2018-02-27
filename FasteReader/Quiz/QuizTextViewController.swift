@@ -66,6 +66,7 @@ extension QuizTextViewController{
             let interval = endTime.timeIntervalSince(beginningTime)
             vc.readingTime = Int(interval)
             vc.questionFile = "\(quizTexts[0])_questions";
+            vc.numberOfWords = textView.text.count
         }
     }
     
