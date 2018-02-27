@@ -1,6 +1,6 @@
 The author of the passage indicates that the men Borglum hired were?
 - trained sculptors = F
-- laid-off stone carvers = F
+- fired stone carvers = F
 - Black Hills volunteers = F
 - unemployed miners = T
 ####

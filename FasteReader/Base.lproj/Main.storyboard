@@ -716,24 +716,6 @@
                                 <color key="textColor" red="0.42691220469554869" green="0.761523886258343" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJa-mR-XDh" customClass="KDCircularProgress" customModule="FasteReader" customModuleProvider="target">
-                                <rect key="frame" x="143" y="566" width="89" height="81"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
-                                        <color key="value" red="0.0" green="0.76078431372549016" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="IBColor1">
-                                        <color key="value" red="0.96943230569050842" green="1" blue="0.98736987644200347" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="angle">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
-                                        <real key="value" value="90"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -741,20 +723,16 @@
                             <constraint firstItem="UaB-ok-oaG" firstAttribute="top" secondItem="Mqq-52-rrL" secondAttribute="bottom" constant="17" id="5M6-hx-qhu"/>
                             <constraint firstItem="Mqq-52-rrL" firstAttribute="top" secondItem="aw4-VN-rNT" secondAttribute="bottom" constant="17" id="7N1-vM-dmQ"/>
                             <constraint firstItem="Z1d-Hz-jjq" firstAttribute="leading" secondItem="Hbm-Aw-tZK" secondAttribute="leadingMargin" id="PaX-av-f8u"/>
-                            <constraint firstAttribute="bottom" secondItem="eJa-mR-XDh" secondAttribute="bottom" constant="20" symbolic="YES" id="Sx0-jf-T4f"/>
                             <constraint firstItem="aw4-VN-rNT" firstAttribute="trailing" secondItem="Mqq-52-rrL" secondAttribute="trailing" id="XYk-i2-l1B"/>
                             <constraint firstItem="Z1d-Hz-jjq" firstAttribute="leading" secondItem="aw4-VN-rNT" secondAttribute="leading" id="Zsm-be-Pqe"/>
-                            <constraint firstItem="eJa-mR-XDh" firstAttribute="leading" secondItem="Uas-fZ-JDW" secondAttribute="leading" constant="143" id="avl-ln-knw"/>
                             <constraint firstItem="aw4-VN-rNT" firstAttribute="top" secondItem="Z1d-Hz-jjq" secondAttribute="bottom" constant="45" id="cAO-dq-LnO"/>
                             <constraint firstItem="Z1d-Hz-jjq" firstAttribute="top" secondItem="Uas-fZ-JDW" secondAttribute="top" constant="30" id="hM5-pp-UtX"/>
-                            <constraint firstItem="eJa-mR-XDh" firstAttribute="top" secondItem="Tpg-jW-ijU" secondAttribute="bottom" constant="8" symbolic="YES" id="m7T-tX-WB5"/>
                             <constraint firstItem="Tpg-jW-ijU" firstAttribute="top" secondItem="UaB-ok-oaG" secondAttribute="bottom" constant="8" symbolic="YES" id="ndq-Xb-tWo"/>
                             <constraint firstItem="UaB-ok-oaG" firstAttribute="trailing" secondItem="Tpg-jW-ijU" secondAttribute="trailing" id="qaq-HU-HYU"/>
                             <constraint firstItem="Mqq-52-rrL" firstAttribute="trailing" secondItem="UaB-ok-oaG" secondAttribute="trailing" id="sB5-wr-SVE"/>
                             <constraint firstItem="Z1d-Hz-jjq" firstAttribute="trailing" secondItem="Hbm-Aw-tZK" secondAttribute="trailingMargin" id="umG-H4-SoJ"/>
                             <constraint firstItem="aw4-VN-rNT" firstAttribute="leading" secondItem="Mqq-52-rrL" secondAttribute="leading" id="vss-vY-swt"/>
                             <constraint firstItem="Z1d-Hz-jjq" firstAttribute="trailing" secondItem="aw4-VN-rNT" secondAttribute="trailing" id="xAS-QY-eCk"/>
-                            <constraint firstItem="Tpg-jW-ijU" firstAttribute="centerX" secondItem="eJa-mR-XDh" secondAttribute="centerX" id="xAr-q5-6nr"/>
                             <constraint firstItem="UaB-ok-oaG" firstAttribute="leading" secondItem="Tpg-jW-ijU" secondAttribute="leading" id="yN9-Sm-ZlX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Uas-fZ-JDW"/>

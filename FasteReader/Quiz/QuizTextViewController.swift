@@ -28,7 +28,7 @@ class QuizTextViewController: UIViewController {
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var textView: UITextView!
     
-    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         stylizing()

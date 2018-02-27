@@ -24,15 +24,19 @@ class QuestionViewController: UIViewController {
     var readingTime = 0
     var questionFile = ""
     
+    private var progressView: KDCircularProgress!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         stylaze()
-        print(readingTime)
-        print(questionFile)
+        //print(readingTime)
+        //print(questionFile)
 
         loadQuestions()
+        questions = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: questions) as! [Question]
         updateQuestion()
+        updateProgressView()
     }
     
     private func updateQuestion(){
@@ -49,6 +53,10 @@ class QuestionViewController: UIViewController {
         }
         
         
+    }
+    
+    private func updateProgressView(){
+        progressView.angle = 360.0 * Double(currentlyShowingAnswer + 1)/Double(questions.count)
     }
     
 
@@ -129,5 +137,25 @@ extension QuestionViewController{
         for button in questionOptions{
             stylizingButton(button: button)
         }
+        
+        setupProgressView()
     }
+    
+    private func setupProgressView(){
+        progressView = KDCircularProgress(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
+        progressView.startAngle = 90
+        progressView.angle = 0
+        progressView.trackColor = .white
+        progressView.progressColors = [backgroundColor]
+        progressView.center = view.center
+        progressView.center.y = view.frame.maxY - 60
+        progressView.layer.zPosition = 3
+        view.addSubview(progressView)
+    }
+    
 }
+
+
+
+
+
