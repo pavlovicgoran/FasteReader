@@ -7,11 +7,18 @@
 //
 
 import UIKit
+import GameplayKit
+
 //Properties and initialization
 class QuizTextViewController: UIViewController {
 
     private let backgroundColor = UIColor(red: 0, green: 165/255, blue: 255/255, alpha: 1) // BLUE
     private let textColor =  UIColor.white
+    
+    private let mountRushmoreFile = "mount_rushmore"
+    private let teotihuacanFile = "teotihuacan"
+    
+    private var quizTexts = [String]()
     
     @IBOutlet weak var continueButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
@@ -21,7 +28,24 @@ class QuizTextViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         stylizing()
+        initialazeQuizTexts()
+    }
+    
+    private func initialazeQuizTexts(){
+        quizTexts.append(mountRushmoreFile)
+        quizTexts.append(teotihuacanFile)
         
+        quizTexts = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: quizTexts) as! [String]
+        
+        initialazeTextView()
+    }
+    
+    private func initialazeTextView(){
+        if let path = Bundle.main.path(forResource: quizTexts[0], ofType: "txt"){
+            if let text = try? String(contentsOfFile: path){
+                textView.text = text
+            }
+        }
     }
     
 

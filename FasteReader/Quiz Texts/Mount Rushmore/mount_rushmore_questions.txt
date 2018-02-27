@@ -1,0 +1,37 @@
+The author of the passage indicates that the men Borglum hired were?
+- trained sculptors = F
+- laid-off stone carvers = F
+- Black Hills volunteers = F
+- unemployed miners = T
+####
+Who carved the Mount Rushmore?
+- Borglum = F
+- Borglum and his son = T
+- Borlum = F
+- Borlum and his son = F
+####
+Where did the workers come from?
+- South Dakota = T
+- North Dakota = F
+- Loisiana = F
+- North Carolina =F
+####
+What are the ingredients of concocted mixture?
+- white lead, linseed oil, granite dust = T
+- plaster, water, white lead = F
+- white lead, water, granite dust = F
+- plaster, linseed oil, granite dust = F
+####
+When are the repairs done on Mount Rushmore?
+- spring = F
+- summer = F
+- autumn = T
+- winter = F
+####
+When did the project started and how long it lasted
+- 1927 and 14 years = T
+- 1928 and 13 years = F
+- 1927 and 13 years = F
+- 1928 and 14 years = F
+
+ 

@@ -1,0 +1,35 @@
+All of the following are mentioned as having been found in the archeological area except
+- market streets = T
+- religious artifacts = F
+- ceremonial structures = F
+- residential districts = F
+####
+Why this ancient city disappeared?
+- migration = F
+- starvation = F
+- invasion = F
+- uncertain = T
+####
+What is the name of the city?
+- Teotihuacan = T
+- Teotihaucan = F
+- Teotuhuecan = F
+- Teotehuacan = F
+####
+What is the name of the rain god?
+- Tlaloc = T
+- Toltec = F
+- Thoth = F
+- Tehuti = F
+####
+What is the name of the native tribe?
+- Tlaloc = F
+- Toltec = T
+- Thoth = F
+- Tehuti = F
+####
+What is not in the passage?
+- Avenue of the Dead = F
+- Moon Plaza = F
+- Pyramids of the Sun = T
+- Pyramids of the Moon = F
