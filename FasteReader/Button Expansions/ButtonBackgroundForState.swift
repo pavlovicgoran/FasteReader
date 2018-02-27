@@ -44,8 +44,8 @@ class QuizButton: UIButton {
         }
     }
     
+    public var isCorrectAnswer = false
     
-    
-    
+ 
 }
 

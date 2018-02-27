@@ -15,10 +15,14 @@ class QuizTextViewController: UIViewController {
     private let backgroundColor = UIColor(red: 0, green: 165/255, blue: 255/255, alpha: 1) // BLUE
     private let textColor =  UIColor.white
     
+    private let startQuizSegueID = "startQuiz"
+    
     private let mountRushmoreFile = "mount_rushmore"
     private let teotihuacanFile = "teotihuacan"
     
     private var quizTexts = [String]()
+    
+    private var beginningTime: Date!
     
     @IBOutlet weak var continueButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
@@ -29,6 +33,8 @@ class QuizTextViewController: UIViewController {
         super.viewDidLoad()
         stylizing()
         initialazeQuizTexts()
+        
+        beginningTime = Date()
     }
     
     private func initialazeQuizTexts(){
@@ -48,10 +54,20 @@ class QuizTextViewController: UIViewController {
         }
     }
     
-
+    
+    
 }
 // MARK: Start the Quiz
 extension QuizTextViewController{
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? QuestionViewController{
+            let endTime = Date()
+            let interval = endTime.timeIntervalSince(beginningTime)
+            vc.readingTime = Int(interval)
+            vc.questionFile = "\(quizTexts[0])_questions";
+        }
+    }
     
 }
 

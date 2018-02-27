@@ -51,6 +51,8 @@
 		5F932645204568F400DE5291 /* teotihuacan.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F932643204568F400DE5291 /* teotihuacan.txt */; };
 		5F9326482045690300DE5291 /* mount_rushmore_questions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9326462045690300DE5291 /* mount_rushmore_questions.txt */; };
 		5F9326492045690300DE5291 /* mount_rushmore.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9326472045690300DE5291 /* mount_rushmore.txt */; };
+		5F93264B20458E3200DE5291 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F93264A20458E3200DE5291 /* Answer.swift */; };
+		5F93264D20458F1200DE5291 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F93264C20458F1200DE5291 /* Question.swift */; };
 		5F99ED24203AFE12007686DF /* ToolStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F99ED23203AFE12007686DF /* ToolStyle.swift */; };
 		5F9DF97E20299AC4002F14B3 /* stick_chapter_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF94E20299AC4002F14B3 /* stick_chapter_1.txt */; };
 		5F9DF97F20299AC4002F14B3 /* stick_chapter_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9DF94F20299AC4002F14B3 /* stick_chapter_2.txt */; };
@@ -176,6 +178,8 @@
 		5F932643204568F400DE5291 /* teotihuacan.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = teotihuacan.txt; sourceTree = "<group>"; };
 		5F9326462045690300DE5291 /* mount_rushmore_questions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mount_rushmore_questions.txt; sourceTree = "<group>"; };
 		5F9326472045690300DE5291 /* mount_rushmore.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mount_rushmore.txt; sourceTree = "<group>"; };
+		5F93264A20458E3200DE5291 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		5F93264C20458F1200DE5291 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		5F99ED23203AFE12007686DF /* ToolStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolStyle.swift; sourceTree = "<group>"; };
 		5F9DF94E20299AC4002F14B3 /* stick_chapter_1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stick_chapter_1.txt; sourceTree = "<group>"; };
 		5F9DF94F20299AC4002F14B3 /* stick_chapter_2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stick_chapter_2.txt; sourceTree = "<group>"; };
@@ -272,6 +276,8 @@
 				5F03478320434EBA00847FE1 /* TestViewController.swift */,
 				5F459FAD2043F60A00AC8DE1 /* QuizTextViewController.swift */,
 				5F5A5F1520442DB4001EE9E3 /* QuestionViewController.swift */,
+				5F93264A20458E3200DE5291 /* Answer.swift */,
+				5F93264C20458F1200DE5291 /* Question.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -813,6 +819,8 @@
 				5F9DF9B12029B1ED002F14B3 /* BookContentsTableViewController.swift in Sources */,
 				5F9DF9AD2029A859002F14B3 /* Book.swift in Sources */,
 				5F8ADBFE202D8FF2002BCBDD /* TechniquesTextArea.swift in Sources */,
+				5F93264D20458F1200DE5291 /* Question.swift in Sources */,
+				5F93264B20458E3200DE5291 /* Answer.swift in Sources */,
 				5FA5AEBE2031D9A600377543 /* Profile.swift in Sources */,
 				5FA5AEBA203185DC00377543 /* LibraryPickerProtocol.swift in Sources */,
 				5F99ED24203AFE12007686DF /* ToolStyle.swift in Sources */,

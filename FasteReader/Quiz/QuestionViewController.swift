@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import GameplayKit
+// MARK: Properties and Initialization
 class QuestionViewController: UIViewController {
 
     private let backgroundColor = UIColor(red: 0, green: 165/255, blue: 255/255, alpha: 1)
@@ -16,14 +17,91 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var question: UILabel!
     @IBOutlet var questionOptions: [QuizButton]!
     
+    private var questions = [Question]()
+    
+    private var currentlyShowingAnswer = 0
+    
+    var readingTime = 0
+    var questionFile = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         stylaze()
-    }
+        print(readingTime)
+        print(questionFile)
 
+        loadQuestions()
+        updateQuestion()
+    }
+    
+    private func updateQuestion(){
+        let questionContent = questions[currentlyShowingAnswer]
+        
+        print(questionContent.description)
+        
+        question.text = questionContent.questionText
+        var answers = questionContent.answers
+        answers = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: answers) as! [Answer]
+        for i in 0 ..< questionOptions.count{
+            questionOptions[i].setTitle(answers[i].answerText, for: .normal)
+            questionOptions[i].isCorrectAnswer = answers[i].isCorrect
+        }
+        
+        
+    }
     
 
+}
+
+// MARK: Parsing question file
+extension QuestionViewController{
+    private func loadQuestions(){
+        //load question file in string
+        guard let fileContents = loadFileContents() else{
+            print("ERROR LOADING QUESTION FILE")
+            return
+        }
+        
+        //split file at ####
+        
+        let questions = fileContents.components(separatedBy: "####")
+        
+        //create Question
+        for question in questions{
+            createQuestion(stringToParse: question)
+        }
+        
+    }
+    
+    private func createQuestion(stringToParse: String){
+        // split string -
+        var stringComponents = stringToParse.components(separatedBy: "-")
+        
+        //assign first as text
+        let question = Question(question: stringComponents[0])
+        
+        for i in 1 ... stringComponents.count - 1{
+            // create answer
+            let answer = Answer(stringToParse: stringComponents[i])
+            
+            //add answer to question
+            question.addAnswer(answer: answer)
+        }
+        
+        //add question
+        questions.append(question)
+    }
+    
+    
+    private func loadFileContents() -> String?{
+        if let path = Bundle.main.path(forResource: questionFile, ofType: "txt"){
+            if let text = try? String(contentsOfFile: path){
+                return text
+            }
+        }
+        return nil
+    }
 }
 
 // MARK: Stylizing
