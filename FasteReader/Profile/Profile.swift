@@ -10,8 +10,8 @@ import UIKit
 // Singleton
 class Profile: NSObject {
     
-    private let minimumWPM = 250
-    private let maximumWPM = 750
+    public let minimumWPM = 250
+    public let maximumWPM = 750
     
     private var username = ""
     private var wordsPerMinute = 500

@@ -14,6 +14,8 @@ class QuestionViewController: UIViewController {
     private let backgroundColor = UIColor(red: 0, green: 165/255, blue: 255/255, alpha: 1)
     private let textColor = UIColor.white
     
+    private let unwindSegueID = "unwindFromQuestion"
+    
     @IBOutlet weak var question: UILabel!
     @IBOutlet var questionOptions: [QuizButton]!
     
@@ -21,9 +23,12 @@ class QuestionViewController: UIViewController {
     
     private var currentlyShowingAnswer = 0
     
+    private var readingSpeed = 0
+    
     var readingTime = 0
     var questionFile = ""
     var numberOfWords = 0
+    var numberOfCorrectAnswers = 0
     
     private var progressView: KDCircularProgress!
     
@@ -31,8 +36,7 @@ class QuestionViewController: UIViewController {
         super.viewDidLoad()
 
         stylaze()
-        //print(readingTime)
-        //print(questionFile)
+        
 
         loadQuestions()
         questions = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: questions) as! [Question]
@@ -43,7 +47,7 @@ class QuestionViewController: UIViewController {
     private func updateQuestion(){
         let questionContent = questions[currentlyShowingAnswer]
         
-        //print(questionContent.description)
+        
         
         question.text = questionContent.questionText
         var answers = questionContent.answers
@@ -61,9 +65,23 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func answerButton(_ sender: QuizButton) {
-        //print(sender.isCorrectAnswer)
+        
+        if sender.isCorrectAnswer {
+            numberOfCorrectAnswers += 1
+        }
+        
         guard currentlyShowingAnswer + 1 < questions.count else{
-            print("QUIZ OVER")
+            currentlyShowingAnswer += 1
+            updateProgressView()
+            calculateReadingSpeed()
+            savingWPM()
+            
+            let ac = UIAlertController(title: "Reading speed", message: "Your reading speed is \(readingSpeed) words per minute", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default, handler: {[unowned self](action) in
+                self.performSegue(withIdentifier: self.unwindSegueID, sender: nil)
+            }))
+            present(ac, animated: true)
+            
             return
         }
         currentlyShowingAnswer += 1
@@ -71,6 +89,21 @@ class QuestionViewController: UIViewController {
         updateProgressView()
     }
     
+    private func calculateReadingSpeed(){
+        readingSpeed = (numberOfWords / readingTime) * Int((TimeConstants.MIN_TO_SEC) * ((Double(numberOfCorrectAnswers) * 0.16)))
+        if readingSpeed > Profile.sharedInstance.maximumWPM{
+            readingSpeed = Profile.sharedInstance.maximumWPM
+        }
+        if readingSpeed < Profile.sharedInstance.minimumWPM{
+            readingSpeed = Profile.sharedInstance.minimumWPM
+        }
+    }
+    
+    private func savingWPM(){
+        let defaults = UserDefaults.standard
+        defaults.set(readingSpeed, forKey: ProfileViewController.keyWPM)
+        Profile.sharedInstance.setWordsPerMinute(wpm: readingSpeed)
+    }
 
 }
 
