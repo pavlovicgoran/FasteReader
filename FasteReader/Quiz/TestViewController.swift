@@ -15,6 +15,7 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         stylizingStartButton()
+        registerSwipes()
     }
 
     private func stylizingStartButton(){
@@ -27,5 +28,18 @@ class TestViewController: UIViewController {
     @IBAction func unwindToQuizBegin(unwindSegue: UIStoryboardSegue){
         
     }
+    
+    // MARK: SWIPE REGISTER
+    private func registerSwipes(){
+        
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(swipe:)))
+        leftSwipe.direction = .left
+        view.addGestureRecognizer(leftSwipe)
+        
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(swipe:)))
+        rightSwipe.direction = .right
+        view.addGestureRecognizer(rightSwipe)
+    }
+    
     
 }

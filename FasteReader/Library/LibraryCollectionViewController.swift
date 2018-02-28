@@ -28,7 +28,7 @@ class LibraryCollectionViewController: UICollectionViewController{
 
         initialazeArrayOfColors()
         initializeBooksArray()
-        
+        registerRightSwipe()
         
     }
 
@@ -95,6 +95,16 @@ extension LibraryCollectionViewController{
     private func chooseColorOfBookCover() -> String{
         arrayOfColors = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: arrayOfColors) as! [String]
         return arrayOfColors[0]
+    }
+    
+}
+// MARK: SWIPE RIGHT
+extension LibraryCollectionViewController{
+    
+    @objc func registerRightSwipe(){
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(swipe:)))
+        rightSwipe.direction = .right
+        view.addGestureRecognizer(rightSwipe)
     }
     
 }

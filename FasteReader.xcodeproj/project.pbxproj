@@ -28,6 +28,7 @@
 		5F1D3F4F20304B8300A05FB3 /* BookTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1D3F4E20304B8300A05FB3 /* BookTabController.swift */; };
 		5F459FAE2043F60A00AC8DE1 /* QuizTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F459FAD2043F60A00AC8DE1 /* QuizTextViewController.swift */; };
 		5F459FB0204404AE00AC8DE1 /* blank_blue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F459FAF204404AE00AC8DE1 /* blank_blue.jpg */; };
+		5F4801172046F49A006F3A13 /* UIViewController+Swipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4801162046F49A006F3A13 /* UIViewController+Swipe.swift */; };
 		5F5A5F1620442DB4001EE9E3 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A5F1520442DB4001EE9E3 /* QuestionViewController.swift */; };
 		5F5A5F1920443388001EE9E3 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A5F1820443388001EE9E3 /* KDCircularProgress.swift */; };
 		5F5B8B182026FC2600B4801A /* book_cover_brown.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5B8B152026FC2500B4801A /* book_cover_brown.png */; };
@@ -155,6 +156,7 @@
 		5F1D3F4E20304B8300A05FB3 /* BookTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTabController.swift; sourceTree = "<group>"; };
 		5F459FAD2043F60A00AC8DE1 /* QuizTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTextViewController.swift; sourceTree = "<group>"; };
 		5F459FAF204404AE00AC8DE1 /* blank_blue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blank_blue.jpg; sourceTree = "<group>"; };
+		5F4801162046F49A006F3A13 /* UIViewController+Swipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Swipe.swift"; sourceTree = "<group>"; };
 		5F5A5F1520442DB4001EE9E3 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		5F5A5F1820443388001EE9E3 /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgress.swift; sourceTree = "<group>"; };
 		5F5B8B152026FC2500B4801A /* book_cover_brown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_cover_brown.png; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 		5F15A2E020248FB10038039B /* FasteReader */ = {
 			isa = PBXGroup;
 			children = (
+				5F4801152046F469006F3A13 /* UIViewController+Swipe */,
 				5F93263F204568B300DE5291 /* Quiz Texts */,
 				5F5A5F172044336E001EE9E3 /* KDCircularProgress */,
 				5F03478220434E8D00847FE1 /* Quiz */,
@@ -384,6 +387,14 @@
 				5F1D3F4E20304B8300A05FB3 /* BookTabController.swift */,
 			);
 			path = "Tab Bar Customization";
+			sourceTree = "<group>";
+		};
+		5F4801152046F469006F3A13 /* UIViewController+Swipe */ = {
+			isa = PBXGroup;
+			children = (
+				5F4801162046F49A006F3A13 /* UIViewController+Swipe.swift */,
+			);
+			path = "UIViewController+Swipe";
 			sourceTree = "<group>";
 		};
 		5F5A5F172044336E001EE9E3 /* KDCircularProgress */ = {
@@ -843,6 +854,7 @@
 				5F6491832036CCD100FDBF83 /* WorldFlashViewController.swift in Sources */,
 				5F6491852037098C00FDBF83 /* TextLoader.swift in Sources */,
 				5FAB042920402FB200DD30B4 /* ExpandVisionViewController.swift in Sources */,
+				5F4801172046F49A006F3A13 /* UIViewController+Swipe.swift in Sources */,
 				5F0692D2202AF1D9003A6F20 /* TechniquesViewController.swift in Sources */,
 				5F6489F2203C2F9800E680A9 /* TimeConstants.swift in Sources */,
 			);

@@ -43,6 +43,8 @@ class ProfileViewController: UIViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(pickPhoto))
         
         stylizingProfilePic()
+        
+        registerLeftSwipe()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -240,6 +242,14 @@ extension ProfileViewController{
         Profile.sharedInstance.setNumberOfLines(numberOfLines: numberOfLines)
     }
     
+}
+// MARK: LEFT SWIPE
+extension ProfileViewController{
+    private func registerLeftSwipe(){
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(swipe:)))
+        leftSwipe.direction = .left
+        self.view.addGestureRecognizer(leftSwipe)
+    }
 }
 
 

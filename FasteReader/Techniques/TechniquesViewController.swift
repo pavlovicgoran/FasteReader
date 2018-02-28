@@ -56,6 +56,8 @@ class TechniquesViewController: UIViewController {
         
         
         updateReadingMaterial()
+        
+        registerSwipes()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -237,6 +239,20 @@ extension TechniquesViewController{
         Profile.sharedInstance.setNumberOfLines(numberOfLines: numberOfLines)
     }
     
+}
+// MARK: SWIPE REGISTER
+extension TechniquesViewController{
+    private func registerSwipes(){
+        
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(swipe:)))
+        leftSwipe.direction = .left
+        view.addGestureRecognizer(leftSwipe)
+        
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(swipe:)))
+        rightSwipe.direction = .right
+        view.addGestureRecognizer(rightSwipe)
+        
+    }
 }
 
 
