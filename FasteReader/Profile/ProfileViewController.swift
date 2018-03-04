@@ -24,7 +24,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var lineLength: UILabel!
     @IBOutlet weak var numberOfLines: UILabel!
     @IBOutlet weak var wordsPerMinute: UILabel!
-    @IBOutlet weak var username: UILabel!
+    
     
     @IBOutlet weak var profileImage: UIImageView!
     
@@ -39,7 +39,6 @@ class ProfileViewController: UIViewController {
         currentlyReading.disclosureButton(baseColor: view.tintColor)
         updateReadingMaterial()
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(changeUsername))
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(pickPhoto))
         
         stylizingProfilePic()
@@ -110,28 +109,7 @@ extension ProfileViewController: LibraryPicker{
 // MARK: Navbar buttons
 extension ProfileViewController{
     
-    //Right bar button
-    @objc func changeUsername(){
-        
-        let ac = UIAlertController(title: "Enter your username", message: nil, preferredStyle: .alert)
-        ac.addTextField(configurationHandler:{ (_ textField: UITextField) -> Void in
-            textField.placeholder = "Enter username"
-            
-        })
-        ac.addAction(UIAlertAction(title: "Save", style: .default, handler: { [unowned self](_ action: UIAlertAction) in
-            
-            if (!(ac.textFields![0].text?.isEmpty)!){
-                self.username.text = ac.textFields![0].text
-                Profile.sharedInstance.setUsername(username: self.username.text!)
-                self.saveToUserDefaults()
-            }
-        }))
-        
-        
-        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-        
-        present(ac, animated: true)
-    }
+    
     //Left bar button
     @objc func pickPhoto(){
         let ac = UIAlertController(title: "Upload the profile image", message: nil, preferredStyle: .actionSheet)
@@ -192,7 +170,7 @@ extension ProfileViewController{
         let defaults = UserDefaults.standard
         defaults.set(lineLength.text, forKey: ProfileViewController.keyLineLength)
         defaults.set(numberOfLines.text, forKey: ProfileViewController.keyNumberOfLines)
-        defaults.set(username.text, forKey: ProfileViewController.keyUsername)
+        
         defaults.set(wordsPerMinute.text, forKey: ProfileViewController.keyWPM)
         
         if let profilePic = profileImage.image{
@@ -207,7 +185,7 @@ extension ProfileViewController{
         let defaults = UserDefaults.standard
         lineLength.text = defaults.string(forKey: ProfileViewController.keyLineLength) ?? "Line Length: 1"
         numberOfLines.text = defaults.string(forKey: ProfileViewController.keyNumberOfLines) ?? "Number of Lines: 1"
-        username.text = defaults.string(forKey: ProfileViewController.keyUsername)
+        
         wordsPerMinute.text = defaults.string(forKey: ProfileViewController.keyWPM) ?? "500"
         
          //profileImage.image = defaults.object(forKey: keyImage) as? UIImage
