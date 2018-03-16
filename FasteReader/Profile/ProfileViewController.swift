@@ -77,7 +77,7 @@ class ProfileViewController: UIViewController {
     
     //Number of lines stepper
     @IBAction func numberOfLinesChanged(_ sender: UIStepper) {
-        numberOfLines.text = "Number of Lines: \(Int(sender.value))"
+        numberOfLines.text = "Line Number: \(Int(sender.value))"
         Profile.sharedInstance.setNumberOfLines(numberOfLines: Int(sender.value))
         saveToUserDefaults()
     }
@@ -184,7 +184,7 @@ extension ProfileViewController{
     private func restoreState(){
         let defaults = UserDefaults.standard
         lineLength.text = defaults.string(forKey: ProfileViewController.keyLineLength) ?? "Line Length: 1"
-        numberOfLines.text = defaults.string(forKey: ProfileViewController.keyNumberOfLines) ?? "Number of Lines: 1"
+        numberOfLines.text = defaults.string(forKey: ProfileViewController.keyNumberOfLines) ?? "Line Number: 1"
         
         wordsPerMinute.text = defaults.string(forKey: ProfileViewController.keyWPM) ?? "500"
         
