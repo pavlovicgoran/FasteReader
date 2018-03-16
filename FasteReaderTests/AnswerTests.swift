@@ -27,5 +27,27 @@ class AnswerTests: XCTestCase {
         
         XCTAssert(answer.isCorrect)
     }
+    //Parse takes strings in special format
+    func testParseText(){
+        let answer = Answer(stringToParse: "abcd = T")
+        let answerText = answer.answerText
+        
+        XCTAssert(answerText == "abcd ")
+    }
+    
+    func testParseIsCorrect(){
+        let answer = Answer(stringToParse: "abcd = T")
+        
+        
+        XCTAssert(answer.isCorrect)
+    }
+    
+    func testNotCorrect(){
+        let answer = Answer(stringToParse: "asdfjn = F")
+        
+        XCTAssert(!answer.isCorrect)
+        
+    }
+    
 
 }
