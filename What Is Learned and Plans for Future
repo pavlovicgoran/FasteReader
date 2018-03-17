@@ -1,0 +1,17 @@
+I am curious by nature. Thus, I experimented with app architecture and structured the app around its features.
+As the number of files grew, it was getting harder to keep everything organized. This lead to the conclusion that MVC
+is more convinient and easier to use.
+
+Since I didn't implement MVC pattern, sharing data between view controlers wasn't very good structured. I used singleton 
+classes to share the user data and the data about the book that is currently read. Lot of bugs could be avoided if the MVC was
+used instead.
+
+There are many ways to upgrade this app.
+
+Firstly, it would be really neet to connect app with iBooks if it is possible. That way users could read their own books.
+
+Secondly, the testing user's reading speed feature should be built around Core Data instead of reading the data from files.
+This would give user a range of possible texts to read and then answer questions about them. 
+
+Lastly, the users would perhaps like to get the book recommendation and this could be easily done if we had access to their 
+Goodreads profile.  
