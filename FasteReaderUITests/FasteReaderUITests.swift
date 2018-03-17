@@ -28,9 +28,18 @@ class FasteReaderUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testExpandVisionTool() {
+        
+        let app = XCUIApplication()
+        
+        XCTAssert(app.buttons["memory"].exists)
+        
+  
+        app.buttons["memory"].tap()
+        
+        XCTAssert(app.staticTexts["Expand Vision"].exists)
+        
+        
     }
     
 }

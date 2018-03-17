@@ -22,7 +22,6 @@
 		5F15A2E720248FB10038039B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F15A2E520248FB10038039B /* Main.storyboard */; };
 		5F15A2E920248FB10038039B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F15A2E820248FB10038039B /* Assets.xcassets */; };
 		5F15A2EC20248FB10038039B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F15A2EA20248FB10038039B /* LaunchScreen.storyboard */; };
-		5F15A2F720248FB10038039B /* FasteReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F15A2F620248FB10038039B /* FasteReaderTests.swift */; };
 		5F15A30220248FB10038039B /* FasteReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F15A30120248FB10038039B /* FasteReaderUITests.swift */; };
 		5F15A314202493250038039B /* pile of books.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F15A313202493250038039B /* pile of books.jpg */; };
 		5F1D3F4F20304B8300A05FB3 /* BookTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1D3F4E20304B8300A05FB3 /* BookTabController.swift */; };
@@ -152,7 +151,6 @@
 		5F15A2EB20248FB10038039B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F15A2ED20248FB10038039B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F15A2F220248FB10038039B /* FasteReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FasteReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F15A2F620248FB10038039B /* FasteReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FasteReaderTests.swift; sourceTree = "<group>"; };
 		5F15A2F820248FB10038039B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F15A2FD20248FB10038039B /* FasteReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FasteReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F15A30120248FB10038039B /* FasteReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FasteReaderUITests.swift; sourceTree = "<group>"; };
@@ -352,7 +350,6 @@
 		5F15A2F520248FB10038039B /* FasteReaderTests */ = {
 			isa = PBXGroup;
 			children = (
-				5F15A2F620248FB10038039B /* FasteReaderTests.swift */,
 				5F15A2F820248FB10038039B /* Info.plist */,
 				5F5EFFC9205C01AE00C796E6 /* TextLoaderTests.swift */,
 				5F5EFFCB205C022000C796E6 /* BookTests.swift */,
@@ -880,7 +877,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F5EFFD0205C04DB00C796E6 /* StringExtensionTests.swift in Sources */,
-				5F15A2F720248FB10038039B /* FasteReaderTests.swift in Sources */,
 				5F5EFFCA205C01AE00C796E6 /* TextLoaderTests.swift in Sources */,
 				5F5EFFCC205C022000C796E6 /* BookTests.swift in Sources */,
 				5F5EFFD2205C096800C796E6 /* AnswerTests.swift in Sources */,
