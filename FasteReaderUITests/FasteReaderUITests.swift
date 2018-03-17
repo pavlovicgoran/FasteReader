@@ -42,4 +42,17 @@ class FasteReaderUITests: XCTestCase {
         
     }
     
+    func testStartToolButtons(){
+        
+        
+        let app = XCUIApplication()
+        
+        
+         XCTAssert(app.buttons["Start the Session"].exists)
+        
+    }
+    
 }
+
+
+
